@@ -1,0 +1,2 @@
+# Destination English Grammar Grade 4
+# Zero external dependencies (uses Python standard library: http.server, sqlite3, hashlib)
