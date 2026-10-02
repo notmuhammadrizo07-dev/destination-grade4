@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DESTINATION ENGLISH GRAMMAR 4 • INTERAKTIV PORTAL</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Strict Authentication Gatekeeper Screen (NON-DISMISSIBLE) -->
+  <!-- Users cannot bypass this screen without logging in or creating a unique account -->
+  <div id="authGatekeeper" class="gatekeeper-screen">
+    <div class="gatekeeper-card">
+      <div class="gatekeeper-header">
+        <div class="gatekeeper-badge">★ DESTINATION SERIES • GRADE 4</div>
+        <h1 class="gatekeeper-title">DESTINATION GRAMMAR &amp; VOCABULARY</h1>
+        <p class="gatekeeper-subtitle">4-Sinf O'quvchilari Uchun Maxsus 70 Betlik Interaktiv Maktab</p>
+      </div>
+
+      <!-- Mascot greeting banner -->
+      <div class="gatekeeper-mascot-banner">
+        <div class="mascot-avatar">🦉</div>
+        <div class="mascot-speech">
+          <strong>Professor Owl &amp; Benny Bunny:</strong>
+          <span>"Salom, yosh qahramon! 70 betlik ingliz tili darslarimiz va 20 ta sarguzasht matnlarimizga xush kelibsiz! Darslarni boshlash uchun profilingizga kiring yoki o'zingizga yangi takrorlanmas nom oching!"</span>
+        </div>
+      </div>
+
+      <!-- Warning about unique username -->
+      <div class="gatekeeper-unique-notice">
+        <span class="notice-icon">⚠️</span>
+        <div>
+          <strong>Qat'iy qoida:</strong> 1 ta akkaunt nomi faqat bitta o'quvchiga beriladi! Ishlatilgan nom ikkinchi marta ro'yxatdan o'tmaydi.
+        </div>
+      </div>
+
+      <!-- Auth Tabs -->
+      <div class="auth-tabs">
+        <div class="auth-tab active" id="tabLoginBtn" onclick="switchAuthTab('login')">🔑 Kirish (Login)</div>
+        <div class="auth-tab" id="tabRegBtn" onclick="switchAuthTab('register')">📝 Yangi Akkaunt Ochish</div>
+      </div>
+
+      <div id="authFeedback" class="feedback-msg"></div>
+
+      <!-- Login Form -->
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <div class="form-group">
+          <label for="loginUsername">Akkaunt nomi (Username):</label>
+          <input type="text" id="loginUsername" class="form-input" placeholder="Masalan: alisher2026" autocomplete="username" required>
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">Parol:</label>
+          <input type="password" id="loginPassword" class="form-input" placeholder="Parolingizni kiriting" autocomplete="current-password" required>
+        </div>
+        <button type="submit" class="btn-submit-auth" id="btnLoginSubmit">
+          🚀 Tizimga Kirish va Darslarni Boshlash
+        </button>
+        <div class="auth-switch-prompt">
+          Akkauntingiz yo'qmi? <a href="javascript:void(0)" onclick="switchAuthTab('register')">Yangi takrorlanmas akkaunt ochish</a>
+        </div>
+      </form>
+
+      <!-- Register Form -->
+      <form id="regForm" onsubmit="handleRegister(event)" style="display: none;">
+        <div class="form-group">
+          <label for="regName">Ism va Familiyangiz:</label>
+          <input type="text" id="regName" class="form-input" placeholder="Masalan: Sardor Rustamov" required>
+        </div>
+        <div class="form-group">
+          <label for="regUsername">Takrorlanmas Akkaunt Nomi (Username):</label>
+          <input type="text" id="regUsername" class="form-input" placeholder="Masalan: sardor_grade4" oninput="checkUsernameAvailability(this.value)" autocomplete="off" required>
+          <div id="usernameCheckMsg" class="username-check-msg"></div>
+          <div style="font-size: 11px; color: #64748b; margin-top: 3px;">
+            Faqat kichik ingliz harflari, raqamlar va _ belgisi (kamida 3 ta belgi).
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="regPassword">Parol:</label>
+          <input type="password" id="regPassword" class="form-input" placeholder="Yangi parol o'ylab toping" autocomplete="new-password" required>
+        </div>
+        <button type="submit" class="btn-submit-auth btn-submit-reg" id="btnRegSubmit">
+          ✨ Yangi Akkaunt Yaratish va Kirish
+        </button>
+        <div class="auth-switch-prompt">
+          Akkauntingiz bormi? <a href="javascript:void(0)" onclick="switchAuthTab('login')">Kirish (Login) bo'limiga qaytish</a>
+        </div>
+      </form>
+
+      <!-- Highlights footer -->
+      <div class="gatekeeper-highlights">
+        <div class="highlight-chip">📘 70 Betlik Kitob</div>
+        <div class="highlight-chip">🎙️ 140 Ta Audio Lug'at</div>
+        <div class="highlight-chip">📝 20 Betlik Maxsus Matn</div>
+        <div class="highlight-chip">🏆 Rasmiy Diplom</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Course Application (Only visible after login) -->
+  <div class="app-layout" id="appLayout" style="display: none;">
+    
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="brand-icon">🦉</div>
+        <div class="brand-text">
+          <h2>DESTINATION GRAMMAR</h2>
+          <span>4-SINF • 70 BETLIK KURS</span>
+        </div>
+      </div>
+
+      <!-- User Card in Sidebar -->
+      <div class="user-sidebar-card">
+        <div class="user-info">
+          <div class="user-avatar" id="userAvatar">?</div>
+          <div class="user-meta">
+            <div class="name" id="userName">O'quvchi</div>
+            <div class="stars-badge" id="userStars">⭐ 0 ball</div>
+          </div>
+        </div>
+        <button onclick="logout()" class="btn-logout" title="Akkauntdan chiqish">🚪 Chiqish</button>
+      </div>
+
+      <!-- Navigation Menu (Populated dynamically by app.js) -->
+      <nav class="nav-menu" id="sidebarNavMenu">
+        <!-- Injected by app.js -->
+      </nav>
+    </aside>
+
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+      
+      <!-- Topbar -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <button class="btn-sidebar-toggle" onclick="toggleSidebar()">☰</button>
+          <div class="topbar-title">DESTINATION ENGLISH 4 • INTERAKTIV MAKTAB</div>
+        </div>
+
+        <div class="topbar-right">
+          <a href="book.html" class="btn-pill" style="background:#0284c7; color:white; text-decoration:none;">
+            📖 70 Betlik Kitob
+          </a>
+          <button class="btn-pill btn-pill-pdf" onclick="window.open('Destination_English_Grammar_Grade4.pdf', '_blank')">
+            📄 PDF Kitob
+          </button>
+          <button class="btn-pill btn-pill-primary" onclick="openCertificateModal()">
+            🏅 Faxriy Yorliq
+          </button>
+          <button class="btn-pill" style="background:#ef4444; color:white;" onclick="logout()">
+            🚪 Chiqish
+          </button>
+        </div>
+      </header>
+
+      <!-- Scrollable Main Content -->
+      <main class="content-body" id="unitContent">
+        <!-- Injected by app.js -->
+      </main>
+
+    </div>
+  </div>
+
+  <!-- Official Certificate Modal (Accessible when logged in) -->
+  <div class="modal-overlay" id="certModal" style="display: none;">
+    <div class="modal-card cert-modal-card">
+      <div style="text-align: right;">
+        <button onclick="closeCertificateModal()" style="background:none; border:none; font-size:22px; cursor:pointer; color:#64748b;">✕</button>
+      </div>
+
+      <div style="font-size: 11px; font-weight: 800; color: #b45309; letter-spacing: 2px;">MACMILLAN &amp; DESTINATION INSPIRED</div>
+      <h2 style="font-size: 24px; font-weight: 900; color: #1e293b; margin: 4px 0;">CERTIFICATE OF ACHIEVEMENT</h2>
+      <div style="font-size: 14px; color: #d97706; font-weight: 800; margin-bottom: 12px;">INGLIZ TILI GRAMMATIKA FAXRIY YORLIG'I</div>
+
+      <div style="font-size: 14px; color: #475569; margin-bottom: 8px;">Ushbu rasmiy sertifikat 4-sinf o'quvchisi:</div>
+      <div style="font-size: 24px; font-weight: 900; color: var(--primary); border-bottom: 2px solid var(--accent); display: inline-block; padding: 2px 24px; margin-bottom: 14px;" id="certStudentName">
+        4-sinf O'quvchisi
+      </div>
+
+      <p style="font-size: 13.5px; color: #334155; line-height: 1.6; max-width: 520px; margin: 0 auto 16px auto;">
+        <b>Destination English Grammar &amp; Vocabulary (Grade 4)</b> kursining barcha 70 betlik materiallarini, 14 ta zamon qoidalari, 140 ta oltin lug'at va 20 betlik maxsus matn topshiriqlarini muvaffaqiyatli o'zlashtirgani uchun taqdirlanadi!
+      </p>
+
+      <div style="display: flex; justify-content: space-around; align-items: center; border-top: 1px dashed #cbd5e1; padding-top: 14px; font-size: 12.5px;">
+        <div>Sana: <strong>2026-yil</strong></div>
+        <div style="font-size: 32px;">🏅</div>
+        <div>Ustoz: <strong>Professor Owl &amp; Benny</strong></div>
+      </div>
+
+      <div style="margin-top: 18px; display: flex; gap: 10px; justify-content: center;">
+        <button class="btn-pill btn-pill-pdf" onclick="window.print()">🖨️ Sertifikatni Chop Etish</button>
+        <button class="btn-pill" style="background:#64748b; color:white;" onclick="closeCertificateModal()">Yopish</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="site_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
