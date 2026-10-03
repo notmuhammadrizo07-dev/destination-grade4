@@ -52,6 +52,77 @@ function speakStoryText(text) {
   }
 }
 
+// Smart Answer Matching & Normalization (accepts isnt, isn't, is not, etc.)
+function canonicalizeAnswer(text) {
+  if (!text) return "";
+  let s = text.trim().toLowerCase();
+  // Normalize various apostrophe and quotation characters
+  s = s.replace(/[\u2019\u2018\u0060\u00b4\u02bb]/g, "'");
+  // Remove trailing punctuation like . , ! ?
+  s = s.replace(/[\.\,\!\?]+$/, "").trim();
+
+  // Contraction normalizations
+  const replacements = [
+    [/\b(isn't|isnt)\b/g, "is not"],
+    [/\b(aren't|arent)\b/g, "are not"],
+    [/\b(wasn't|wasnt)\b/g, "was not"],
+    [/\b(weren't|werent)\b/g, "were not"],
+    [/\b(don't|dont)\b/g, "do not"],
+    [/\b(doesn't|doesnt)\b/g, "does not"],
+    [/\b(didn't|didnt)\b/g, "did not"],
+    [/\b(won't|wont)\b/g, "will not"],
+    [/\b(can't|cant|cannot)\b/g, "can not"],
+    [/\b(haven't|havent)\b/g, "have not"],
+    [/\b(hasn't|hasnt)\b/g, "has not"],
+    [/\b(hadn't|hadnt)\b/g, "had not"],
+    [/\b(wouldn't|wouldnt)\b/g, "would not"],
+    [/\b(shouldn't|shouldnt)\b/g, "should not"],
+    [/\b(couldn't|couldnt)\b/g, "could not"],
+    [/\b(i'm|im)\b/g, "i am"],
+    [/\b(you're|youre)\b/g, "you are"],
+    [/\b(he's|hes)\b/g, "he is"],
+    [/\b(she's|shes)\b/g, "she is"],
+    [/\b(it's|its)\b/g, "it is"],
+    [/\b(we're)\b/g, "we are"],
+    [/\b(they're|theyre)\b/g, "they are"],
+    [/\b(i'll|ill)\b/g, "i will"],
+    [/\b(you'll|youll)\b/g, "you will"],
+    [/\b(he'll)\b/g, "he will"],
+    [/\b(she'll)\b/g, "she will"],
+    [/\b(we'll|well)\b/g, "we will"],
+    [/\b(they'll|theyll)\b/g, "they will"],
+    [/\b(i've|ive)\b/g, "i have"],
+    [/\b(you've|youve)\b/g, "you have"],
+    [/\b(we've|weve)\b/g, "we have"],
+    [/\b(they've|theyve)\b/g, "they have"]
+  ];
+
+  for (const [pat, rep] of replacements) {
+    s = s.replace(pat, rep);
+  }
+  return s.replace(/\s+/g, " ").trim();
+}
+
+function checkAnswerMatch(userInput, expectedAnswer) {
+  if (!userInput || !expectedAnswer) return false;
+  const userTrimmed = userInput.trim();
+  if (!userTrimmed) return false;
+
+  const userCanon = canonicalizeAnswer(userTrimmed);
+  const userRaw = userTrimmed.toLowerCase().replace(/['\s\u2019\u2018\u0060\u00b4\u02bb\-]/g, "");
+
+  // Multiple valid options separated by '/' or ';'
+  const options = expectedAnswer.split(/[\/;]/).map(o => o.trim()).filter(Boolean);
+
+  for (const opt of options) {
+    const optCanon = canonicalizeAnswer(opt);
+    if (userCanon === optCanon) return true;
+    const optRaw = opt.toLowerCase().replace(/['\s\u2019\u2018\u0060\u00b4\u02bb\-]/g, "");
+    if (userRaw === optRaw) return true;
+  }
+  return false;
+}
+
 // Gatekeeper Controls
 function showGatekeeper() {
   document.getElementById("authGatekeeper").style.display = "flex";
@@ -598,6 +669,34 @@ function renderUnitView(unitId) {
       </div>
       ${quizHtml}
     </div>
+
+    <!-- Section 5: Video Dars (Eng Pastida) -->
+    ${unit.video ? `
+      <div class="card-box video-lesson-card">
+        <div class="card-title" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #fee2e2; padding-bottom: 8px;">
+          <span style="color: #b91c1c; font-weight: 800; font-size: 15px;">🎥 5-QISM: MAXSUS VIDEO DARS</span>
+          <span class="video-badge">▶ HD Video Dars</span>
+        </div>
+        <div style="margin-top: 10px; font-size: 13.5px; color: #334155;">
+          <strong>${unit.video.title}</strong>
+          <p style="margin: 4px 0 12px 0; color: #64748b; font-size: 13px;">${unit.video.desc}</p>
+        </div>
+        <div class="video-container">
+          <iframe 
+            src="https://www.youtube-nocookie.com/embed/${unit.video.youtube_id}?rel=0" 
+            title="${unit.video.title}" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="video-footer-tip">
+          <span>💡 <b>Foydali Maslahat:</b> Darsni diqqat bilan tomosha qiling, qoidani takrorlang va o'rganilgan zamonlarni matnlarda qo'llang!</span>
+          <a href="https://www.youtube.com/watch?v=${unit.video.youtube_id}" target="_blank" rel="noopener noreferrer" style="color: #dc2626; font-weight: 700; text-decoration: underline; margin-left: auto;">
+            ▶ YouTube'da ochish
+          </a>
+        </div>
+      </div>
+    ` : ""}
   `;
 }
 
@@ -644,6 +743,29 @@ function renderClozePageView(id) {
           <span>🎯 HIKOYALARNI YECHISHNING 4 ASOSIY STRATEGIYASI:</span>
         </div>
         ${rulesHtml}
+        ${pageData.video ? `
+          <div class="video-lesson-card" style="margin-top: 24px; padding: 16px; border: 1.5px solid #fee2e2; border-radius: 10px;">
+            <div class="card-title" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #fee2e2; padding-bottom: 8px;">
+              <span style="color: #b91c1c; font-weight: 800; font-size: 15px;">🎥 MATN O'QISH VA TUSHUNISH MASTERCLASS DARSI</span>
+              <span class="video-badge">▶ Video Dars</span>
+            </div>
+            <p style="margin: 8px 0 12px 0; color: #475569; font-size: 13px;">${pageData.video.desc}</p>
+            <div class="video-container">
+              <iframe 
+                src="https://www.youtube-nocookie.com/embed/${pageData.video.youtube_id}?rel=0" 
+                title="${pageData.video.title}" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-footer-tip">
+              <span>💡 <b>Maslahat:</b> Ushbu dars orqali matnlarni tez va xatosiz yechish sirlarini bilib olasiz!</span>
+              <a href="https://www.youtube.com/watch?v=${pageData.video.youtube_id}" target="_blank" rel="noopener noreferrer" style="color: #dc2626; font-weight: 700; text-decoration: underline; margin-left: auto;">
+                ▶ YouTube'da ochish
+              </a>
+            </div>
+          </div>
+        ` : ""}
         <div style="text-align: right; margin-top: 20px;">
           <button class="btn-pill" style="background: #10b981; color: white; padding: 10px 20px;" onclick="renderItem('cloze-p52')">
             Story 1 ga O'tish ▶
@@ -749,6 +871,37 @@ function renderClozePageView(id) {
 
   const nextPg = pageNum < 68 ? pageNum + 1 : 69;
 
+  let storyVideoHtml = "";
+  if (pageData.unit_ref) {
+    const uNum = parseInt(pageData.unit_ref.replace(/\D/g, ""));
+    const matchedUnit = SITE_DATA.units.find(u => u.num === uNum);
+    if (matchedUnit && matchedUnit.video) {
+      storyVideoHtml = `
+        <div class="card-box video-lesson-card" style="margin-top: 20px;">
+          <div class="card-title" style="display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #fee2e2; padding-bottom: 8px;">
+            <span style="color: #b91c1c; font-weight: 800; font-size: 15px;">🎥 MAVZUGA OID VIDEO DARS (${pageData.unit_ref})</span>
+            <span class="video-badge">▶ Video Dars</span>
+          </div>
+          <p style="margin: 8px 0 12px 0; color: #475569; font-size: 13px;">${matchedUnit.video.desc}</p>
+          <div class="video-container">
+            <iframe 
+              src="https://www.youtube-nocookie.com/embed/${matchedUnit.video.youtube_id}?rel=0" 
+              title="${matchedUnit.video.title}" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              allowfullscreen>
+            </iframe>
+          </div>
+          <div class="video-footer-tip">
+            <span>💡 <b>Eslatma:</b> Hikoyadagi bo'sh joylarni to'g'ri to'ldirish uchun video darsdagi qoidani eslang!</span>
+            <a href="https://www.youtube.com/watch?v=${matchedUnit.video.youtube_id}" target="_blank" rel="noopener noreferrer" style="color: #dc2626; font-weight: 700; text-decoration: underline; margin-left: auto;">
+              ▶ YouTube'da ochish
+            </a>
+          </div>
+        </div>
+      `;
+    }
+  }
+
   container.innerHTML = `
     <div class="web-unit-banner" style="background: linear-gradient(135deg, #007791 0%, #004e5f 100%);">
       <div class="web-unit-banner-left">
@@ -787,17 +940,18 @@ function renderClozePageView(id) {
         </button>
       </div>
     </div>
+    ${storyVideoHtml}
   `;
 }
 
-// Unit Cloze Checker
+// Unit Cloze Checker (Accepts isnt, isn't, is not, etc.)
 function checkUnitCloze(unitId) {
   const inputs = document.querySelectorAll(`.cloze-input[data-unit="${unitId}"]`);
   let correctCount = 0;
   inputs.forEach(input => {
-    const userVal = input.value.trim().toLowerCase();
-    const correctVal = input.getAttribute("data-ans").trim().toLowerCase();
-    if (userVal === correctVal) {
+    const userVal = input.value;
+    const correctVal = input.getAttribute("data-ans") || "";
+    if (checkAnswerMatch(userVal, correctVal)) {
       input.classList.add("correct");
       input.classList.remove("wrong");
       correctCount++;
@@ -819,7 +973,7 @@ function checkUnitCloze(unitId) {
   }
 }
 
-// 20-Page Story Cloze Checker
+// 20-Page Story Cloze Checker (Accepts isnt, isn't, is not, etc.)
 function checkStoryCloze(pageNum) {
   const inputs = document.querySelectorAll(`.story-cloze-input[data-page="${pageNum}"]`);
   let correctCount = 0;
@@ -831,10 +985,10 @@ function checkStoryCloze(pageNum) {
       nextNode.remove();
     }
 
-    const userVal = input.value.trim().toLowerCase();
-    const correctVal = input.getAttribute("data-ans").trim().toLowerCase();
+    const userVal = input.value;
+    const correctVal = input.getAttribute("data-ans") || "";
 
-    if (userVal === correctVal) {
+    if (checkAnswerMatch(userVal, correctVal)) {
       input.classList.add("correct");
       input.classList.remove("wrong");
       correctCount++;
@@ -870,13 +1024,13 @@ function checkQuizOpt(btn, correctAns, unitId) {
   });
 
   const selectedText = btn.innerText.trim();
-  if (selectedText.toLowerCase() === correctAns.toLowerCase()) {
+  if (checkAnswerMatch(selectedText, correctAns)) {
     btn.classList.add("correct");
     addStarsAndSave(2, `${unitId}-quiz`);
   } else {
     btn.classList.add("wrong");
     parent.querySelectorAll(".quiz-opt-btn").forEach(b => {
-      if (b.innerText.trim().toLowerCase() === correctAns.toLowerCase()) {
+      if (checkAnswerMatch(b.innerText.trim(), correctAns)) {
         b.classList.add("correct");
       }
     });
