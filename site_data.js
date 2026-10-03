@@ -55,7 +55,12 @@ const SITE_DATA = {
         { q: "The English test (am not / isn't / aren't) difficult at all.", opts: ["am not", "isn't", "aren't"], ans: "isn't" },
         { q: "(Am / Is / Are) your parents at home right now?", opts: ["Am", "Is", "Are"], ans: "Are" },
         { q: "'clever' so'zining sinonimi qaysi?", opts: ["tiny", "smart", "loud"], ans: "smart" }
-      ]
+      ],
+      video: {
+        "title": "Unit 1: Verb 'To Be' (am, is, are) Video Dars",
+        "desc": "'To be' (am, is, are) fe'llarining qo'llanishi va qoidalarini quvnoq animatsion video dars orqali ko'ring:",
+        "youtube_id": "q32HkJy3x3I"
+}
     },
 
     {
@@ -110,7 +115,12 @@ const SITE_DATA = {
         { q: "My mother (cook / cooks) delicious plov on weekends.", opts: ["cook", "cooks"], ans: "cooks" },
         { q: "She (tidy / tidies) her bedroom every Saturday.", opts: ["tidy", "tidies"], ans: "tidies" },
         { q: "'start' so'zining sinonimi qaysi?", opts: ["begin", "end", "stop"], ans: "begin" }
-      ]
+      ],
+      video: {
+        "title": "Unit 2: Present Simple Action Verbs (Daily Routines)",
+        "desc": "Hozirgi oddiy zamon, kun tartibi va fe'llarga -s/-es qo'shish qoidalarini video orqali tushuntirish:",
+        "youtube_id": "Qf735P6rXUw"
+}
     },
 
     {
@@ -164,7 +174,12 @@ const SITE_DATA = {
         { q: "(Do / Does) your cat swim in the bathtub?", opts: ["Do", "Does"], ans: "Does" },
         { q: "We (don't / doesn't) go to school on Sundays.", opts: ["don't", "doesn't"], ans: "don't" },
         { q: "'enjoy' so'zining sinonimi qaysi?", opts: ["like", "jump", "draw"], ans: "like" }
-      ]
+      ],
+      video: {
+        "title": "Unit 3: Present Simple Negatives & Questions (Do / Does)",
+        "desc": "Do, Does, Don't va Doesn't yordamchi fe'llari bilan inkor va so'roq gaplar tuzish darsi:",
+        "youtube_id": "L9AWrJnhsRI"
+}
     },
 
     {
@@ -220,7 +235,12 @@ const SITE_DATA = {
         { q: "We (aren't sleeping / isn't sleeping) at the moment.", opts: ["aren't sleeping", "isn't sleeping"], ans: "aren't sleeping" },
         { q: "She (is danceing / is dancing) beautifully on the stage.", opts: ["is danceing", "is dancing"], ans: "is dancing" },
         { q: "'sprint' so'zining sinonimi qaysi?", opts: ["sleep", "run", "cook"], ans: "run" }
-      ]
+      ],
+      video: {
+        "title": "Unit 4: Present Continuous Tense (am/is/are + ing)",
+        "desc": "Ayni damda sodir bo'layotgan harakatlar (Present Continuous) qoidalarini video orqali o'rganing:",
+        "youtube_id": "Hn0eP_uN1_4"
+}
     },
 
     {
@@ -274,7 +294,12 @@ const SITE_DATA = {
         { q: "(Is she / Does she) smiling at the new student?", opts: ["Is she", "Does she"], ans: "Is she" },
         { q: "(Where are / Where is) your brothers going right now?", opts: ["Where are", "Where is"], ans: "Where are" },
         { q: "'search' so'zining sinonimi qaysi?", opts: ["look for", "hide", "fly"], ans: "look for" }
-      ]
+      ],
+      video: {
+        "title": "Unit 5: Present Continuous Questions & Short Answers",
+        "desc": "Hozirgi davomli zamonda so'roq gaplar va qisqa javoblar berish video darsi:",
+        "youtube_id": "UkgxT50qC8s"
+}
     },
 
     {
@@ -321,7 +346,12 @@ const SITE_DATA = {
         { q: "I (drink / am drinking) a glass of milk every morning.", opts: ["drink", "am drinking"], ans: "drink" },
         { q: "Be quiet! Grandmother (sleeps / is sleeping) right now.", opts: ["sleeps", "is sleeping"], ans: "is sleeping" },
         { q: "'normally' so'zining sinonimi qaysi?", opts: ["usually", "never", "now"], ans: "usually" }
-      ]
+      ],
+      video: {
+        "title": "Unit 6: Present Simple vs Present Continuous",
+        "desc": "Doimiy odatlar (Simple) va ayni damdagi harakatlar (Continuous) farqini video orqali ko'ring:",
+        "youtube_id": "1Y-z6H7wTkg"
+}
     },
 
     {
@@ -408,7 +438,12 @@ Benny (19. love) {loves} learning English grammar adventures, and he promises:
         { q: "Malika (wasn't / weren't) at school because she was sick.", opts: ["wasn't", "weren't"], ans: "wasn't" },
         { q: "(Was / Were) you happy with your birthday present?", opts: ["Was", "Were"], ans: "Were" },
         { q: "'delicious' so'zining sinonimi qaysi?", opts: ["tasty", "scared", "loud"], ans: "tasty" }
-      ]
+      ],
+      video: {
+        "title": "Unit 7: Past Simple 'To Be' (Was / Were)",
+        "desc": "O'tgan zamonda 'bo'lmoq' fe'li: Was va Were ning ishlatilishi va qoidalari:",
+        "youtube_id": "O3P7k_G4T-g"
+}
     },
 
     {
@@ -455,7 +490,12 @@ Benny (19. love) {loves} learning English grammar adventures, and he promises:
         { q: "The bus __________ (stop) at the traffic lights.", opts: ["stoped", "stopped"], ans: "stopped" },
         { q: "She __________ (tidy) her room yesterday.", opts: ["tidied", "tidyed"], ans: "tidied" },
         { q: "'shut' so'zining sinonimi qaysi?", opts: ["close", "open", "walk"], ans: "close" }
-      ]
+      ],
+      video: {
+        "title": "Unit 8: Past Simple Regular Verbs (-ed)",
+        "desc": "To'g'ri fe'llarga -ed qo'shish qoidalari va ularning talaffuzi:",
+        "youtube_id": "aqXQn6wzWq8"
+}
     },
 
     {
@@ -505,7 +545,12 @@ Benny (19. love) {loves} learning English grammar adventures, and he promises:
         { q: "Timur __________ (eat) two slices of watermelon.", opts: ["eated", "ate"], ans: "ate" },
         { q: "Father __________ (buy) me an interesting puzzle.", opts: ["buyed", "bought"], ans: "bought" },
         { q: "'purchased' so'zining sinonimi qaysi?", opts: ["bought", "saw", "went"], ans: "bought" }
-      ]
+      ],
+      video: {
+        "title": "Unit 9: Past Simple Irregular Verbs",
+        "desc": "Ingliz tilidagi eng ko'p ishlatiladigan noto'g'ri fe'llarning o'tgan zamon shakllari:",
+        "youtube_id": "MA3NFtLc22k"
+}
     },
 
     {
@@ -551,7 +596,12 @@ Benny (19. love) {loves} learning English grammar adventures, and he promises:
         { q: "Benny didn't (ate / eat) the sour lemon.", opts: ["ate", "eat"], ans: "eat" },
         { q: "She didn't (forgot / forget) her backpack.", opts: ["forgot", "forget"], ans: "forget" },
         { q: "'discover' so'zining sinonimi qaysi?", opts: ["find", "lose", "ask"], ans: "find" }
-      ]
+      ],
+      video: {
+        "title": "Unit 10: Past Simple Negatives & Questions (Did / Didn't)",
+        "desc": "O'tgan zamonda Did va Didn't orqali so'roq va inkor gaplar tuzish video darsi:",
+        "youtube_id": "mS73t3jU0L8"
+}
     },
 
     {
@@ -596,7 +646,12 @@ Benny (19. love) {loves} learning English grammar adventures, and he promises:
         { q: "The children (was / were) playing football in the yard.", opts: ["was", "were"], ans: "were" },
         { q: "Benny (wasn't / weren't) sleeping; he was reading.", opts: ["wasn't", "weren't"], ans: "wasn't" },
         { q: "'fix' so'zining sinonimi qaysi?", opts: ["repair", "rain", "sleep"], ans: "repair" }
-      ]
+      ],
+      video: {
+        "title": "Unit 11: Past Continuous Tense (was/were + ing)",
+        "desc": "O'tmishda ma'lum bir vaqtda davom etayotgan harakatlarni ifodalash:",
+        "youtube_id": "_0h6H6tJ0l0"
+}
     },
 
     {
@@ -642,7 +697,12 @@ Benny (19. love) {loves} learning English grammar adventures, and he promises:
         { q: "They (is going to / are going to) travel to Bukhara.", opts: ["is going to", "are going to"], ans: "are going to" },
         { q: "Timur (isn't going to / aren't going to) buy the noisy toy.", opts: ["isn't going to", "aren't going to"], ans: "isn't going to" },
         { q: "'construct' so'zining sinonimi qaysi?", opts: ["build", "buy", "plant"], ans: "build" }
-      ]
+      ],
+      video: {
+        "title": "Unit 12: Future with 'Be Going To' (Plans)",
+        "desc": "Kelajakdagi rejalar va niyatlar uchun 'be going to' iborasining qo'llanilishi:",
+        "youtube_id": "j-h5E8t2W4U"
+}
     },
 
     {
@@ -687,7 +747,12 @@ Benny (19. love) {loves} learning English grammar adventures, and he promises:
         { q: "Don't worry! I (will / won't) forget your birthday.", opts: ["will", "won't"], ans: "won't" },
         { q: "If you study hard, you (will / won't) pass the English exam.", opts: ["will", "won't"], ans: "will" },
         { q: "'believe' so'zining sinonimi qaysi?", opts: ["think", "win", "fly"], ans: "think" }
-      ]
+      ],
+      video: {
+        "title": "Unit 13: Future Simple: Will and Won't",
+        "desc": "Kelasi oddiy zamon, bashoratlar va va'dalar uchun Will va Won't dan foydalanish:",
+        "youtube_id": "vN4q0M8r5_A"
+}
     },
 
     {
@@ -733,7 +798,12 @@ Benny (19. love) {loves} learning English grammar adventures, and he promises:
         { q: "(Have / Has) you ever visited Samarkand?", opts: ["Have", "Has"], ans: "Have" },
         { q: "My brother (haven't / hasn't) eaten sushi before.", opts: ["haven't", "hasn't"], ans: "hasn't" },
         { q: "'toured' so'zining sinonimi qaysi?", opts: ["visited", "seen", "eaten"], ans: "visited" }
-      ]
+      ],
+      video: {
+        "title": "Unit 14: Present Perfect Intro (Have you ever...?)",
+        "desc": "Hayotiy tajribalar va Present Perfect zamoni haqida boshlang'ich tushunchalar:",
+        "youtube_id": "4nN1_T9eJk4"
+}
     }
   ]
 };
@@ -764,7 +834,12 @@ SITE_DATA.cloze_pages = [
         "To'g'ri fe'llarga <b>-ed</b> qo'shing (study -> studied, stop -> stopped), noto'g'ri fe'llarning 2 yoki 3-shaklini yozing."
       ]
     ],
-    "banner_note": "Ushbu 20 ta sahifada siz 1-dan 14-gacha bo'lgan barcha zamonlarni haqiqiy qiziqarli hikoyalar, ertaklar va detektiv sarguzashtlar orqali mustahkamlaysiz!"
+    "banner_note": "Ushbu 20 ta sahifada siz 1-dan 14-gacha bo'lgan barcha zamonlarni haqiqiy qiziqarli hikoyalar, ertaklar va detektiv sarguzashtlar orqali mustahkamlaysiz!",
+    "video": {
+      "title": "4-Sinf uchun Matn O'qish va Bo'sh Joylarni To'ldirish Masterclass Darsi",
+      "desc": "Ingliz tilidagi hikoyalarni oson tushunish, fe'llar zamonini topish va topshiriqlarni to'g'ri bajarish usullari:",
+      "youtube_id": "o_7P4jD8v1Y"
+    }
   },
   {
     "page_num": 52,
