@@ -58,8 +58,9 @@ const SITE_DATA = {
       ],
       video: {
         "title": "Unit 1: Verb 'To Be' (am, is, are) Video Dars",
-        "desc": "'To be' (am, is, are) fe'llarining qo'llanishi va qoidalarini quvnoq animatsion video dars orqali ko'ring:",
-        "youtube_id": "q32HkJy3x3I"
+        "desc": "Verb 'To Be' (am, is, are) ning qo'llanishi va qoidalarini quvnoq animatsion video dars orqali ko'ring:",
+        "youtube_id": "cEzSLzzKkf0"
+
 }
     },
 
@@ -117,9 +118,10 @@ const SITE_DATA = {
         { q: "'start' so'zining sinonimi qaysi?", opts: ["begin", "end", "stop"], ans: "begin" }
       ],
       video: {
-        "title": "Unit 2: Present Simple Action Verbs (Daily Routines)",
-        "desc": "Hozirgi oddiy zamon, kun tartibi va fe'llarga -s/-es qo'shish qoidalarini video orqali tushuntirish:",
-        "youtube_id": "Qf735P6rXUw"
+        "title": "Unit 2: Present Simple Routines & Action Verbs",
+        "desc": "Hozirgi oddiy zamon, kundalik tartib (daily routines) va fe'llar bo'yicha video dars:",
+        "youtube_id": "pEx5entLOFQ"
+
 }
     },
 
@@ -177,8 +179,9 @@ const SITE_DATA = {
       ],
       video: {
         "title": "Unit 3: Present Simple Negatives & Questions (Do / Does)",
-        "desc": "Do, Does, Don't va Doesn't yordamchi fe'llari bilan inkor va so'roq gaplar tuzish darsi:",
-        "youtube_id": "L9AWrJnhsRI"
+        "desc": "Do va Does yordamchi fe'llari bilan inkor (don't/doesn't) va so'roq gaplar tuzish darsi:",
+        "youtube_id": "7LWC01gTY2s"
+
 }
     },
 
@@ -239,7 +242,8 @@ const SITE_DATA = {
       video: {
         "title": "Unit 4: Present Continuous Tense (am/is/are + ing)",
         "desc": "Ayni damda sodir bo'layotgan harakatlar (Present Continuous) qoidalarini video orqali o'rganing:",
-        "youtube_id": "Hn0eP_uN1_4"
+        "youtube_id": "S1XZERFjB5g"
+
 }
     },
 
@@ -298,7 +302,8 @@ const SITE_DATA = {
       video: {
         "title": "Unit 5: Present Continuous Questions & Short Answers",
         "desc": "Hozirgi davomli zamonda so'roq gaplar va qisqa javoblar berish video darsi:",
-        "youtube_id": "UkgxT50qC8s"
+        "youtube_id": "GhbQzuq0sv8"
+
 }
     },
 
@@ -349,8 +354,9 @@ const SITE_DATA = {
       ],
       video: {
         "title": "Unit 6: Present Simple vs Present Continuous",
-        "desc": "Doimiy odatlar (Simple) va ayni damdagi harakatlar (Continuous) farqini video orqali ko'ring:",
-        "youtube_id": "1Y-z6H7wTkg"
+        "desc": "British Council: Doimiy odatlar (Simple) va ayni damdagi harakatlar (Continuous) farqini video orqali ko'ring:",
+        "youtube_id": "GV9IFkjsQkE"
+
 }
     },
 
@@ -442,7 +448,8 @@ Benny (19. love) {loves} learning English grammar adventures, and he promises:
       video: {
         "title": "Unit 7: Past Simple 'To Be' (Was / Were)",
         "desc": "O'tgan zamonda 'bo'lmoq' fe'li: Was va Were ning ishlatilishi va qoidalari:",
-        "youtube_id": "O3P7k_G4T-g"
+        "youtube_id": "fsFPgAhDo4I"
+
 }
     },
 
@@ -493,8 +500,9 @@ Benny (19. love) {loves} learning English grammar adventures, and he promises:
       ],
       video: {
         "title": "Unit 8: Past Simple Regular Verbs (-ed)",
-        "desc": "To'g'ri fe'llarga -ed qo'shish qoidalari va ularning talaffuzi:",
-        "youtube_id": "aqXQn6wzWq8"
+        "desc": "To'g'ri fe'llarga -ed qo'shish qoidalari va o'tgan zamon fe'llari video darsi:",
+        "youtube_id": "MI3S3kdkofo"
+
 }
     },
 
@@ -547,9 +555,10 @@ Benny (19. love) {loves} learning English grammar adventures, and he promises:
         { q: "'purchased' so'zining sinonimi qaysi?", opts: ["bought", "saw", "went"], ans: "bought" }
       ],
       video: {
-        "title": "Unit 9: Past Simple Irregular Verbs",
-        "desc": "Ingliz tilidagi eng ko'p ishlatiladigan noto'g'ri fe'llarning o'tgan zamon shakllari:",
+        "title": "Unit 9: Irregular Verbs (Noto'g'ri Fe'llar)",
+        "desc": "Ingliz tilidagi eng ko'p ishlatiladigan noto'g'ri fe'llarning o'tgan zamon shakllari qo'shiq bilan:",
         "youtube_id": "MA3NFtLc22k"
+
 }
     },
 
@@ -598,9 +607,10 @@ Benny (19. love) {loves} learning English grammar adventures, and he promises:
         { q: "'discover' so'zining sinonimi qaysi?", opts: ["find", "lose", "ask"], ans: "find" }
       ],
       video: {
-        "title": "Unit 10: Past Simple Negatives & Questions (Did / Didn't)",
-        "desc": "O'tgan zamonda Did va Didn't orqali so'roq va inkor gaplar tuzish video darsi:",
-        "youtube_id": "mS73t3jU0L8"
+        "title": "Unit 10: Past Simple Negatives (Didn't)",
+        "desc": "O'tgan zamonda Didn't orqali inkor gaplar tuzish video darsi:",
+        "youtube_id": "YNypo34w4sg"
+
 }
     },
 
@@ -649,8 +659,9 @@ Benny (19. love) {loves} learning English grammar adventures, and he promises:
       ],
       video: {
         "title": "Unit 11: Past Continuous Tense (was/were + ing)",
-        "desc": "O'tmishda ma'lum bir vaqtda davom etayotgan harakatlarni ifodalash:",
-        "youtube_id": "_0h6H6tJ0l0"
+        "desc": "O'tmishda ma'lum bir vaqtda davom etayotgan harakatlarni ifodalash video darsi:",
+        "youtube_id": "Rb_qdxmspeU"
+
 }
     },
 
@@ -701,7 +712,8 @@ Benny (19. love) {loves} learning English grammar adventures, and he promises:
       video: {
         "title": "Unit 12: Future with 'Be Going To' (Plans)",
         "desc": "Kelajakdagi rejalar va niyatlar uchun 'be going to' iborasining qo'llanilishi:",
-        "youtube_id": "j-h5E8t2W4U"
+        "youtube_id": "IpmmTWcjVbM"
+
 }
     },
 
@@ -751,7 +763,8 @@ Benny (19. love) {loves} learning English grammar adventures, and he promises:
       video: {
         "title": "Unit 13: Future Simple: Will and Won't",
         "desc": "Kelasi oddiy zamon, bashoratlar va va'dalar uchun Will va Won't dan foydalanish:",
-        "youtube_id": "vN4q0M8r5_A"
+        "youtube_id": "n14zCZAvSjI"
+
 }
     },
 
@@ -800,9 +813,10 @@ Benny (19. love) {loves} learning English grammar adventures, and he promises:
         { q: "'toured' so'zining sinonimi qaysi?", opts: ["visited", "seen", "eaten"], ans: "visited" }
       ],
       video: {
-        "title": "Unit 14: Present Perfect Intro (Have you ever...?)",
-        "desc": "Hayotiy tajribalar va Present Perfect zamoni haqida boshlang'ich tushunchalar:",
-        "youtube_id": "4nN1_T9eJk4"
+        "title": "Unit 14: Present Perfect Tense",
+        "desc": "Present Perfect zamoni (Have/Has + V3) va hayotiy tajribalar haqida video dars:",
+        "youtube_id": "i9GlEYf8_5I"
+
 }
     }
   ]
@@ -836,9 +850,10 @@ SITE_DATA.cloze_pages = [
     ],
     "banner_note": "Ushbu 20 ta sahifada siz 1-dan 14-gacha bo'lgan barcha zamonlarni haqiqiy qiziqarli hikoyalar, ertaklar va detektiv sarguzashtlar orqali mustahkamlaysiz!",
     "video": {
-      "title": "4-Sinf uchun Matn O'qish va Bo'sh Joylarni To'ldirish Masterclass Darsi",
-      "desc": "Ingliz tilidagi hikoyalarni oson tushunish, fe'llar zamonini topish va topshiriqlarni to'g'ri bajarish usullari:",
-      "youtube_id": "o_7P4jD8v1Y"
+      "title": "4-Sinf uchun Matn O'qish va Tushunish (Reading Comprehension)",
+      "desc": "Ingliz tilidagi hikoyalarni o'qish, tushunish va savollarga to'g'ri javob berish masterclass darsi:",
+      "youtube_id": "AYtpX9qka-k"
+
     }
   },
   {
