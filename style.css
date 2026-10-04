@@ -945,3 +945,60 @@ body {
   gap: 10px;
 }
 
+/* Subject Switcher Toolbar */
+.subject-switcher-bar {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  padding: 8px 10px 12px 10px;
+  border-bottom: 1px solid #334155;
+  margin-bottom: 8px;
+}
+
+.subject-switch-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: #1e293b;
+  color: #94a3b8;
+  border: 1.5px solid #334155;
+  border-radius: 8px;
+  padding: 9px 8px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subject-switch-btn:hover {
+  background: #334155;
+  color: #f8fafc;
+  transform: translateY(-1px);
+}
+
+.subject-switch-btn.active {
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: white;
+  border-color: #38bdf8;
+  box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
+}
+
+.subject-switch-btn[data-subject="math"].active {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  color: white;
+  border-color: #34d399;
+  box-shadow: 0 4px 12px rgba(5, 150, 105, 0.35);
+}
+
+.math-accent-border {
+  border-left-color: #059669 !important;
+}
+
+.math-badge {
+  background: rgba(5, 150, 105, 0.15);
+  color: #059669;
+  border: 1px solid rgba(5, 150, 105, 0.3);
+}
+
+
