@@ -1,5 +1,6 @@
 // math_data.js - Complete data for 4th Grade Mathematics (Matematika)
 // 14 Comprehensive Units + 20-Page Problem Solving Adventure (Pages 51-70)
+// Advanced Standard: Al-Xorazmiy & Presidential School / Olympiad Level
 
 const MATH_DATA = {
   units: [
@@ -7,18 +8,18 @@ const MATH_DATA = {
     "id": "math-unit-1",
     "num": 1,
     "title": "Ko'p Xonali Sonlar (1 000 000 gacha sonlar)",
-    "subtitle": "Xona birliklari, sinflar va sonlarni taqqoslash",
-    "tag": "Sonlar va Arifmetika • 4-Sinf",
-    "meaning": "<b>Ko'p xonali sonlar</b> bir nechta raqamlar yordamida yoziladi. Har uchta xona birligi bitta <b>sinf</b>ni hosil qiladi: <i>Birlar sinfi</i> (birlar, o'nlar, yuzlar), <i>Minglar sinfi</i> (minglar, o'n minglar, yuz minglar) va <i>Millionlar sinfi</i>.",
+    "subtitle": "Xonalar, sinflar, xona qo'shiluvchilari yig'indisi va yaxlitlash",
+    "tag": "Sonlar va Arifmetika • 4-Sinf Chuqurlashtirilgan",
+    "meaning": "<b>Ko'p xonali sonlar</b> bir nechta raqamlar yordamida yoziladi. Har uchta xona birligi bitta <b>sinf</b>ni tashkil etadi: <i>Birlar sinfi</i> (birlar, o'nlar, yuzlar), <i>Minglar sinfi</i> (minglar, o'n minglar, yuz minglar) va <i>Millionlar sinfi</i>. Har qanday ko'p xonali sonni uning xona qo'shiluvchilari yig'indisi shaklida yozish mumkin (masalan, <code>458 205 = 400 000 + 50 000 + 8 000 + 200 + 5</code>).",
     "tables": [
       {
-        "title": "Xona va Sinflar Jadvali (Place Value Chart)",
+        "title": "Sinflar va Xona Birliklari Jadvali (1 000 000 gacha)",
         "headers": [
-          "Sinf (Period)",
-          "Yuzliklar (Hundreds)",
-          "O'nliklar (Tens)",
-          "Birliklar (Ones)",
-          "Misol (Son)"
+          "Sinf Nomi",
+          "Yuzliklar Xonasi",
+          "O'nliklar Xonasi",
+          "Birliklar Xonasi",
+          "Namuna (Son)"
         ],
         "rows": [
           [
@@ -30,281 +31,314 @@ const MATH_DATA = {
           ],
           [
             "Minglar sinfi",
-            "5 (yuz ming)",
-            "4 (o'n ming)",
-            "3 (ming)",
-            "543 000"
+            "Yuz minglar (100 000)",
+            "O'n minglar (10 000)",
+            "Birlar minglar (1 000)",
+            "584 000"
           ],
           [
             "Birlar sinfi",
-            "2 (yuz)",
-            "8 (o'n)",
-            "7 (bir)",
-            "287"
+            "Yuzlar (100)",
+            "O'nlar (10)",
+            "Birlar (1)",
+            "725"
           ]
         ]
       },
       {
-        "title": "Sonlarni Yoyib Yozish va Taqqoslash",
+        "title": "Xona Qo'shiluvchilari va Yaxlitlash Qoidalari",
         "headers": [
-          "Asl Son",
+          "Son",
           "Xona Qo'shiluvchilari Yig'indisi",
-          "Taqqoslash Namunasi"
+          "Yuzliklargacha Yaxlitlash",
+          "Mingliklargacha Yaxlitlash"
         ],
         "rows": [
           [
-            "45 230",
-            "40 000 + 5 000 + 200 + 30",
-            "45 230 > 45 190"
+            "348 275",
+            "300 000 + 40 000 + 8 000 + 200 + 70 + 5",
+            "348 300 (7>=5 ortadi)",
+            "348 000 (2<5 o'zgarmaydi)"
           ],
           [
-            "308 045",
-            "300 000 + 8 000 + 40 + 5",
-            "308 045 < 308 050"
+            "605 842",
+            "600 000 + 5 000 + 800 + 40 + 2",
+            "605 800 (4<5 o'zgarmaydi)",
+            "606 000 (8>=5 ortadi)"
           ],
           [
+            "999 999",
+            "900 000 + 90 000 + 9 000 + 900 + 90 + 9",
             "1 000 000",
-            "999 999 + 1",
-            "1 000 000 > 999 999"
+            "1 000 000"
           ]
         ]
       }
     ],
-    "tip": "<b>Matematik Qoida!</b> Ko'p xonali sonlarni o'qishda o'ngdan chapga qarab uchtadan raqam ajratiladi (masalan: 345 678). Har bir sinf nomi (ming, million) aytiladi, lekin birlar sinfining nomi aytilmaydi!",
-    "time_words": "<b>Asosiy belgilar:</b> > (katta), < (kichik), = (teng), ≈ (taxminan teng).",
+    "tip": "<b>Olimpiada qoidasi:</b> Sonlarni yaxlitlaganda, kerakli xonadan keyingi raqam 0, 1, 2, 3, 4 bo'lsa xona soni o'zgarmaydi; agar 5, 6, 7, 8, 9 bo'lsa xona 1 taga ortadi!",
+    "time_words": "<b>Asosiy tushunchalar:</b> 1 000 000 (million), Sinflar, Xona birliklari, Yaxlitlash, Natural son.",
     "vocab": [
       {
         "num": 1,
-        "word": "Natural son",
-        "uz": "Natural son",
+        "word": "Xona birligi",
+        "uz": "Raqam o'rni",
         "pos": "ot",
-        "synonym": "Sanoq son",
-        "meaning": "Narsalarni sanashda ishlatiladigan sonlar (1, 2, 3...)",
-        "example": "Eng kichik natural son 1 ga teng, eng kattasi yo'q."
+        "synonym": "Razryad",
+        "meaning": "Sondagi raqam egallagan o'rni (birlik, o'nlik, yuzlik)",
+        "example": "458 200 sonida 5 raqami o'n minglar xonasida turibdi."
       },
       {
         "num": 2,
-        "word": "Xona birligi",
-        "uz": "Xona qiymati",
+        "word": "Birlar sinfi",
+        "uz": "Dastlabki 3 xona",
         "pos": "ot",
-        "synonym": "Xona",
-        "meaning": "Raqamning sondagi tutgan o'rni (birlik, o'nlik, yuzlik...)",
-        "example": "542 sonida 4 raqami o'nliklar xonasida turibdi."
+        "synonym": "Kichik sinf",
+        "meaning": "Birlar, o'nlar va yuzlar xonalaridan iborat birinchi sinf",
+        "example": "125 450 sonida birlar sinfi 450 ga teng."
       },
       {
         "num": 3,
-        "word": "Sinf",
-        "uz": "Sinflar guruhi",
+        "word": "Minglar sinfi",
+        "uz": "Ikkinchi sinf",
         "pos": "ot",
-        "synonym": "Guruh",
-        "meaning": "O'ngdan boshlab har 3 ta xonadan iborat bo'lim",
-        "example": "Minglar sinfiga minglar, o'n minglar va yuz minglar kiradi."
+        "synonym": "Mingliklar guruhi",
+        "meaning": "Minglar, o'n minglar va yuz minglar xonalaridan iborat sinf",
+        "example": "584 120 sonida minglar sinfida 584 ta birlik bor."
       },
       {
         "num": 4,
-        "word": "Yaxlitlash",
-        "uz": "Yaxlitlash",
-        "pos": "fe'l/ot",
-        "synonym": "Taqribiy hisob",
-        "meaning": "Sonni eng yaqin o'nlik, yuzlik yoki minglikka keltirish",
-        "example": "488 soni yuzliklargacha yaxlitlansa 500 bo'ladi."
+        "word": "Million",
+        "uz": "1 000 000",
+        "pos": "son",
+        "synonym": "Mingta ming",
+        "meaning": "Birning orqasida oltita nol bo'lgan yetti xonali son",
+        "example": "O'zbekiston yoshlari soni bir necha milliondan oshadi."
       },
       {
         "num": 5,
-        "word": "Taqqoslash",
-        "uz": "Taqqoslash",
-        "pos": "fe'l/ot",
-        "synonym": "Chog'ishtirish",
-        "meaning": "Sonlarning kattalik, kichiklik yoki tengligini aniqlash",
-        "example": "12 500 va 12 400 sonlarini taqqoslasak, 12 500 katta."
+        "word": "Xona qo'shiluvchilari",
+        "uz": "Yoyilma shakli",
+        "pos": "ot",
+        "synonym": "Razryad yig'indisi",
+        "meaning": "Sonni har bir xona qiymati yig'indisi ko'rinishida yozish",
+        "example": "500 000 + 40 000 + 700 + 9 soni 540 709 ga teng."
       },
       {
         "num": 6,
-        "word": "Juft son",
-        "uz": "Juft son",
-        "pos": "sifat/ot",
-        "synonym": "2 ga karrali",
-        "meaning": "2 ga qoldiqsiz bo'linadigan va 0, 2, 4, 6, 8 bilan tugaydigan son",
-        "example": "56 784 soni 4 bilan tugagani uchun juft sondir."
+        "word": "Yaxlitlash",
+        "uz": "Taqribiy hisoblash",
+        "pos": "fe'l/ot",
+        "synonym": "Yaqinlashtirish",
+        "meaning": "Sonni o'ziga yaqin bo'lgan nol bilan tugovchi qulay songa almashtirish",
+        "example": "68 472 sonini mingliklargacha yaxlitlasak 68 000 hosil bo'ladi."
       },
       {
         "num": 7,
-        "word": "Toq son",
-        "uz": "Toq son",
-        "pos": "sifat/ot",
-        "synonym": "Juft bo'lmagan",
-        "meaning": "2 ga qoldiqsiz bo'linmaydigan, 1, 3, 5, 7, 9 bilan tugaydigan son",
-        "example": "99 999 soni eng katta besh xonali toq sondir."
+        "word": "Natural son",
+        "uz": "Sanoq soni",
+        "pos": "ot",
+        "synonym": "Butun musbat son",
+        "meaning": "Narsalarni sanashda ishlatiladigan sonlar (1, 2, 3, ...)",
+        "example": "Eng kichik olti xonali natural son 100 000 dir."
       },
       {
         "num": 8,
-        "word": "Xona qo'shiluvchisi",
-        "uz": "Yoyilma shakli",
+        "word": "Raqam",
+        "uz": "Yozuv belgisi",
         "pos": "ot",
-        "synonym": "Yig'indi ko'rinishi",
-        "meaning": "Sonni xonalar bo'yicha qo'shiluvchilar tarzida yozish",
-        "example": "5 200 = 5 000 + 200 ko'rinishida yoziladi."
+        "synonym": "Simvol (0-9)",
+        "meaning": "Sonlarni yozish uchun ishlatiladigan 10 ta belgi (0 dan 9 gacha)",
+        "example": "1 000 000 soni 7 ta raqam bilan yoziladi."
       },
       {
         "num": 9,
-        "word": "Raqam",
-        "uz": "Raqam (belgi)",
-        "pos": "ot",
-        "synonym": "Belgi",
-        "meaning": "Sonlarni yozish uchun foydalaniladigan 10 ta belgi (0 dan 9 gacha)",
-        "example": "Barcha cheksiz sonlar 10 ta raqam orqali tuziladi."
+        "word": "Taqqoslash",
+        "uz": "Solishtirish",
+        "pos": "fe'l/ot",
+        "synonym": "Chog'ishtirish",
+        "meaning": "Ikki sonning kattalik munosabatini aniqlash (> , < , =)",
+        "example": "584 200 > 584 190 munosabati to'g'ri taqqoslashdir."
       },
       {
         "num": 10,
-        "word": "Ketma-ketlik",
-        "uz": "Qonuniyatli qator",
+        "word": "Eng katta son",
+        "uz": "Maksimal qiymat",
         "pos": "ot",
-        "synonym": "Ketma-ket sonlar",
-        "meaning": "Ma'lum qoida bo'yicha birin-ketin kelgan sonlar tizimi",
-        "example": "2, 4, 6, 8 qatori juft sonlar ketma-ketligidir."
+        "synonym": "Eng yuqori son",
+        "meaning": "Berilgan xonadagi eng katta qiymatga ega son",
+        "example": "Eng katta olti xonali natural son 999 999 ga teng."
       }
     ],
     "cloze": {
-      "title": "Topshiriq 1: Kosmik Rasadxona va Yulduzlar Hisobi",
-      "inst": "Matnni o'qing va qavs ichidagi amallarni bajarib, bo'sh joylarga to'g'ri sonlarni yozing:",
-      "text": "Rasadxonada o'quvchilar yulduzlarni o'rganishmoqda. Birinchi teleskopda (1. 20000 + 4000 + 300) {24300} ta yulduz ko'rindi. Ikkinchi teleskopda esa bundan 700 ta ko'p, ya'ni {25000} ta yulduz qayd etildi. 25000 sonida minglar xonasida turgan raqam {5} dir. 99 999 sonidan keyin keladigan eng kichik olti xonali son bu {100000} dir. 450 sonini eng yaqin yuzlikka yaxlitlasak {500} bo'ladi.",
+      "title": "Topshiriq 1: Xazina Sandig'ining Maxfiy Raqamli Kodi",
+      "inst": "Qoidalarga asoslanib hisoblang va bo'sh joylarni to'ldiring:",
+      "text": "Arxeolog Alisher topgan xazina sandig'ida maxfiy olti xonali kod yashiringan: 458 200 sonida minglar sinfida jami {458} ta birlik bor. 500 000 + 40 000 + 700 + 9 xona qo'shiluvchilari yig'indisi {540709} sonini hosil qiladi. 68 472 sonini mingliklargacha yaxlitlasak {68000} hosil bo'ladi. Eng kichik olti xonali natural son {100000} dir. 1 000 000 sonida jami {6} ta nol bor.",
       "answers": {
-        "1": "24300",
-        "2": "25000",
-        "3": "5",
+        "1": "458",
+        "2": "540709",
+        "3": "68000",
         "4": "100000",
-        "5": "500"
+        "5": "6"
       }
     },
     "quiz": [
       {
-        "q": "Qaysi qatorda xona qo'shiluvchilari to'g'ri ko'rsatilgan: 34 502 = ?",
+        "q": "584 720 sonida yuz minglar xonasida qaysi raqam turibdi?",
         "opts": [
-          "30 000 + 4 000 + 500 + 2",
-          "3 000 + 400 + 50 + 2",
-          "30 000 + 400 + 52"
+          "5",
+          "8",
+          "4"
         ],
-        "ans": "30 000 + 4 000 + 500 + 2"
+        "ans": "5"
       },
       {
-        "q": "Eng katta besh xonali son qaysi?",
+        "q": "400 000 + 70 000 + 800 + 5 yig'indi qaysi songa teng?",
         "opts": [
-          "99999",
-          "100000",
-          "90000"
+          "470 805",
+          "407 805",
+          "478 005"
         ],
-        "ans": "99999"
+        "ans": "470 805"
       },
       {
-        "q": "78 450 va 78 540 sonlarini taqqoslang:",
+        "q": "84 650 sonini mingliklargacha yaxlitlaganda qanday son hosil bo'ladi?",
         "opts": [
-          "78 450 < 78 540",
-          "78 450 > 78 540",
-          "78 450 = 78 540"
+          "85 000",
+          "84 000",
+          "84 700"
         ],
-        "ans": "78 450 < 78 540"
+        "ans": "85 000"
       },
       {
-        "q": "678 sonini o'nliklargacha yaxlitlang:",
+        "q": "Eng katta olti xonali natural son qaysi?",
         "opts": [
-          "680",
-          "670",
-          "700"
+          "999 999",
+          "1 000 000",
+          "900 000"
         ],
-        "ans": "680"
+        "ans": "999 999"
       },
       {
-        "q": "'Natural son' atamasining ma'nosi nima?",
+        "q": "720 000 va 702 000 sonlarini to'g'ri taqqoslang:",
         "opts": [
-          "Sanashda ishlatiladigan sonlar",
-          "Faqat noldan kichik sonlar",
-          "Harflar bilan yozilgan so'zlar"
+          "720 000 > 702 000",
+          "720 000 < 702 000",
+          "720 000 = 702 000"
         ],
-        "ans": "Sanashda ishlatiladigan sonlar"
+        "ans": "720 000 > 702 000"
       }
     ],
     "video": {
-      "title": "Place Value Song For Kids | Up To The Millions | 3rd - 5th Grade",
-      "desc": "Ko'p xonali sonlar, xona birliklari va milliongacha bo'lgan sonlar haqida video dars:",
-      "youtube_id": "MloZcl1JJEI"
+      "title": "Ko'p Xonali Sonlar (1 000 000 gacha sonlar) Video Dars",
+      "desc": "Ko'p xonali sonlar, sinflar, xona birliklari va ularni taqqoslash qoidalari darsi:",
+      "youtube_id": "9j_v4-2Zpao"
     }
   },
   {
     "id": "math-unit-2",
     "num": 2,
     "title": "Ko'p Xonali Sonlarni Qo'shish va Ayirish",
-    "subtitle": "Ustun usuli, xonadan o'tish va tekshirish usullari",
-    "tag": "Sonlar va Arifmetika • 4-Sinf",
-    "meaning": "<b>Qo'shish va ayirish</b> amallari ustun shaklida xonama-xona (birlar birlar tagiga, o'nlar o'nlar tagiga) yozilib bajariladi. Qo'shishda xona birligi 10 dan oshsa, keyingi xonaga 1 qo'shiladi. Ayirishda kichik raqamdan kattasini ayirib bo'lmasa, qo'shni chap xonadan 1 o'nlik qarz olinadi.",
+    "subtitle": "Xonama-xona ustun usulida amallar, o'nlikdan qarz olish va tenglamalar",
+    "tag": "Arifmetik Amallar • 4-Sinf Chuqurlashtirilgan",
+    "meaning": "<b>Ko'p xonali sonlarni qo'shish va ayirishda</b> sonlar bir-birining tagiga xonama-xona (birliklar tagiga birliklar, o'nliklar tagiga o'nliklar) yoziladi. Qo'shishda xonadagi yig'indi 10 yoki undan ortiq bo'lsa, keyingi xonaga 1 o'tkaziladi. Ayirishda kichik raqamdan katta raqam ayrilmasa, yuqori xonadan 1 ta o'nlik <b>qarz olinadi</b>. Noma'lumli tenglamalarni yechishda esa teskari amallar qoidasi qo'llaniladi.",
     "tables": [
       {
-        "title": "Ustun Shaklida Amallar Qoidasi",
+        "title": "Ustun Usulida Qo'shish va Ayirish Namunasi",
         "headers": [
-          "Amal",
-          "Yozilishi",
-          "Bajarish Bosqichlari",
-          "Qoida / Xossa"
+          "Amal Turi",
+          "Misol",
+          "Bajarilish Bosqichlari",
+          "Yakuniy Natija"
         ],
         "rows": [
           [
             "Qo'shish (+)",
-            "45 280 + 23 450 = 68 730",
-            "Birlardan boshlanadi, 10 dan oshsa o'tadi",
-            "a + b = b + a (O'rin almashtirish)"
+            "485 240 + 314 760",
+            "Birliklar: 0+0=0; O'nliklar: 4+6=10 (0 yozib, 1 dilda); Yuzliklar: 2+7+1=10...",
+            "800 000"
           ],
           [
             "Ayirish (-)",
-            "84 000 - 32 500 = 51 500",
-            "0 dan ayirishda yuqori xonadan qarz olinadi",
-            "Kamayuvchi = Ayriluvchi + Ayirma"
+            "1 000 000 - 425 600",
+            "Nollardan qarz olinadi: 10-6=4; 9-5=4; 9-2=7; 9-4=5...",
+            "574 400"
           ],
           [
-            "Tekshirish",
-            "68 730 - 23 450 = 45 280",
-            "Qo'shishni ayirish bilan tekshirish",
-            "Teskari amallar qoidasi"
+            "Tenglama",
+            "x + 45 800 = 120 000",
+            "Noma'lum qo'shiluvchini topish: x = 120 000 - 45 800",
+            "x = 74 200"
+          ]
+        ]
+      },
+      {
+        "title": "Noma'lum Sonni Topish Qoidalari",
+        "headers": [
+          "Tenglama Ko'rinishi",
+          "Noma'lum Komponent",
+          "Yechish Formulasi",
+          "Misol"
+        ],
+        "rows": [
+          [
+            "a + x = b",
+            "Qo'shiluvchi (x)",
+            "x = b - a (Yig'indidan ayirish)",
+            "x + 30 000 = 85 000 -> x = 55 000"
+          ],
+          [
+            "x - a = b",
+            "Kamayuvchi (x)",
+            "x = b + a (Ayirmaga qo'shish)",
+            "x - 24 000 = 50 000 -> x = 74 000"
+          ],
+          [
+            "a - x = b",
+            "Ayriluvchi (x)",
+            "x = a - b (Kamayuvchidan ayirish)",
+            "100 000 - x = 35 000 -> x = 65 000"
           ]
         ]
       }
     ],
-    "tip": "<b>Ustoz maslahati!</b> Ayriluvchi va ayirma qo'shilsa, har doim kamayuvchi hosil bo'ladi. Agar hisobingiz to'g'riligiga shubha qilsangiz, ayirmani ayriluvchiga qo'shib tekshirib ko'ring!",
-    "time_words": "<b>Formulalar:</b> Yig'indi = a + b, Kamayuvchi - Ayriluvchi = Ayirma, x = Yig'indi - a.",
+    "tip": "<b>Muhim qoida:</b> Ayirish to'g'ri bajarilganini tekshirish uchun ayirmaga ayriluvchini qo'shish kerak: agar kamayuvchi hosil bo'lsa, hisob to'g'ri!",
+    "time_words": "<b>Amallar:</b> Qo'shish (+), Ayirish (-), Qarz olish, Dilda saqlash, Tenglama ildizi.",
     "vocab": [
       {
         "num": 1,
         "word": "Qo'shiluvchi",
-        "uz": "Qo'shiluvchi son",
+        "uz": "Qo'shiladigan son",
         "pos": "ot",
-        "synonym": "Yig'iluvchi",
-        "meaning": "Qo'shish amalida qatnashayotgan har bir son",
-        "example": "25 + 15 = 40 ifodada 25 va 15 qo'shiluvchilardir."
+        "synonym": "Yig'indi qismi",
+        "meaning": "Qo'shish amalida ishtirok etayotgan har bir son",
+        "example": "45 000 + 35 000 amalda 45 000 birinchi qo'shiluvchidir."
       },
       {
         "num": 2,
         "word": "Yig'indi",
         "uz": "Qo'shish natijasi",
         "pos": "ot",
-        "synonym": "Jami",
-        "meaning": "Qo'shish amali natijasida hosil bo'lgan umumiy son",
-        "example": "40 soni berilgan amaldagi yig'indidir."
+        "synonym": "Jami summa",
+        "meaning": "Ikki yoki undan ortiq son qo'shilganda hosil bo'ladigan yakuniy son",
+        "example": "485 240 va 314 760 sonlari yig'indisi 800 000 ga teng."
       },
       {
         "num": 3,
         "word": "Kamayuvchi",
-        "uz": "Boshlang'ich son",
+        "uz": "Kamaytiriladigan son",
         "pos": "ot",
         "synonym": "Katta son",
-        "meaning": "Ayirish amalida kamaytirilayotgan birinchi son",
-        "example": "70 - 20 = 50 ifodada 70 kamayuvchidir."
+        "meaning": "Ayirish amalida boshida turgan, undan boshqa son ayriladigan son",
+        "example": "1 000 000 - 425 600 ifodada 1 000 000 kamayuvchidir."
       },
       {
         "num": 4,
         "word": "Ayriluvchi",
-        "uz": "Ayirib tashlanuvchi",
+        "uz": "Ayriladigan son",
         "pos": "ot",
         "synonym": "Kamaytiruvchi",
-        "meaning": "Birinchi sondan ayirib olinayotgan ikkinchi son",
-        "example": "70 dan 20 ayirilsa, 20 ayriluvchidir."
+        "meaning": "Kamayuvchidan olib tashlanadigan son",
+        "example": "500 000 - y = 185 400 tenglamada y ayriluvchi son hisoblanadi."
       },
       {
         "num": 5,
@@ -312,1378 +346,1449 @@ const MATH_DATA = {
         "uz": "Ayirish natijasi",
         "pos": "ot",
         "synonym": "Farq",
-        "meaning": "Kamayuvchi va ayriluvchi orasidagi farq",
-        "example": "70 va 20 sonlarining ayirmasi 50 ga teng."
+        "meaning": "Kamayuvchi va ayriluvchi orasidagi tafovut, yakuniy natija",
+        "example": "1 000 000 dan 425 600 ning ayirmasi 574 400 bo'ladi."
       },
       {
         "num": 6,
-        "word": "Ustun shakli",
-        "uz": "Tagma-tag yozish",
-        "pos": "ot",
-        "synonym": "Ustun usuli",
-        "meaning": "Sonlarni xona birliklari bo'yicha vertikal yozib hisoblash",
-        "example": "Ustun usulida birlar birlar tagiga yoziladi."
+        "word": "Qarz olish",
+        "uz": "Yuqori xonadan 1 olish",
+        "pos": "fe'l/ot",
+        "synonym": "Xona maydalash",
+        "meaning": "Ayirishda yetmagan xona uchun chapdagi yuqori xonadan 1 ta o'nlik olish",
+        "example": "0 dan 6 ni ayirib bo'lmagani uchun yuzlikdan qarz olamiz."
       },
       {
         "num": 7,
-        "word": "Xonadan o'tish",
-        "uz": "O'nlik uzatish",
+        "word": "Ustun usuli",
+        "uz": "Vertikal yozish",
         "pos": "ot",
-        "synonym": "O'tkazma",
-        "meaning": "Xona yig'indisi 9 dan oshganda 1 ni keyingi xonaga qo'shish",
-        "example": "8 + 5 = 13 bo'lib, 3 yoziladi, 1 keyingi xonaga o'tadi."
+        "synonym": "Xonama-xona hisoblash",
+        "meaning": "Sonlarni xonalari bo'yicha ustun shaklida terib hisoblash",
+        "example": "Katta sonlarni qo'shish ustun usulida oson bajariladi."
       },
       {
         "num": 8,
-        "word": "Qarz olish",
-        "uz": "Kattaroq xonadan olish",
-        "pos": "ot",
-        "synonym": "O'nlik olish",
-        "meaning": "Ayirishda kichik xonaga qo'shni chap xonadan 10 qo'shish",
-        "example": "0 dan 5 ni ayirish uchun yuzlikdan 1 o'nlik qarz olinadi."
-      },
-      {
-        "num": 9,
-        "word": "Teskari amal",
-        "uz": "Qarama-qarshi amal",
-        "pos": "ot",
-        "synonym": "Tekshiruv amali",
-        "meaning": "Bajarilgan hisobni teskarisiga tekshirish (masalan: qo'shish <-> ayirish)",
-        "example": "Ayirishni tekshirish uchun ayirmaga ayriluvchi qo'shiladi."
-      },
-      {
-        "num": 10,
         "word": "Tenglama",
         "uz": "Noma'lumli tenglik",
         "pos": "ot",
         "synonym": "Tenglik",
-        "meaning": "Noma'lum son x qatnashgan matematik ifoda",
-        "example": "x + 250 = 600 tenglamada x = 350 bo'ladi."
+        "meaning": "Tarkibida harf bilan belgilangan noma'lum son (x) qatnashgan tenglik",
+        "example": "x + 45 800 = 120 000 tenglama noma'lum sonni topishni talab qiladi."
+      },
+      {
+        "num": 9,
+        "word": "Tekshirish",
+        "uz": "To'g'riligini aniqlash",
+        "pos": "fe'l/ot",
+        "synonym": "Nazorat",
+        "meaning": "Olingan natijani teskari amal yordamida qayta hisoblab ko'rish",
+        "example": "Ayirmani tekshirish uchun ayirmaga ayriluvchi qo'shiladi."
+      },
+      {
+        "num": 10,
+        "word": "Xona tafovuti",
+        "uz": "Oraliq farqi",
+        "pos": "ot",
+        "synonym": "Kattalik farqi",
+        "meaning": "Ikki son o'rtasidagi qiymat farqini ko'rsatuvchi natija",
+        "example": "Shaharlar orasidagi masofalar farqi 51 500 km ni tashkil etdi."
       }
     ],
     "cloze": {
-      "title": "Topshiriq 2: Maktab Kutubxonasidagi Kitoblar Fondi",
-      "inst": "Matnni o'qing va hisob-kitoblarni amalga oshirib, bo'sh joylarni to'ldiring:",
-      "text": "Kutubxonada 45 600 ta badiiy kitob va 34 200 ta darslik bor edi. Jami kitoblar soni (45600 + 34200) {79800} tani tashkil etdi. Yil oxirida maktabga yana 12 200 ta yangi kitob keltirildi, natijada kitoblar {92000} taga yetdi. O'quvchilarga 20 000 ta kitob o'qishga tarqatilgach, kutubxonada {72000} ta kitob qoldi. Agar x + 500 = 1200 bo'lsa, x ning qiymati {700} bo'ladi.",
+      "title": "Topshiriq 2: Bank G'aznasidagi Murakkab Hisob-Kitob",
+      "inst": "Qo'shish, ayirish va tenglamalarni yechib bo'sh joylarni to'ldiring:",
+      "text": "Markaziy bank g'aznasida 485 240 so'm va 314 760 so'm mablag' birlashtirildi, jami yig'indi {800000} so'm bo'ldi. 1 000 000 so'mdan 425 600 so'm ajratilgach, g'aznada {574400} so'm qoldi. Agar x + 45 800 = 120 000 bo'lsa, noma'lum x qiymati {74200} ga teng. 500 000 - y = 185 400 tenglamada y ning qiymati {314600} bo'ladi. Ikki sonning yig'indisi 90 000 ga teng bo'lib, birinchi son 38 500 bo'lsa, ikkinchi son {51500} dir.",
       "answers": {
-        "1": "79800",
-        "2": "92000",
-        "3": "72000",
-        "4": "700"
+        "1": "800000",
+        "2": "574400",
+        "3": "74200",
+        "4": "314600",
+        "5": "51500"
       }
     },
     "quiz": [
       {
-        "q": "34 500 + 15 500 yig'indisi nechaga teng?",
+        "q": "485 240 + 314 760 yig'indi nechaga teng?",
         "opts": [
-          "50000",
-          "49000",
-          "51000"
+          "800 000",
+          "799 000",
+          "810 000"
         ],
-        "ans": "50000"
+        "ans": "800 000"
       },
       {
-        "q": "100 000 - 45 000 ayirmasi nechaga teng?",
+        "q": "1 000 000 - 425 600 ayirmani toping:",
         "opts": [
-          "55000",
-          "65000",
-          "45000"
+          "574 400",
+          "584 400",
+          "575 400"
         ],
-        "ans": "55000"
+        "ans": "574 400"
       },
       {
-        "q": "Qaysi xossa to'g'ri: a + b = ?",
+        "q": "x + 24 500 = 80 000 tenglamada x nechaga teng?",
         "opts": [
-          "b + a",
-          "b - a",
-          "a * b"
+          "55 500",
+          "65 500",
+          "104 500"
         ],
-        "ans": "b + a"
+        "ans": "55 500"
       },
       {
-        "q": "Tenglamani yeching: x - 400 = 600",
+        "q": "500 000 - y = 320 000 tenglamada y ning qiymatini toping:",
         "opts": [
-          "1000",
-          "200",
-          "800"
+          "180 000",
+          "820 000",
+          "280 000"
         ],
-        "ans": "1000"
+        "ans": "180 000"
       },
       {
-        "q": "'Kamayuvchi' nima?",
+        "q": "Ayirish to'g'ri bajarilganini qaysi amal bilan tekshiramiz?",
         "opts": [
-          "Ayirishda birinchi turgan katta son",
-          "Qo'shish natijasi",
-          "Bo'lishdagi qoldiq"
+          "Qo'shish amali bilan",
+          "Bo'lish amali bilan",
+          "Ko'paytirish amali bilan"
         ],
-        "ans": "Ayirishda birinchi turgan katta son"
+        "ans": "Qo'shish amali bilan"
       }
     ],
     "video": {
-      "title": "Math Antics - Multi-Digit Addition",
-      "desc": "Ko'p xonali sonlarni ustun usulida qo'shish va ayirish video darsi:",
-      "youtube_id": "mAvuom42NyY"
+      "title": "Ko'p Xonali Sonlarni Ustun Shaklida Qo'shish va Ayirish",
+      "desc": "Ko'p xonali sonlarni xonama-xona qo'shish va ayirish usullari:",
+      "youtube_id": "u6bH_hDugN0"
     }
   },
   {
     "id": "math-unit-3",
     "num": 3,
     "title": "Ko'p Xonali Sonlarni Ko'paytirish",
-    "subtitle": "1, 2 va 3 xonali sonlarga ko'paytirish hamda qonun-qoidalar",
-    "tag": "Sonlar va Arifmetika • 4-Sinf",
-    "meaning": "<b>Ko'paytirish</b> bir xil qo'shiluvchilar yig'indisini tez topish amali. Ikki xonali songa ko'paytirishda oldin birliklarga, keyin o'nliklarga ko'paytirilib, oraliq natijalar bir xona chapga surilib qo'shiladi. Nol bilan tugagan sonlarni ko'paytirishda nollarni vaqtincha chetga surib, raqamlar ko'paytiriladi va oxiriga jami nollar yoziladi.",
+    "subtitle": "Ko'paytirish qonunlari, taqsimot xossasi, ikki va uch xonali songa ko'paytirish",
+    "tag": "Arifmetik Amallar • 4-Sinf Chuqurlashtirilgan",
+    "meaning": "<b>Ko'p xonali sonlarni ko'paytirishda</b> xonama-xona ko'paytirish va oraliq natijalarni qo'shish tartibiga rioya qilinadi. Ko'paytirishning <b>taqsimot qonuni</b>: <code>a * (b + c) = a * b + a * c</code> murakkab hisoblashlarni og'zaki yoki juda oson yechishga yordam beradi. Oxirida nollari bor sonlarni ko'paytirishda nollardan boshqa raqamlar ko'paytirilib, natija orqasiga barcha nollar yozib qo'yiladi.",
     "tables": [
       {
-        "title": "Ko'paytirish Xossalari va Qoidalari",
+        "title": "Ko'paytirish Qonunlari va Qulay Usullar Jadvali",
         "headers": [
-          "Xossa Nomi",
-          "Formula",
-          "Misol",
-          "Qoida Ma'nosi"
+          "Qonun Nomi",
+          "Matematik Formulalar",
+          "Amaliy Namunaviy Misol",
+          "Oson Hisoblash Usuli"
         ],
         "rows": [
           [
             "O'rin almashtirish",
             "a * b = b * a",
-            "25 * 4 = 4 * 25 = 100",
-            "Ko'paytuvchilar o'rni almashsa, ko'paytma o'zgarmaydi"
+            "25 * 348 = 348 * 25",
+            "Sonlar o'rni almashsa ko'paytma o'zgarmaydi"
           ],
           [
-            "Guruhlash",
+            "Guruhlash qonuni",
             "(a * b) * c = a * (b * c)",
-            "(5 * 20) * 7 = 100 * 7 = 700",
-            "Qulay tartibda guruhlab hisoblash mumkin"
+            "(4 * 78) * 25 = (4 * 25) * 78",
+            "4 * 25 = 100 bo'lib, 100 * 78 = 7 800"
           ],
           [
-            "Taqsimot",
-            "a * (b + c) = a*b + a*c",
-            "6 * (10 + 5) = 60 + 30 = 90",
-            "Qavsdagi har bir songa alohida ko'paytiriladi"
+            "Taqsimot qonuni",
+            "a * (b + c) = a * b + a * c",
+            "25 * (40 + 4) = 25 * 40 + 25 * 4",
+            "1 000 + 100 = 1 100 (juda qulay!)"
           ],
           [
-            "Nol va Bir xossasi",
-            "a * 0 = 0; a * 1 = a",
-            "540 * 0 = 0; 540 * 1 = 540",
-            "Nolga ko'paytirsa 0, birga ko'paytirsa o'zi chiqadi"
+            "Nolli sonlar",
+            "1 200 * 400",
+            "12 * 4 = 48 va orqasiga 4 ta nol",
+            "480 000 hosil bo'ladi"
           ]
         ]
       }
     ],
-    "tip": "<b>Tez hisoblash siri!</b> Sonni 5 ga ko'paytirish uchun uni 10 ga ko'paytirib, keyin 2 ga bo'lish mumkin: 24 * 5 = 240 / 2 = 120!",
-    "time_words": "<b>Asosiy formulalar:</b> Ko'paytma = a * b, a * (b + c) = ab + ac.",
+    "tip": "<b>Olimpiada siri:</b> Agar ifodada 25 va 4 sonlari uchrasa, ularni birinchi ko'paytiring (25 * 4 = 100). Agar 125 va 8 sonlari uchrasa, 125 * 8 = 1 000 bo'ladi!",
+    "time_words": "<b>Formulalar:</b> a * b = b * a, a * (b + c) = a*b + a*c, 25*4=100, 125*8=1000.",
     "vocab": [
       {
         "num": 1,
         "word": "Ko'paytuvchi",
-        "uz": "Ko'paytuvchi son",
+        "uz": "Zarb qilinuvchi son",
         "pos": "ot",
-        "synonym": "Zarb qilinuvchi",
-        "meaning": "Ko'paytirish amalida qatnashayotgan har bir son",
-        "example": "6 * 7 = 42 ifodada 6 va 7 ko'paytuvchilardir."
+        "synonym": "Omil",
+        "meaning": "Ko'paytirish amalida qatnashayotgan sonlar",
+        "example": "425 * 36 misolida 425 birinchi ko'paytuvchi hisoblanadi."
       },
       {
         "num": 2,
         "word": "Ko'paytma",
-        "uz": "Ko'paytirish natijasi",
+        "uz": "Zarb natijasi",
         "pos": "ot",
-        "synonym": "Hasil zarb",
-        "meaning": "Ko'paytirish amali natijasida chiqqan qiymat",
-        "example": "42 soni 6 va 7 ning ko'paytmasidir."
+        "synonym": "Hosil bo'lgan son",
+        "meaning": "Ikki yoki undan ortiq son ko'paytirilganda chiqadigan natija",
+        "example": "425 va 36 ning ko'paytmasi 15 300 ga teng."
       },
       {
         "num": 3,
-        "word": "Karrali son",
-        "uz": "Bo'linuvchi son",
-        "pos": "sifat/ot",
-        "synonym": "Karrasi",
-        "meaning": "Berilgan songa qoldiqsiz bo'linadigan son",
-        "example": "20 soni 5 ga karralidir, chunki 20:5=4."
+        "word": "Taqsimot qonuni",
+        "uz": "Qavslarni ochish",
+        "pos": "ot",
+        "synonym": "Distributivlik",
+        "meaning": "Sonni yig'indiga ko'paytirish uchun uni har bir qo'shiluvchiga ko'paytirish",
+        "example": "25 * (40 + 4) = 1 000 + 100 = 1 100 taqsimot qonuniga asoslangan."
       },
       {
         "num": 4,
-        "word": "Taqsimot qonuni",
-        "uz": "Qavsni ochish",
+        "word": "Oraliq ko'paytma",
+        "uz": "Qadam natijasi",
         "pos": "ot",
-        "synonym": "Ulushli qoida",
-        "meaning": "a*(b+c) = a*b + a*c qoidasi bo'yicha ko'paytirish",
-        "example": "Taqsimot qonuni qiyin ifodalarni oson yechishga yordam beradi."
+        "synonym": "Chala ko'paytma",
+        "meaning": "Ustun usulida bir xonaga ko'paytirganda chiqadigan oraliq qator",
+        "example": "Ikki xonali songa ko'paytirishda ikkita oraliq ko'paytma qo'shiladi."
       },
       {
         "num": 5,
-        "word": "Oraliq ko'paytma",
-        "uz": "Qadamma-qadam natija",
+        "word": "Nolli ko'paytirish",
+        "uz": "Nollarni qo'shib yozish",
         "pos": "ot",
-        "synonym": "Chala ko'paytma",
-        "meaning": "Ikki xonali songa ko'paytirishdagi birinchi va ikkinchi qator",
-        "example": "Ustun usulida oraliq ko'paytmalar qo'shib yakuniy son topiladi."
+        "synonym": "Yaxlit ko'paytirish",
+        "meaning": "Nollar bilan tugagan sonlarni ko'paytirib, nollarni oxiriga tirkash",
+        "example": "1 200 * 400 amali 480 000 ga teng."
       },
       {
         "num": 6,
-        "word": "Nollarga ko'paytirish",
-        "uz": "Dumaloq sonlar",
-        "pos": "ot",
-        "synonym": "Nolli hisob",
-        "meaning": "Oxiri 0 bilan tugagan sonlarni ko'paytirish usuli",
-        "example": "40 * 300 = 12 000 (4*3=12 va 3 ta nol yoziladi)."
+        "word": "Guruhlash",
+        "uz": "Qulay tartibda terish",
+        "pos": "fe'l/ot",
+        "synonym": "Assotsiativlik",
+        "meaning": "Ko'paytuvchilarni hisoblash oson bo'ladigan juftliklarga ajratish",
+        "example": "4 va 25 sonlarini guruhlab 100 hosil qildik."
       },
       {
         "num": 7,
-        "word": "Karra oshirish",
-        "uz": "Marta kattalashtirish",
-        "pos": "fe'l",
-        "synonym": "Ko'paytirish",
-        "meaning": "Sonni bir necha marta ko'paytirish",
-        "example": "5 ni 6 marta oshirish 5 * 6 = 30 demakdir."
+        "word": "Hajm hisoblash",
+        "uz": "Miqdorni ko'paytirish",
+        "pos": "ot",
+        "synonym": "Umumiy son",
+        "meaning": "Bitta qutidagi miqdorni qutilar soniga ko'paytirish",
+        "example": "150 ta qutidagi qalamlar soni 7 200 tani tashkil etdi."
       },
       {
         "num": 8,
-        "word": "Ko'paytirish jadvali",
-        "uz": "Karra jadval",
+        "word": "Uch xonali songa ko'paytirish",
+        "uz": "Katta ko'paytirish",
         "pos": "ot",
-        "synonym": "Pifagor jadvali",
-        "meaning": "1 dan 10 gacha bo'lgan sonlarning ko'paytmalari tizimi",
-        "example": "Karra jadvalini bilish tez hisoblash asosi hisoblanadi."
+        "synonym": "Uch qatorli ustun",
+        "meaning": "Ko'p xonali sonni yuzlik, o'nlik va birlikka ketma-ket ko'paytirish",
+        "example": "350 * 20 amali 7 000 qiymatini beradi."
       },
       {
         "num": 9,
-        "word": "Guruhlash",
-        "uz": "Qulay birlashtirish",
+        "word": "Kvadrat",
+        "uz": "Sonning o'ziga ko'paytmasi",
         "pos": "ot",
-        "synonym": "Guruhlab hisoblash",
-        "meaning": "(a*b)*c = a*(b*c) xossasi orqali qulay ko'paytirish",
-        "example": "4 * 89 * 25 = (4 * 25) * 89 = 100 * 89 = 8900."
+        "synonym": "a * a",
+        "meaning": "Sonni o'zini o'ziga ko'paytirish (masalan: 12 * 12 = 144)",
+        "example": "12 ning kvadrati 144 ga teng bo'ladi."
       },
       {
         "num": 10,
-        "word": "Ko'paytma qiymati",
-        "uz": "Natijaviy son",
+        "word": "Avtomatik karra",
+        "uz": "Jadval ustuni",
         "pos": "ot",
-        "synonym": "Yechim",
-        "meaning": "Hisoblash yakunida hosil bo'lgan sof javob",
-        "example": "Ifodaning ko'paytma qiymati 2400 ga teng bo'ldi."
+        "synonym": "Karra jadvali",
+        "meaning": "Ko'paytirish jadvalini to'liq yoddan bilish ko'nikmasi",
+        "example": "Tezkor ko'paytirish barcha matematik hisoblarning poydevoridir."
       }
     ],
     "cloze": {
-      "title": "Topshiriq 3: Bog'bonning Hosil Yig'imi",
-      "inst": "Matnni o'qing va amallarni bajarib, bo'sh joylarga to'g'ri sonlarni yozing:",
-      "text": "Bog'bon har bir qutiga 25 kg dan olma joyladi. Jami 40 ta quti tayyorlandi. Barcha qutilardagi olma (25 * 40) {1000} kg bo'ldi. Ertasi kuni har birida 12 kg dan bo'lgan 30 quti nok terildi, noklar jami {360} kg ni tashkil etdi. Olma va noklarning jami og'irligi {1360} kg bo'ldi. Har qanday sonni 0 ga ko'paytirganda natija {0} bo'ladi.",
+      "title": "Topshiriq 3: Fabrika Omboridagi Katta Buyurtma",
+      "inst": "Ko'paytirish qonunlaridan foydalanib bo'sh joylarni to'ldiring:",
+      "text": "Fabrika omborida hisob-kitob qilinmoqda: 425 * 36 ifodaning qiymati {15300} ga teng chiqdi. 1 200 * 400 amali bajarilganda natija {480000} bo'ldi. 25 * (40 + 4) ifodasi taqsimot qonuniga ko'ra oson hisoblanganda uning qiymati {1100} bo'ladi. Bir qutida 48 ta qalam bo'lsa, 150 ta shunday qutida jami {7200} ta qalam bo'ladi. 350 * 20 amali bajarilsa {7000} hosil bo'ladi.",
       "answers": {
-        "1": "1000",
-        "2": "360",
-        "3": "1360",
-        "4": "0"
+        "1": "15300",
+        "2": "480000",
+        "3": "1100",
+        "4": "7200",
+        "5": "7000"
       }
     },
     "quiz": [
       {
-        "q": "25 * 40 ko'paytmasi nechaga teng?",
+        "q": "425 * 36 ko'paytma nechaga teng?",
         "opts": [
-          "1000",
-          "100",
-          "10000"
+          "15 300",
+          "14 300",
+          "15 200"
         ],
-        "ans": "1000"
+        "ans": "15 300"
       },
       {
-        "q": "120 * 30 ko'paytmasi nechaga teng?",
+        "q": "1 200 * 400 ko'paytmaning to'g'ri qiymatini toping:",
         "opts": [
-          "3600",
-          "360",
-          "36000"
+          "480 000",
+          "48 000",
+          "4 800 000"
         ],
-        "ans": "3600"
+        "ans": "480 000"
       },
       {
-        "q": "Sonni 0 ga ko'paytirsa necha hosil bo'ladi?",
+        "q": "25 * 78 * 4 ifodani eng qulay usulda hisoblang:",
         "opts": [
-          "0",
-          "1",
-          "O'sha sonning o'zi"
+          "7 800 (chunki 25*4=100)",
+          "6 800",
+          "7 200"
         ],
-        "ans": "0"
+        "ans": "7 800 (chunki 25*4=100)"
       },
       {
-        "q": "Qulay usulda hisoblang: 5 * 37 * 20 = ?",
+        "q": "Bir qutida 50 ta daftar bor. 140 ta qutida nechta daftar bo'ladi?",
         "opts": [
-          "3700",
-          "370",
-          "37000"
+          "7 000",
+          "700",
+          "70 000"
         ],
-        "ans": "3700"
+        "ans": "7 000"
       },
       {
-        "q": "45 * 11 ko'paytmasi nechaga teng?",
+        "q": "Taqsimot qonunining to'g'ri formulasini tanlang:",
         "opts": [
-          "495",
-          "450",
-          "505"
+          "a * (b + c) = a*b + a*c",
+          "a * (b + c) = a + b*c",
+          "a * (b + c) = a*b + c"
         ],
-        "ans": "495"
+        "ans": "a * (b + c) = a*b + a*c"
       }
     ],
     "video": {
-      "title": "2-Digit by 2-Digit Multiplication | Math with Mr. J",
-      "desc": "Ko'p xonali sonlarni 2 xonali songa ko'paytirish usullari video darsi:",
-      "youtube_id": "PZjIT9CH6bM"
+      "title": "Ko'p Xonali Sonlarni Ustun Usulida Ko'paytirish",
+      "desc": "Ikki va uch xonali sonlarga ko'paytirish sirlari va qoidalari:",
+      "youtube_id": "0j7kGf78E8E"
     }
   },
   {
     "id": "math-unit-4",
     "num": 4,
     "title": "Ko'p Xonali Sonlarni Bo'lish va Qoldiq",
-    "subtitle": "Burchak usulida bo'lish, qoldiqli bo'lish va tekshirish",
-    "tag": "Sonlar va Arifmetika • 4-Sinf",
-    "meaning": "<b>Bo'lish</b> amali narsalarni teng ulushlarga taqsimlashni bildiradi. Ko'p xonali sonlarni bo'lish yuqori xonadan boshlanadi. Agar son to'liq bo'linmasa, <b>qoldiq</b> qoladi. Qoldiq doimo bo'luvchidan kichik bo'lishi shart! Formula: <code>Bo'linuvchi = Bo'luvchi * To'liqsiz_bo'linma + Qoldiq</code>.",
+    "subtitle": "Burchak usulida bo'lish, qoldiqli bo'lish formulasi va noma'lum bo'linuvchi",
+    "tag": "Arifmetik Amallar • 4-Sinf Chuqurlashtirilgan",
+    "meaning": "<b>Ko'p xonali sonlarni bo'lishda</b> burchak usuli (ustunli bo'lish) qo'llaniladi. Agar son qoldiqsiz bo'linmasa, <b>qoldiqli bo'lish</b> formulasi qo'llaniladi: <code>a = b * q + r</code> (bu yerda <i>a</i> — bo'linuvchi, <i>b</i> — bo'luvchi, <i>q</i> — to'liqsiz bo'linma, <i>r</i> — qoldiq). <b>Eng muhim qoida:</b> qoldiq har doim bo'luvchidan kichik bo'lishi shart (<code>r < b</code>). Noma'lum bo'linuvchini topish uchun to'liqsiz bo'linma bo'luvchiga ko'paytirilib, qoldiq qo'shiladi.",
     "tables": [
       {
-        "title": "Bo'lish va Qoldiqli Bo'lish Qoidalari",
+        "title": "Bo'lish va Qoldiqli Bo'lish Formulalari Jadvali",
         "headers": [
-          "Amal Turi",
-          "Misol",
+          "Holat",
           "Formula",
-          "Qoida / Talab"
+          "Namuna Misol",
+          "Hisoblash Natijasi"
         ],
         "rows": [
           [
             "Qoldiqsiz bo'lish",
-            "4 800 : 6 = 800",
             "a : b = c",
-            "Natijada qoldiq nolga teng bo'ladi"
+            "15 360 : 24",
+            "To'liq bo'linma: 640"
           ],
           [
             "Qoldiqli bo'lish",
-            "27 : 4 = 6 (qoldiq 3)",
-            "a = b * c + r",
-            "Qoldiq har doim bo'luvchidan kichik bo'lishi shart (r < b)"
+            "a = b * q + r (r < b)",
+            "148 : 12",
+            "q = 12, qoldiq r = 4 (chunki 12*12+4=148)"
           ],
           [
-            "Bo'linishni tekshirish",
-            "4 * 6 + 3 = 24 + 3 = 27",
-            "Bo'linuvchi = Bo'luvchi * c + r",
-            "Ko'paytirish va qo'shish orqali tekshiriladi"
+            "Noma'lum bo'linuvchi",
+            "x = b * q + r",
+            "x : 15 = 8 (qoldiq 7)",
+            "x = 15 * 8 + 7 = 120 + 7 = 127"
+          ],
+          [
+            "Nollarni qisqartirish",
+            "a00 : b00 = a : b",
+            "72 000 : 900",
+            "720 : 9 = 80"
           ]
         ]
       }
     ],
-    "tip": "<b>Oltin Qoida!</b> Nolni istalgan noldan farqli songa bo'lsa, 0 chiqadi (0 : 5 = 0). Lekin sonni 0 ga bo'lish MATEMATIKADA MUMKIN EMAS!",
-    "time_words": "<b>Formulalar:</b> a : b = c, a = b * c + r (r < b), x = Bo'luvchi * Bo'linma.",
+    "tip": "<b>Diqqat qiling:</b> Agar qoldiq bo'luvchiga teng yoki undan katta bo'lib qolsa, demak to'liqsiz bo'linma noto'g'ri topilgan! Masalan, 15 ga bo'lganda qoldiq eng ko'pi bilan 14 bo'lishi mumkin!",
+    "time_words": "<b>Formulalar:</b> a = b * q + r, r < b, x = b*q + r, Qoldiqsiz bo'lish.",
     "vocab": [
       {
         "num": 1,
         "word": "Bo'linuvchi",
-        "uz": "Bo'linuvchi son",
+        "uz": "Bo'linadigan son",
         "pos": "ot",
-        "synonym": "Katta son",
-        "meaning": "Bo'lish amalida bo'linayotgan birinchi son",
-        "example": "48 : 6 = 8 ifodada 48 bo'linuvchidir."
+        "synonym": "a soni",
+        "meaning": "Bo'lish amalida qismlarga taqsimlanadigan katta son",
+        "example": "15 360 : 24 ifodada 15 360 bo'linuvchidir."
       },
       {
         "num": 2,
         "word": "Bo'luvchi",
-        "uz": "Bo'luvchi son",
+        "uz": "Bo'ladigan son",
         "pos": "ot",
-        "synonym": "Taqsimlovchi",
-        "meaning": "Bo'linuvchi nechta qismga bo'linayotganini ko'rsatuvchi son",
-        "example": "48 : 6 = 8 ifodada 6 bo'luvchidir."
+        "synonym": "b soni",
+        "meaning": "Bo'linuvchi necha teng qismga bo'linishini ko'rsatuvchi son",
+        "example": "15 360 : 24 misolida 24 bo'luvchi son hisoblanadi."
       },
       {
         "num": 3,
-        "word": "Bo'linma",
-        "uz": "Bo'lish natijasi",
+        "word": "To'liqsiz bo'linma",
+        "uz": "Qoldiqli natija",
         "pos": "ot",
-        "synonym": "Natija",
-        "meaning": "Bo'lish amali natijasida chiqqan qiymat",
-        "example": "48 ning 6 ga bo'linmasi 8 ga teng."
+        "synonym": "q soni",
+        "meaning": "Qoldiqli bo'lishda chiqqan butun bo'laklar soni",
+        "example": "148 ni 12 ga bo'lganda to'liqsiz bo'linma 12 chiqadi."
       },
       {
         "num": 4,
         "word": "Qoldiq",
         "uz": "Ortib qolgan son",
         "pos": "ot",
-        "synonym": "Ortiqcha",
-        "meaning": "Bo'lish to'liq bajarilmaganda ortib qolgan qism",
-        "example": "19 ni 4 ga bo'lsak, 4 chiqadi va 3 qoldiq qoladi."
+        "synonym": "r soni (r < b)",
+        "meaning": "Teng bo'linmay ortib qolgan va bo'luvchidan kichik son",
+        "example": "148 ni 12 ga bo'lganda qoldiq 4 ga teng bo'ladi."
       },
       {
         "num": 5,
-        "word": "Burchak usuli",
-        "uz": "Ustunli bo'lish",
+        "word": "Noma'lum bo'linuvchi",
+        "uz": "x ni topish",
         "pos": "ot",
-        "synonym": "Yozma bo'lish",
-        "meaning": "Sonlarni burchak chizig'i ichida qadamma-qadam bo'lish",
-        "example": "Burchak usulida har bir qadam ayirish orqali tekshiriladi."
+        "synonym": "Teskari ko'paytirish",
+        "meaning": "x : b = q (qoldiq r) tenglamadan x = b * q + r orqali topiladigan son",
+        "example": "x : 15 = 8 (qoldiq 7) bo'lsa, x = 127 bo'ladi."
       },
       {
         "num": 6,
-        "word": "Qoldiqsiz bo'linish",
-        "uz": "To'liq bo'linish",
-        "pos": "sifat/ot",
-        "synonym": "Butun bo'linish",
-        "meaning": "Qoldiq 0 ga teng bo'lgan mukammal bo'linish",
-        "example": "100 soni 25 ga qoldiqsiz bo'linadi (4 chiqadi)."
+        "word": "Burchak usuli",
+        "uz": "Ustunli bo'lish",
+        "pos": "ot",
+        "synonym": "Katakcha usuli",
+        "meaning": "Katta sonlarni qadamma-qadam burchak chizig'i bilan bo'lish",
+        "example": "Ikki xonali songa bo'lish burchak usulida qulay bajariladi."
       },
       {
         "num": 7,
-        "word": "Nolga bo'lish mumkin emas",
-        "uz": "Taqiqlangan amal",
-        "pos": "ot",
-        "synonym": "Qat'iy qoida",
-        "meaning": "Matematikada hech qanday son 0 ga bo'linmaydi",
-        "example": "10 : 0 ifodasi ma'noga ega emas."
+        "word": "Nollarni qisqartirish",
+        "uz": "Nollarni o'chirish",
+        "pos": "fe'l/ot",
+        "synonym": "10 ga, 100 ga qisqartirish",
+        "meaning": "Bo'linuvchi va bo'luvchidan teng sondagi nollarni o'chirib bo'lish",
+        "example": "72 000 : 900 amali 720 : 9 = 80 ga teng."
       },
       {
         "num": 8,
-        "word": "Bo'linish alomati",
-        "uz": "Qoidalar to'plami",
+        "word": "Teng taqsimlash",
+        "uz": "Bir xil ulashish",
         "pos": "ot",
-        "synonym": "Alomat",
-        "meaning": "Sonni bo'lmasdan turib unga bo'linishini bilish qoidasi",
-        "example": "Oxiri 0 yoki 5 bilan tugagan sonlar 5 ga bo'linadi."
+        "synonym": "Adolatli bo'lish",
+        "meaning": "Umumiy miqdorni berilgan odamlar soniga teng bo'lib berish",
+        "example": "350 ta daftar 25 o'quvchiga 14 tadan teng tegadi."
       },
       {
         "num": 9,
-        "word": "Karra kamaytirish",
-        "uz": "Marta kichraytirish",
-        "pos": "fe'l",
-        "synonym": "Bo'lish",
-        "meaning": "Sonni berilgan miqdorga bo'lib kamaytirish",
-        "example": "40 ni 4 marta kamaytirsak 10 hosil bo'ladi."
+        "word": "Eng katta qoldiq",
+        "uz": "b - 1",
+        "pos": "ot",
+        "synonym": "Maksimal qoldiq",
+        "meaning": "Berilgan bo'luvchidan 1 ga kam bo'lgan eng katta mumkin bo'lgan qoldiq",
+        "example": "Songa 12 ga bo'lganda eng katta qoldiq 11 bo'lishi mumkin."
       },
       {
         "num": 10,
-        "word": "Teng taqsimlash",
-        "uz": "Teng bo'lib berish",
+        "word": "Tekshirish amali",
+        "uz": "b * q + r",
         "pos": "ot",
-        "synonym": "Adolatli taqsim",
-        "meaning": "Narsalarni har bir ishtirokchiga teng sondan taqsimlash",
-        "example": "18 ta daftarni 3 o'quvchiga 6 tadan teng taqsimlash mumkin."
+        "synonym": "Qayta hisob",
+        "meaning": "Bo'lish to'g'ri bajarilganini ko'paytirish va qoldiqni qo'shish bilan tekshirish",
+        "example": "12 * 12 + 4 = 148 tekshiruvi bo'lish to'g'riligini isbotlaydi."
       }
     ],
     "cloze": {
-      "title": "Topshiriq 4: Sovg'alarni Teng Taqsimlash",
-      "inst": "Matnni o'qing va bo'lish amallarini bajarib, bo'sh joylarni to'ldiring:",
-      "text": "Ustaxonada 720 ta o'yinchoq tayyorlandi va 8 ta qutiga teng taqsimlandi. Har bir qutiga (720 : 8) {90} tadan o'yinchoq joylandi. 35 ta shokoladni 4 nafar bolaga teng bo'lganda, har biriga {8} tadan tushdi va {3} ta shokolad qoldiq qoldi. Agar x : 6 = 50 bo'lsa, x ning qiymati {300} ga teng bo'ladi.",
+      "title": "Topshiriq 4: Karvon Mulkini Teng Taqsimlash",
+      "inst": "Bo'lish va qoldiqli bo'lish qoidalaridan foydalanib bo'sh joylarni to'ldiring:",
+      "text": "Karvonboshi tovarlarni taqsimlamoqda: 15 360 : 24 ifodaning bo'linmasi {640} ga teng bo'ldi. 148 soni 12 ga bo'linsa, to'liqsiz bo'linma 12, qoldiq esa {4} chiqadi. Agar x : 15 = 8 (qoldiq 7) bo'lsa, noma'lum bo'linuvchi x = {127} ga teng. 72 000 : 900 ifodasida ikkita nol qisqartirilsa, natija {80} hosil bo'ladi. 350 ta daftar 25 nafar o'quvchiga teng taqsimlansa, har biriga {14} tadan daftar tegadi.",
       "answers": {
-        "1": "90",
-        "2": "8",
-        "3": "3",
-        "4": "300"
+        "1": "640",
+        "2": "4",
+        "3": "127",
+        "4": "80",
+        "5": "14"
       }
     },
     "quiz": [
       {
-        "q": "720 : 9 bo'linmasi nechaga teng?",
+        "q": "15 360 : 24 ifodaning to'g'ri qiymatini toping:",
+        "opts": [
+          "640",
+          "64",
+          "604"
+        ],
+        "ans": "640"
+      },
+      {
+        "q": "148 ni 12 ga bo'lgandagi qoldiq nechaga teng?",
+        "opts": [
+          "4",
+          "8",
+          "2"
+        ],
+        "ans": "4"
+      },
+      {
+        "q": "x : 15 = 8 (qoldiq 7) bo'lsa, x nechaga teng?",
+        "opts": [
+          "127",
+          "120",
+          "113"
+        ],
+        "ans": "127"
+      },
+      {
+        "q": "Sonni 9 ga bo'lganda eng katta mumkin bo'lgan qoldiq nechaga teng?",
+        "opts": [
+          "8",
+          "9",
+          "10"
+        ],
+        "ans": "8"
+      },
+      {
+        "q": "72 000 : 900 amali natijasi nechaga teng?",
         "opts": [
           "80",
-          "8",
-          "800"
+          "800",
+          "8"
         ],
         "ans": "80"
-      },
-      {
-        "q": "37 ni 5 ga bo'lganda qoldiq necha bo'ladi?",
-        "opts": [
-          "2",
-          "7",
-          "5"
-        ],
-        "ans": "2"
-      },
-      {
-        "q": "Qaysi qoldiq 6 ga bo'lishda bo'lishi MUMKIN EMAS?",
-        "opts": [
-          "7",
-          "5",
-          "3"
-        ],
-        "ans": "7"
-      },
-      {
-        "q": "Tenglamani yeching: x : 7 = 40",
-        "opts": [
-          "280",
-          "47",
-          "33"
-        ],
-        "ans": "280"
-      },
-      {
-        "q": "0 : 25 ifodaning natijasi nima bo'ladi?",
-        "opts": [
-          "0",
-          "25",
-          "Mumkin emas"
-        ],
-        "ans": "0"
       }
     ],
     "video": {
-      "title": "Long Division. DMSB. Grade 4",
-      "desc": "Burchak usulida bo'lish (Long Division) qoidalari video darsi:",
-      "youtube_id": "2-sP854NMLw"
+      "title": "Ko'p Xonali Sonlarni Burchak Usulida Bo'lish va Qoldiq",
+      "desc": "Ko'p xonali sonlarni ikki xonali songa bo'lish va qoldiqni topish:",
+      "youtube_id": "vMhA5-x_H5M"
     }
   },
   {
     "id": "math-unit-5",
     "num": 5,
-    "title": "Amallar Tartibi va Qavsli Ifodalar",
-    "subtitle": "Arifmetik amallarning qat'iy ketma-ketligi va tenglamalar",
-    "tag": "Sonlar va Arifmetika • 4-Sinf",
-    "meaning": "<b>Amallar tartibi</b> arifmetik ifodaning to'g'ri qiymatini topish qoidasidir: <b>1-bosqich:</b> Qavs ichidagi amallar; <b>2-bosqich:</b> Ko'paytirish va bo'lish amallari (chapdan o'ngga qarab); <b>3-bosqich:</b> Qo'shish va ayirish amallari (chapdan o'ngga qarab).",
+    "title": "Amallar Tartibi va Qavsli Murakkab Ifodalar",
+    "subtitle": "PEMDAS qoidalari, 4-5 amalli ifodalar va murakkab tenglamalar",
+    "tag": "Arifmetik Amallar • 4-Sinf Chuqurlashtirilgan",
+    "meaning": "<b>Amallar tartibi (PEMDAS qoidasi)</b> bo'yicha matematik ifodalarda birinchi bo'lib <b>qavs ichidagi amallar</b> bajariladi. So'ngra <b>ko'paytirish va bo'lish</b> chapdan o'ngga qarab bajariladi. Eng oxirida <b>qo'shish va ayirish</b> amallari navbati bilan bajariladi. Qavsli murakkab tenglamalarni yechishda qavs bitta noma'lum butun deb qaraladi va tashqi amaldan boshlab ketma-ket yechiladi.",
     "tables": [
       {
-        "title": "Amallar Bajarilish Tartibi Qoidasi",
+        "title": "Amallar Bajarilishining 4 Oltin Qoidasi",
         "headers": [
-          "Bosqich",
-          "Amal Nomi",
-          "Misol Ifoda",
-          "Hisoblash Ketma-ketligi"
+          "Bosqich Tartibi",
+          "Bajariladigan Amal",
+          "Namuna Ifoda",
+          "Oraliq Hisoblash"
         ],
         "rows": [
           [
-            "1-navbatda",
-            "Qavslar ( )",
-            "40 + (15 - 5) * 2",
-            "Oldin qavs: 15 - 5 = 10"
+            "1-bosqich",
+            "Qavs ichidagi barcha amallar",
+            "500 - (150 + 50 * 4) : 7",
+            "Qavs ichi: 50 * 4 = 200; 150 + 200 = 350"
           ],
           [
-            "2-navbatda",
-            "Ko'paytirish (*) va Bo'lish (:)",
-            "40 + 10 * 2",
-            "Keyin ko'paytirish: 10 * 2 = 20"
+            "2-bosqich",
+            "Bo'lish va Ko'paytirish (chapdan)",
+            "500 - 350 : 7",
+            "350 : 7 = 50"
           ],
           [
-            "3-navbatda",
-            "Qo'shish (+) va Ayirish (-)",
-            "40 + 20 = 60",
-            "Oxirida qo'shish: 40 + 20 = 60"
+            "3-bosqich",
+            "Qo'shish va Ayirish (yakuniy)",
+            "500 - 50",
+            "Natija = 450"
+          ],
+          [
+            "Murakkab tenglama",
+            "(x + 60) : 4 = 45",
+            "x + 60 = 45 * 4 = 180",
+            "x = 180 - 60 = 120"
           ]
         ]
       }
     ],
-    "tip": "<b>Diqqat qiling!</b> 20 + 20 * 0 ifodasida avval ko'paytirish bajariladi (20 * 0 = 0), keyin qo'shiladi (20 + 0 = 20). Natija 0 emas, 20 chiqadi!",
-    "time_words": "<b>Qoida:</b> Qavslar -> Ko'paytirish / Bo'lish -> Qo'shish / Ayirish.",
+    "tip": "<b>Prezident maktabi testi siri:</b> <code>(x + a) : b = c</code> ko'rinishidagi tenglamada avval <code>(x + a) = c * b</code> qilib bo'lishni yo'qoting, so'ngra <code>x = c * b - a</code> qilib javobni darhol toping!",
+    "time_words": "<b>Tartib:</b> 1. Qavs -> 2. Ko'paytirish/Bo'lish -> 3. Qo'shish/Ayirish.",
     "vocab": [
       {
         "num": 1,
-        "word": "Arifmetik ifoda",
-        "uz": "Hisoblash ifodasi",
+        "word": "Qavslar",
+        "uz": "Birinchi navbat belgisi",
         "pos": "ot",
-        "synonym": "Misol",
-        "meaning": "Sonlar va amal belgilari qatnashgan yozuv",
-        "example": "120 + 40 * 2 arifmetik ifodaga misoldir."
+        "synonym": "Guruhlash belgisi ()",
+        "meaning": "Ichidagi amal birinchi navbatda bajarilishi shart bo'lgan belgi",
+        "example": "(150 + 50 * 4) ifodada avval qavs ichi hisoblanadi."
       },
       {
         "num": 2,
-        "word": "Qavs",
-        "uz": "Qavs belgilari",
+        "word": "Amallar tartibi",
+        "uz": "Ketma-ketlik qoidasi",
         "pos": "ot",
-        "synonym": "Birlashtiruvchi",
-        "meaning": "Birinchi bajarilishi shart bo'lgan amalni ajratuvchi belgi ( )",
-        "example": "Qavs ichidagi amal birinchi navbatda bajariladi."
+        "synonym": "Prioritet",
+        "meaning": "Matematikada amallarni qat'iy belgilangan tartibda bajarish tartibi",
+        "example": "Amallar tartibiga rioya qilish to'g'ri natijaning kafolatidir."
       },
       {
         "num": 3,
-        "word": "Amallar tartibi",
-        "uz": "Bajarilish qoidasi",
+        "word": "Murakkab tenglama",
+        "uz": "Ko'p amalli tenglama",
         "pos": "ot",
-        "synonym": "Ketma-ketlik",
-        "meaning": "Amallarning qat'iy matematik navbati",
-        "example": "Amallar tartibi buzilsa, butun javob xato chiqadi."
+        "synonym": "Qavsli tenglama",
+        "meaning": "Tarkibida qavs va bir nechta arifmetik amal qatnashgan tenglama",
+        "example": "(x + 60) : 4 = 45 murakkab tenglamaning ildizi 120 ga teng."
       },
       {
         "num": 4,
         "word": "Ifoda qiymati",
-        "uz": "Yakuniy natija",
+        "uz": "Yakuniy javob",
         "pos": "ot",
-        "synonym": "Javob",
-        "meaning": "Barcha amallar bajarilgach chiqqan sonli qiymat",
-        "example": "Ushbu ifodaning qiymati 100 ga teng bo'ldi."
+        "synonym": "Natija",
+        "meaning": "Barcha amallar to'g'ri bajarilgach hosil bo'ladigan yakuniy son",
+        "example": "500 - (150 + 50 * 4) : 7 ifodaning qiymati 450 ga teng."
       },
       {
         "num": 5,
-        "word": "Harfli ifoda",
-        "uz": "O'zgaruvchili ifoda",
+        "word": "Chapdan o'ngga",
+        "uz": "Yo'nalish qoidasi",
         "pos": "ot",
-        "synonym": "Parametrli ifoda",
-        "meaning": "Tarkibida harflar (a, b, x) qatnashgan ifoda",
-        "example": "2 * a + 10 ifodada a=5 bo'lsa, qiymat 20 bo'ladi."
+        "synonym": "Navbat bo'yicha",
+        "meaning": "Bir xil kuchga ega amallar (ko'paytirish/bo'lish) chapdan boshlab bajarilishi",
+        "example": "240 : 8 * 2 ifodada avval 240 : 8 bo'linadi."
       },
       {
         "num": 6,
         "word": "Tenglama ildizi",
-        "uz": "Yechim",
+        "uz": "Noma'lum x qiymati",
         "pos": "ot",
-        "synonym": "x ning qiymati",
-        "meaning": "Tenglikni to'g'ri qiluvchi noma'lum son qiymati",
-        "example": "x + 30 = 100 tenglamaning ildizi 70 ga teng."
+        "synonym": "Yechim",
+        "meaning": "Tenglamadagi noma'lum harf o'rniga qo'yganda tenglikni to'g'ri qiluvchi son",
+        "example": "400 - 3 * x = 250 tenglamaning ildizi 50 ga teng."
       },
       {
         "num": 7,
-        "word": "Tenglik",
-        "uz": "Teng bo'lgan ifoda",
-        "pos": "ot",
-        "synonym": "Barobarlik",
-        "meaning": "Chap va o'ng tomoni teng bo'lgan matematik yozuv (=)",
-        "example": "20 + 30 = 50 tenglikka misoldir."
+        "word": "Soddalashtirish",
+        "uz": "Osonlashtirish",
+        "pos": "fe'l/ot",
+        "synonym": "Yengillashtirish",
+        "meaning": "Amallarni ketma-ket bajarib ifodani qisqaroq ko'rinishga keltirish",
+        "example": "Qavs ichidagi amallarni bajarib ifodani soddalashtiramiz."
       },
       {
         "num": 8,
-        "word": "Tengsizlik",
-        "uz": "Teng bo'lmagan ifoda",
+        "word": "Noma'lum qavs",
+        "uz": "Yaxlit bo'lak",
         "pos": "ot",
-        "synonym": "Katta/kichiklik",
-        "meaning": "> yoki < belgilari bilan yozilgan munosabat",
-        "example": "45 > 30 to'g'ri tengsizlikdir."
+        "synonym": "Blok",
+        "meaning": "Tenglamada qavs ichidagi noma'lumni bitta son deb hisoblab yechish",
+        "example": "(x + 60) bo'lagi 180 ga teng deb olinadi."
       },
       {
         "num": 9,
-        "word": "Soddalashtirish",
-        "uz": "Qulay qilish",
-        "pos": "fe'l/ot",
-        "synonym": "Osonlashtirish",
-        "meaning": "Ifodani qisqartirib oson ko'rinishga keltirish",
-        "example": "Qavslarni ochib ifodani soddalashtiramiz."
+        "word": "Arifmetik ifoda",
+        "uz": "Sonli yozuv",
+        "pos": "ot",
+        "synonym": "Misol",
+        "meaning": "Sonlar va amallar belgilaridan tuzilgan matematik yozuv",
+        "example": "240 : (12 - 4) + 60 * 2 arifmetik ifodadir."
       },
       {
         "num": 10,
-        "word": "Ketma-ket hisoblash",
-        "uz": "Qadam-baqadam",
+        "word": "Algoritmik qadam",
+        "uz": "Bosqichma-bosqich",
         "pos": "ot",
-        "synonym": "Algoritm",
-        "meaning": "Har bir amalni navbati bilan alohida hisoblab borish",
-        "example": "Murakkab misollarni ketma-ket hisoblash xatoni oldini oladi."
+        "synonym": "Rejali hisoblash",
+        "meaning": "Har bir amalni qat'iy reja bo'yicha ketma-ket bajarish usuli",
+        "example": "Olimpiada masalalari algoritmik qadamlar bilan xatosiz yechiladi."
       }
     ],
     "cloze": {
-      "title": "Topshiriq 5: Sehrli Laboratoriya Formulalari",
-      "inst": "Amallar tartibiga qat'iy rioya qilib, ifodalarning qiymatlarini toping:",
-      "text": "Professor Owl quyidagi tajriba ifodasini tuzdi: 50 + 20 * 3. Amallar tartibiga ko'ra avval ko'paytirilib, so'ng qo'shiladi va natija {110} chiqadi. Keyingi ifoda qavsli: (50 + 20) * 3 bo'lib, uning qiymati {210} bo'ladi. 100 - 80 : 4 ifodasida esa avval bo'linadi va natija {80} hosil bo'ladi. 200 - (30 + 70) ifodaning qiymati {100} dir.",
+      "title": "Topshiriq 5: Sehrli Laboratoriyaning Qavsli Formulalari",
+      "inst": "Amallar tartibiga qat'iy rioya qilib bo'sh joylarni to'ldiring:",
+      "text": "Professor Al-Xorazmiy laboratoriyasida tajriba hisoblanmoqda: 500 - (150 + 50 * 4) : 7 ifodada qavs ichi 350, so'ng bo'linma 50 bo'lib, yakuniy qiymat {450} chiqadi. (x + 60) : 4 = 45 tenglamada x + 60 = 180 bo'lib, noma'lum x = {120} bo'ladi. 240 : (12 - 4) + 60 * 2 ifodada avval qavs (8), so'ng bo'linma (30) va ko'paytma (120) qo'shilib, natija {150} bo'ladi. (85 - 35) * (14 + 16) ifodaning qiymati {1500} ga teng. 400 - 3 * x = 250 tenglamada 3 * x = 150 bo'lib, x = {50} chiqadi.",
       "answers": {
-        "1": "110",
-        "2": "210",
-        "3": "80",
-        "4": "100"
+        "1": "450",
+        "2": "120",
+        "3": "150",
+        "4": "1500",
+        "5": "50"
       }
     },
     "quiz": [
       {
-        "q": "20 + 5 * 4 ifodaning qiymati nechaga teng?",
+        "q": "500 - (150 + 50 * 4) : 7 ifodaning qiymati nechaga teng?",
         "opts": [
-          "40",
-          "100",
-          "29"
+          "450",
+          "50",
+          "350"
         ],
-        "ans": "40"
+        "ans": "450"
       },
       {
-        "q": "(20 + 5) * 4 ifodaning qiymati nechaga teng?",
+        "q": "(x + 60) : 4 = 45 tenglamada x nechaga teng?",
         "opts": [
-          "100",
-          "40",
-          "80"
+          "120",
+          "180",
+          "60"
         ],
-        "ans": "100"
+        "ans": "120"
       },
       {
-        "q": "60 : 2 + 3 * 10 ifodaning qiymati nechaga teng?",
+        "q": "240 : (12 - 4) + 60 * 2 ifodaning qiymatini toping:",
         "opts": [
-          "60",
-          "330",
-          "150"
+          "150",
+          "180",
+          "120"
         ],
-        "ans": "60"
+        "ans": "150"
       },
       {
-        "q": "50 - 50 * 0 ifodaning qiymati nechaga teng?",
+        "q": "Qaysi amal birinchi bajariladi: 80 - 20 : 4 + 5 * 6?",
+        "opts": [
+          "Bo'lish (20 : 4)",
+          "Ayirish (80 - 20)",
+          "Qo'shish"
+        ],
+        "ans": "Bo'lish (20 : 4)"
+      },
+      {
+        "q": "400 - 3 * x = 250 tenglamaning ildizini toping:",
         "opts": [
           "50",
-          "0",
-          "1"
+          "150",
+          "100"
         ],
         "ans": "50"
-      },
-      {
-        "q": "Birinchi qaysi amal bajariladi: 40 + (12 : 3) * 5?",
-        "opts": [
-          "Qavs ichidagi bo'lish (12 : 3)",
-          "Qo'shish (40 + 12)",
-          "Ko'paytirish (3 * 5)"
-        ],
-        "ans": "Qavs ichidagi bo'lish (12 : 3)"
       }
     ],
     "video": {
-      "title": "Order of Operations (PEMDAS) | Easy Math Lesson with Examples",
-      "desc": "Amallar tartibi (PEMDAS) va qavslarni yechish video darsi:",
-      "youtube_id": "KjuASYpTzA4"
+      "title": "Amallar Bajarilish Tartibi (Qavsli va Qavssiz Murakkab Ifodalar)",
+      "desc": "Amallar tartibi (PEMDAS), qavslar va murakkab tenglamalarni yechish:",
+      "youtube_id": "uWzP0u5c93s"
     }
   },
   {
     "id": "math-unit-6",
     "num": 6,
-    "title": "Oddiy Kasrlar bilan Tanishuv",
-    "subtitle": "Butun va ulush, kasr surati va maxraji, taqqoslash",
-    "tag": "Sonlar va Arifmetika • 4-Sinf",
-    "meaning": "<b>Kasr</b> butun narsaning bir yoki bir nechta teng bo'lagini ifodalaydi. Kasr yozuvida chiziq ustidagi son <b>surat</b> (nechta bo'lak olingani), chiziq ostidagi son <b>maxraj</b> (butun nechta teng bo'lakka bo'lingani) deyiladi. Masalan, <code>3/4</code> (to'rtdan uch).",
+    "title": "Oddiy Kasrlar va Ular Ustida Amallar",
+    "subtitle": "Kasrlarni qo'shish va ayirish, 1 dan ayirish, sonning kasri va kasriga ko'ra son",
+    "tag": "Kasrlar & Arifmetika • 4-Sinf Chuqurlashtirilgan",
+    "meaning": "<b>Kasr</b> butun narsaning bir yoki bir nechta teng ulushini ifodalaydi. Kasr chizig'i ustidagi son <b>surat</b> (olingan qismlar), chizig'i ostidagi son <b>maxraj</b> (butun nechta teng qismga bo'lingani) deyiladi.<br><br><b>4-Sinf Asosiy Qoidalari:</b><br>1. <b>Bir xil maxrajli kasrlarni qo'shish va ayirish:</b> Maxraj o'zgarmaydi, faqat suratlar qo'shiladi yoki ayriladi: <code>a/m + b/m = (a+b)/m</code> va <code>a/m - b/m = (a-b)/m</code>.<br>2. <b>Butun sondan kasrni ayirish:</b> 1 butunni maxraj bilan bir xil kasr deb olamiz (masalan, <code>1 = 7/7</code>), shunda <code>1 - 3/7 = 7/7 - 3/7 = 4/7</code>.<br>3. <b>Sonning kasr qismini topish:</b> Sonni maxrajga bo'lib, suratga ko'paytiramiz: <code>(A : n) * m</code>.<br>4. <b>Kasriga ko'ra sonning o'zini topish:</b> Sonni suratga bo'lib, maxrajga ko'paytiramiz: <code>(B : m) * n</code>.",
     "tables": [
       {
-        "title": "Kasr Turlari va Ulushlar Jadvali",
+        "title": "Kasrlar Ustida 4 Oltin Qoida Jadvali",
         "headers": [
-          "Kasr Nomi",
-          "Yozilishi",
-          "Surat va Maxraj",
-          "Ma'nosi / Shakli"
+          "Amal Turi",
+          "Formula",
+          "Namuna Misol",
+          "Hisoblash Natijasi"
         ],
         "rows": [
           [
-            "Yarim (Half)",
-            "1/2",
-            "Surat: 1, Maxraj: 2",
-            "Butun teng 2 qismga bo'linib, 1 qismi olingan"
+            "Bir xil maxrajli qo'shish",
+            "a/m + b/m = (a+b)/m",
+            "5/14 + 4/14",
+            "(5+4)/14 = 9/14"
           ],
           [
-            "Chorak (Quarter)",
-            "1/4",
-            "Surat: 1, Maxraj: 4",
-            "Butun teng 4 qismga bo'linib, 1 qismi olingan"
+            "Bir xil maxrajli ayirish",
+            "a/m - b/m = (a-b)/m",
+            "9/13 - 4/13",
+            "(9-4)/13 = 5/13"
           ],
           [
-            "To'g'ri kasr",
-            "3/5",
-            "Surat < Maxraj (3 < 5)",
-            "Qiymati 1 dan kichik bo'lgan kasr"
+            "1 butundan ayirish",
+            "1 - a/b = (b-a)/b",
+            "1 - 7/12",
+            "12/12 - 7/12 = 5/12"
           ],
           [
-            "Noto'g'ri kasr",
-            "5/5 yoki 7/4",
-            "Surat >= Maxraj",
-            "Qiymati 1 ga teng yoki 1 dan katta kasr"
+            "Sonning kasrini topish",
+            "(A : n) * m",
+            "240 ning 5/8 qismi",
+            "(240 : 8) * 5 = 30 * 5 = 150"
+          ],
+          [
+            "Kasriga ko'ra sonni topish",
+            "(B : m) * n",
+            "3/7 qismi 21 bo'lgan son",
+            "(21 : 3) * 7 = 7 * 7 = 49"
+          ]
+        ]
+      },
+      {
+        "title": "Kasrlarni Taqqoslash Qoidalari",
+        "headers": [
+          "Taqqoslash Holati",
+          "Qoida",
+          "Misol",
+          "Xulosa"
+        ],
+        "rows": [
+          [
+            "Maxrajlari bir xil",
+            "Surati katta bo'lgan kasr katta",
+            "5/8 va 3/8",
+            "5/8 > 3/8 (chunki 5 > 3)"
+          ],
+          [
+            "Suratlari bir xil",
+            "Maxraji KICHIK bo'lgan kasr KATTA",
+            "3/4 va 3/8",
+            "3/4 > 3/8 (4 ga bo'lingan bo'lak 8 ga bo'lingandan katta!)"
+          ],
+          [
+            "1 butun bilan taqqoslash",
+            "To'g'ri kasr < 1; Noto'g'ri kasr >= 1",
+            "7/9 va 9/7",
+            "7/9 < 1, lekin 9/7 > 1"
           ]
         ]
       }
     ],
-    "tip": "<b>Muhim qoida!</b> Maxrajlari bir xil bo'lgan kasrlardan qaysi birining surati katta bo'lsa, o'sha kasr katta bo'ladi: 3/5 > 1/5!",
-    "time_words": "<b>Belgilar:</b> 1/2 (yarim), 1/4 (chorak), 3/4 (to'rtdan uch), Surat / Maxraj.",
+    "tip": "<b>Oltin Maslahat:</b> Sonning kasrini topganda <i>(A : Maxraj) * Surat</i> qilinadi. Aksincha, berilgan qiymatiga ko'ra sonning o'zini topganda <i>(Qiymat : Surat) * Maxraj</i> qilinadi!",
+    "time_words": "<b>Formulalar:</b> a/m + b/m = (a+b)/m, 1 - a/b = (b-a)/b, (A : n)*m, (B : m)*n, To'g'ri/Noto'g'ri kasr.",
     "vocab": [
       {
         "num": 1,
-        "word": "Kasr",
-        "uz": "Ulushli son",
+        "word": "Kasr surati",
+        "uz": "Kasr tepasidagi son",
         "pos": "ot",
-        "synonym": "Kars",
-        "meaning": "Butunning teng qismlarini ifodalovchi son",
-        "example": "Pitsaning ikkidan bir qismi 1/2 kasri bilan ifodalanadi."
+        "synonym": "Numerator",
+        "meaning": "Butundan nechta teng ulush olinganini ko'rsatuvchi son",
+        "example": "5/14 kasrida 5 surati bo'lib, olingan ulushlar sonini bildiradi."
       },
       {
         "num": 2,
-        "word": "Surat",
-        "uz": "Tepadagi son",
+        "word": "Kasr maxraji",
+        "uz": "Kasr ostidagi son",
         "pos": "ot",
-        "synonym": "Bo'laklar soni",
-        "meaning": "Kasr chizig'i ustidagi olingan qismlar soni",
-        "example": "3/7 kasrida 3 surati bo'ladi."
+        "synonym": "Denominator",
+        "meaning": "Butun narsa nechta teng bo'lakka bo'linganini ko'rsatuvchi son",
+        "example": "5/14 kasrida 14 maxraji bo'lib, teng bo'laklar sonini bildiradi."
       },
       {
         "num": 3,
-        "word": "Maxraj",
-        "uz": "Pastdagi son",
-        "pos": "ot",
-        "synonym": "Bo'lingan qismlar",
-        "meaning": "Butun nechta teng qismga bo'linganini ko'rsatuvchi son",
-        "example": "3/7 kasrida 7 maxraji bo'ladi."
-      },
-      {
-        "num": 4,
-        "word": "Kasr chizig'i",
-        "uz": "Bo'lish chizig'i",
-        "pos": "ot",
-        "synonym": "Gorizontal chiziq",
-        "meaning": "Surat va maxraj orasidagi bo'lish ma'nosidagi chiziq",
-        "example": "Kasr chizig'i bo'lish amali bilan bir xil ma'noga ega."
-      },
-      {
-        "num": 5,
-        "word": "Ulush",
-        "uz": "Bitta bo'lak",
-        "pos": "ot",
-        "synonym": "Teng qism",
-        "meaning": "Butunning 1 ga teng bo'lgan har bir bo'lagi (1/n)",
-        "example": "Nonning to'rtdan bir ulushini do'stimga berdim."
-      },
-      {
-        "num": 6,
-        "word": "Yarim",
-        "uz": "Teng ikkiga bo'lingan",
-        "pos": "ot",
-        "synonym": "1/2",
-        "meaning": "Butun narsaning teng ikki bo'lagidan biri",
-        "example": "Bir soatning yarmi 30 minutga teng."
-      },
-      {
-        "num": 7,
-        "word": "Chorak",
-        "uz": "To'rtdan bir qism",
-        "pos": "ot",
-        "synonym": "1/4",
-        "meaning": "Butunning to'rtdan bir qismi",
-        "example": "Bir soatning choragi 15 minutga teng."
-      },
-      {
-        "num": 8,
         "word": "To'g'ri kasr",
         "uz": "1 dan kichik kasr",
         "pos": "ot",
-        "synonym": "Oddiy kasr",
-        "meaning": "Surati maxrajidan kichik bo'lgan kasr (masalan: 2/5)",
-        "example": "To'g'ri kasrning qiymati har doim 1 dan kichikdir."
+        "synonym": "Surati kichik kasr",
+        "meaning": "Surati maxrajidan kichik bo'lgan va qiymati 1 dan kichik kasr",
+        "example": "7/12 to'g'ri kasrdir, chunki 7 < 12."
+      },
+      {
+        "num": 4,
+        "word": "Noto'g'ri kasr",
+        "uz": "1 ga teng yoki katta kasr",
+        "pos": "ot",
+        "synonym": "Katta kasr",
+        "meaning": "Surati maxrajiga teng yoki maxrajidan katta bo'lgan kasr",
+        "example": "8/5 va 14/14 noto'g'ri kasrlarga misoldir."
+      },
+      {
+        "num": 5,
+        "word": "Aralash son",
+        "uz": "Butun va kasrli son",
+        "pos": "ot",
+        "synonym": "c a/b",
+        "meaning": "Butun son va to'g'ri kasr yig'indisidan iborat son (masalan, 2 butun 1/3)",
+        "example": "7/3 noto'g'ri kasr 2 butun 1/3 aralash soniga teng."
+      },
+      {
+        "num": 6,
+        "word": "Bir butun",
+        "uz": "To'liq butunlik",
+        "pos": "ot",
+        "synonym": "1 = n/n",
+        "meaning": "Butun narsaning barcha qismlari olingan holat (masalan, 1 = 8/8)",
+        "example": "1 dan 7/12 ni ayirganda 1 ni 12/12 deb olamiz."
+      },
+      {
+        "num": 7,
+        "word": "Sonning kasri",
+        "uz": "Bo'lagini topish",
+        "pos": "ot",
+        "synonym": "(A : n) * m",
+        "meaning": "Sonni maxrajiga bo'lib, suratiga ko'paytirish orqali topiladigan miqdor",
+        "example": "240 ning 5/8 qismi 150 ga teng bo'ladi."
+      },
+      {
+        "num": 8,
+        "word": "Kasriga ko'ra son",
+        "uz": "Butunini topish",
+        "pos": "ot",
+        "synonym": "(B : m) * n",
+        "meaning": "Ma'lum qismiga ko'ra butun sonning o'zini hisoblash usuli",
+        "example": "3/7 qismi 21 bo'lgan son 49 ga teng."
       },
       {
         "num": 9,
-        "word": "Noto'g'ri kasr",
-        "uz": "1 ga teng yoki katta",
-        "pos": "ot",
-        "synonym": "Katta kasr",
-        "meaning": "Surati maxrajiga teng yoki undan katta kasr (masalan: 6/5)",
-        "example": "4/4 kasri 1 butunga teng noto'g'ri kasrdir."
+        "word": "Kasrlarni taqqoslash",
+        "uz": "Kattasini tanlash",
+        "pos": "fe'l/ot",
+        "synonym": "Solishtirish",
+        "meaning": "Kasrlarning kattalik munosabatini surat va maxraj qoidasiga ko'ra aniqlash",
+        "example": "Maxraji bir xil bo'lsa 5/8 > 3/8; surati bir xil bo'lsa 3/4 > 3/8 bo'ladi."
       },
       {
         "num": 10,
-        "word": "Kasrlarni taqqoslash",
-        "uz": "Kattasini aniqlash",
-        "pos": "fe'l/ot",
-        "synonym": "Chog'ishtirish",
-        "meaning": "Bir xil maxrajli kasrlarning suratlarini solishtirish",
-        "example": "5/8 va 3/8 kasrlaridan 5/8 kattadir."
+        "word": "Kasrlar yig'indisi",
+        "uz": "Qo'shish natijasi",
+        "pos": "ot",
+        "synonym": "Umumiy kasr",
+        "meaning": "Bir xil maxrajli kasrlarning suratlarini qo'shish natijasi",
+        "example": "5/14 + 4/14 yig'indisi 9/14 ga teng."
       }
     ],
     "cloze": {
-      "title": "Topshiriq 6: Bennyning Pitsa Bazmi",
-      "inst": "Hikoyani o'qing va kasrlar haqidagi savollarga to'g'ri javoblarni yozing:",
-      "text": "Benny katta pitsani 8 ta teng bo'lakka bo'ldi. U do'sti Leo bilan 5 ta bo'lakni yeb qo'ydi. Ular pitsaning {5/8} qismini yeyishdi. Qutida pitsaning {3/8} qismi qoldi. 3/8 kasrida surat {3} ga, maxraj esa {8} ga teng. Agar butun olma 2 ga teng bo'linsa, uning bir bo'lagi {1/2} yoki yarim deyiladi.",
+      "title": "Topshiriq 6: Benny va Alisherning Kasrlar Akademiyasi",
+      "inst": "Kasrlar ustida amallarni hisoblab bo'sh joylarni to'ldiring:",
+      "text": "Benny va Alisher kasrlar ustida murakkab masalalarni yechmoqda: 5/14 + 4/14 kasrlar yig'indisi {9/14} ga teng bo'ldi. 1 butun qog'ozdan 7/12 qismi qirqib olingach, qog'ozning {5/12} qismi qoldi. Sehrli bog'dagi 240 kg mevaning 5/8 qismi saralandi, ya'ni {150} kg meva ajratildi. Agar noma'lum sonning 3/7 qismi 21 ga teng bo'lsa, butun sonning o'zi {49} bo'ladi. Do'konga keltirilgan 400 kg mevaning 2/5 qismi olma, 1/5 qismi nok bo'lsa, qolgan mevalar miqdori {160} kg dir.",
       "answers": {
-        "1": "5/8",
-        "2": "3/8",
-        "3": "3",
-        "4": "8",
-        "5": "1/2"
+        "1": "9/14",
+        "2": "5/12",
+        "3": "150",
+        "4": "49",
+        "5": "160"
       }
     },
     "quiz": [
       {
-        "q": "3/7 kasrida surat qaysi son?",
+        "q": "7/15 + 4/15 kasrlar yig'indisi nechaga teng?",
         "opts": [
-          "3",
-          "7",
-          "10"
+          "11/15",
+          "11/30",
+          "3/15"
         ],
-        "ans": "3"
+        "ans": "11/15"
       },
       {
-        "q": "5/9 va 2/9 kasrlarini taqqoslang:",
+        "q": "1 - 3/8 ayirmani hisoblang:",
         "opts": [
-          "5/9 > 2/9",
-          "5/9 < 2/9",
-          "5/9 = 2/9"
+          "5/8",
+          "2/8",
+          "4/8"
         ],
-        "ans": "5/9 > 2/9"
+        "ans": "5/8"
       },
       {
-        "q": "Qaysi kasr to'g'ri kasr hisoblanadi?",
+        "q": "180 sonining 2/3 qismi nechaga teng?",
+        "opts": [
+          "120",
+          "60",
+          "90"
+        ],
+        "ans": "120"
+      },
+      {
+        "q": "3/5 qismi 45 bo'lgan sonni toping:",
+        "opts": [
+          "75",
+          "27",
+          "135"
+        ],
+        "ans": "75"
+      },
+      {
+        "q": "Qaysi kasr katta: 4/7 mi yoki 4/9 mi?",
         "opts": [
           "4/7",
-          "8/5",
-          "9/9"
+          "4/9",
+          "Ular teng"
         ],
         "ans": "4/7"
-      },
-      {
-        "q": "Bir soatning choragi (1/4 qismi) necha minut?",
-        "opts": [
-          "15 minut",
-          "30 minut",
-          "45 minut"
-        ],
-        "ans": "15 minut"
-      },
-      {
-        "q": "Pitsa 6 ga bo'linib, 6 tasi ham yeyilsa (6/6), bu necha butun bo'ladi?",
-        "opts": [
-          "1",
-          "6",
-          "0"
-        ],
-        "ans": "1"
       }
     ],
     "video": {
-      "title": "Fractions! | Mini Math Movies | Scratch Garden",
-      "desc": "Oddiy kasrlar bilan tanishuv va ulushlar video darsi:",
-      "youtube_id": "362JVVvgYPE"
+      "title": "Oddiy Kasrlar va Ular Ustida Amallar (4-Sinf Masterclass)",
+      "desc": "Kasrlar, bir xil maxrajli kasrlarni qo'shish va ayirish, sonning kasrini topish darsi:",
+      "youtube_id": "Vn2c9aX1s0k"
     }
   },
   {
     "id": "math-unit-7",
     "num": 7,
     "title": "Kattaliklar va O'lchov Birliklari",
-    "subtitle": "Uzunlik, massa, vaqt va sig'im birliklari",
-    "tag": "O'lchovlar va Kattaliklar • 4-Sinf",
-    "meaning": "<b>Kattaliklar</b> atrofimizdagi narsalarning uzunligi, og'irligi (massasi), vaqti va hajmini o'lchash uchun xizmat qiladi. O'lchov birliklari orasidagi bog'lanishlarni bilish masalalarni yechishda asosiy omildir.",
+    "subtitle": "Uzunlik, massa, vaqt va sig'im birliklarini murakkab aylantirish",
+    "tag": "O'lchovlar va Kattaliklar • 4-Sinf Chuqurlashtirilgan",
+    "meaning": "<b>Kattaliklar</b> atrofimizdagi narsalarning uzunligi, og'irligi (massasi), vaqti va hajmini aniq o'lchash uchun xizmat qiladi. 4-sinfda bir nechta xil birliklardan iborat murakkab kattaliklarni eng kichik yoki yirik birlikka aylantirish o'rganiladi.<br><br><b>Asosiy o'lchov formulalari:</b><br>• 1 t = 10 s = 1 000 kg; 1 sentner (s) = 100 kg; 1 kg = 1 000 g.<br>• 1 km = 1 000 m; 1 m = 10 dm = 100 cm = 1 000 mm.<br>• 1 sutka = 24 soat; 1 soat = 60 min; 1 min = 60 sek.<br>• 1 litr = 1 000 ml.",
     "tables": [
       {
-        "title": "Asosiy O'lchov Birliklari Jadvali",
+        "title": "Murakkab Kattaliklarni Maydalash va Yiriklashtirish",
         "headers": [
-          "Kattalik",
-          "Asosiy Birliklar",
-          "Tenglik Formulalari",
-          "Amaliy Misol"
+          "Kattalik Turi",
+          "Murakkab Ko'rinishi",
+          "Aylantirish Qoidasi",
+          "Yakuniy Birlikdagi Qiymati"
         ],
         "rows": [
           [
-            "Uzunlik",
-            "mm, cm, dm, m, km",
-            "1 km = 1000 m; 1 m = 100 cm; 1 cm = 10 mm",
-            "5 km = 5 000 m; 2 m = 200 cm"
+            "Massa (kg)",
+            "4 t 6 sentner 80 kg",
+            "4 000 kg + 600 kg + 80 kg",
+            "4 680 kg"
           ],
           [
-            "Massa",
-            "g, kg, sentner, t",
-            "1 t = 10 s; 1 s = 100 kg; 1 kg = 1000 g",
-            "3 t = 3 000 kg; 4 kg = 4 000 g"
+            "Uzunlik (m)",
+            "3 km 45 m",
+            "3 000 m + 45 m",
+            "3 045 m"
           ],
           [
-            "Vaqt",
-            "sek, min, soat, sutka, yil, asr",
-            "1 asr = 100 yil; 1 sutka = 24 soat; 1 soat = 60 min",
-            "2 soat = 120 min; 1 sutka = 24 soat"
+            "Vaqt (min)",
+            "5 soat 25 minut",
+            "5 * 60 min + 25 min",
+            "325 minut"
           ],
           [
-            "Sig'im (hajm)",
-            "millilitr (ml), litr (l)",
-            "1 litr = 1000 millilitr",
-            "5 litr = 5 000 ml"
+            "Sig'im (ml)",
+            "3 litr 450 ml",
+            "3 * 1 000 ml + 450 ml",
+            "3 450 ml"
+          ],
+          [
+            "Sutka va soat",
+            "2 sutka 14 soat",
+            "2 * 24 soat + 14 soat",
+            "62 soat"
           ]
         ]
       }
     ],
-    "tip": "<b>Esda saqlang!</b> Katta birlikdan kichik birlikka o'tganda KO'PAYTIRILADI (masalan: 3 m = 3 * 100 = 300 cm). Kichik birlikdan kattasiga o'tganda BO'LINADI (5000 m = 5000 : 1000 = 5 km)!",
-    "time_words": "<b>Birliklar:</b> km, m, dm, cm, mm; t, sentner, kg, g; soat, min, sek; litr, ml.",
+    "tip": "<b>Esda saqlang!</b> 1 tonna 1 000 kg ga, 1 sentner esa 100 kg ga teng. Demak, 1 tonna ichida roppa-rosa 10 ta sentner bor!",
+    "time_words": "<b>Birliklar:</b> km, m, dm, cm, mm; t, sentner, kg, g; sutka, soat, min, sek; litr, ml.",
     "vocab": [
       {
         "num": 1,
-        "word": "Uzunlik",
-        "uz": "Masofa o'lchami",
+        "word": "Tonna",
+        "uz": "1 000 kg",
         "pos": "ot",
-        "synonym": "Bo'yi / masofa",
-        "meaning": "Ikki nuqta orasidagi masofani ifodalovchi kattalik",
-        "example": "Uzunlik o'lchovining asosiy birligi metrdir."
+        "synonym": "t",
+        "meaning": "Og'ir yuklar va hosilni o'lchash uchun ishlatiladigan eng katta massa birligi",
+        "example": "4 tonna 4 000 kg ga teng bo'ladi."
       },
       {
         "num": 2,
-        "word": "Massa",
-        "uz": "Og'irlik miqdori",
+        "word": "Sentner",
+        "uz": "100 kg",
         "pos": "ot",
-        "synonym": "Vazn",
-        "meaning": "Jismning modda miqdorini ko'rsatuvchi og'irligi",
-        "example": "Massa tarozida tortib aniqlanadi."
+        "synonym": "s",
+        "meaning": "Qishloq xo'jaligi hosilini o'lchashda ishlatiladigan 100 kg lik birlik",
+        "example": "6 sentner 600 kg ga teng."
       },
       {
         "num": 3,
-        "word": "Vaqt",
-        "uz": "Muddat / zamon",
+        "word": "Kilometr",
+        "uz": "1 000 m",
         "pos": "ot",
-        "synonym": "Davomiylik",
-        "meaning": "Harakat va voqealarning kechish mudsati",
-        "example": "Darsning vaqti 45 minut davom etadi."
+        "synonym": "km",
+        "meaning": "Shaharlararo uzoq masofalarni o'lchovchi uzunlik birligi",
+        "example": "3 km 45 m masofa 3 045 metrni tashkil qiladi."
       },
       {
         "num": 4,
-        "word": "Sig'im",
-        "uz": "Suyuqlik hajmi",
+        "word": "Millimetr",
+        "uz": "1/10 cm",
         "pos": "ot",
-        "synonym": "Idish hajmi",
-        "meaning": "Idishga sig'adigan suyuqlik miqdori",
-        "example": "Katta chelakning sig'imi 10 litrga teng."
+        "synonym": "mm",
+        "meaning": "Juda kichik detallar va qog'oz qalinligini o'lchovchi birlik",
+        "example": "1 santimetrda 10 millimetr bor."
       },
       {
         "num": 5,
-        "word": "Kilometr",
-        "uz": "1000 metr",
+        "word": "Sutka",
+        "uz": "24 soat",
         "pos": "ot",
-        "synonym": "km",
-        "meaning": "Uzoq masofalarni o'lchash birligi (1 km = 1000 m)",
-        "example": "Toshkentdan Samarqandgacha masofa 300 km atrofida."
+        "synonym": "Bir kecha-kunduz",
+        "meaning": "Yerning o'z o'qi atrofida bir marta to'liq aylanish vaqti (24 soat)",
+        "example": "2 sutka 14 soat jami 62 soatga teng."
       },
       {
         "num": 6,
-        "word": "Kilogramm",
-        "uz": "1000 gramm",
+        "word": "Minut",
+        "uz": "60 sekund",
         "pos": "ot",
-        "synonym": "kg",
-        "meaning": "Massaning asosiy xalqaro birligi",
-        "example": "Do'kondan 2 kg olma va 1 kg uzum sotib oldik."
+        "synonym": "Daqiqa",
+        "meaning": "Vaqtning 60 sekundga teng bo'lgan o'lchovi",
+        "example": "5 soat 25 minut jami 325 minut bo'ladi."
       },
       {
         "num": 7,
-        "word": "Tonna",
-        "uz": "1000 kilogramm",
+        "word": "Litr",
+        "uz": "1 000 ml",
         "pos": "ot",
-        "synonym": "t",
-        "meaning": "Yirik yuklar va massalarni o'lchash birligi (1 t = 1000 kg)",
-        "example": "Yuk mashinasi 5 tonna bug'doy keltirdi."
+        "synonym": "l",
+        "meaning": "Suyuqliklar va sig'imni o'lchashning asosiy birligi",
+        "example": "3 litr 450 ml sharbat 3 450 millilitrga teng."
       },
       {
         "num": 8,
-        "word": "Sentner",
-        "uz": "100 kilogramm",
+        "word": "Millilitr",
+        "uz": "1/1000 litr",
         "pos": "ot",
-        "synonym": "s",
-        "meaning": "100 kg ga teng qishloq xo'jaligi massa birligi",
-        "example": "1 tonna 10 sentnerga teng bo'ladi."
+        "synonym": "ml",
+        "meaning": "Dorilar va mayda suyuqliklarni o'lchovchi kichik hajm birligi",
+        "example": "1 litr suv 1 000 millilitrga teng."
       },
       {
         "num": 9,
-        "word": "Asr",
-        "uz": "100 yil",
-        "pos": "ot",
-        "synonym": "Yuz yillik",
-        "meaning": "100 yillik vaqt oralig'i (yuz yillik)",
-        "example": "Hozir biz XXI asrda (21-asrda) yashamoqdamiz."
+        "word": "Maydalash",
+        "uz": "Kichik birlikka o'tish",
+        "pos": "fe'l/ot",
+        "synonym": "Ko'paytirish usuli",
+        "meaning": "Kattalikni kichikroq o'lchov birligiga ko'paytirib aylantirish",
+        "example": "Tonnalarni kilogrammga o'tkazishda 1000 ga ko'paytiriladi."
       },
       {
         "num": 10,
-        "word": "Litr",
-        "uz": "Suyuqlik birligi",
-        "pos": "ot",
-        "synonym": "l",
-        "meaning": "Suyuqliklar hajmini o'lchashning asosiy birligi",
-        "example": "Har kuni kamida 2 litr toza suv ichish foydalidir."
+        "word": "Yiriklashtirish",
+        "uz": "Katta birlikka o'tish",
+        "pos": "fe'l/ot",
+        "synonym": "Bo'lish usuli",
+        "meaning": "Kichik birlikni bo'lish orqali kattaroq birlikka keltirish",
+        "example": "3 000 metrni kilometrga yiriklashtirsak 3 km bo'ladi."
       }
     ],
     "cloze": {
-      "title": "Topshiriq 7: Yosh Sayohatchining Safar Hisobi",
-      "inst": "O'lchov birliklarini to'g'ri aylantiring va bo'sh joylarni to'ldiring:",
-      "text": "Sayohatchilar birinchi kuni 4 km piyoda yurishdi. Bu (4 * 1000) {4000} metr demakdir. Ularning yuk xaltasida 2 kg yegulik bor edi, bu {2000} grammga teng. Safar 3 soat davom etdi, minutga aylantirsak {180} minut bo'ladi. Ular yo'lda har biri 500 ml bo'lgan 4 idish suv ichishdi, jami {2} litr suv ichilgan.",
+      "title": "Topshiriq 7: Chimyon Ekspeditsiyasi Logistikasi",
+      "inst": "O'lchov birliklarini to'g'ri aylantirib bo'sh joylarni to'ldiring:",
+      "text": "Ekspeditsiya yuklari tahlil qilinmoqda: 4 t 6 sentner 80 kg yuk jami {4680} kg ni tashkil etdi. Tog' etagigacha bo'lgan 3 km 45 m masofa {3045} metrga teng. Safarda o'tkazilgan 5 soat 25 minut vaqt jami {325} minut bo'ldi. Daryodan olingan 3 litr 450 ml toza suv {3450} ml hajmga ega. Qutqaruvchilarning 2 sutka 14 soatlik xizmati jami {62} soatni tashkil qildi.",
       "answers": {
-        "1": "4000",
-        "2": "2000",
-        "3": "180",
-        "4": "2"
+        "1": "4680",
+        "2": "3045",
+        "3": "325",
+        "4": "3450",
+        "5": "62"
       }
     },
     "quiz": [
       {
-        "q": "3 kilometr necha metrga teng?",
+        "q": "4 t 6 sentner 80 kg necha kilogramm bo'ladi?",
         "opts": [
-          "3000 m",
-          "300 m",
-          "30000 m"
+          "4 680 kg",
+          "4 608 kg",
+          "4 068 kg"
         ],
-        "ans": "3000 m"
+        "ans": "4 680 kg"
       },
       {
-        "q": "2 tonna necha kilogramm bo'ladi?",
+        "q": "3 km 45 metr necha metrga teng?",
         "opts": [
-          "2000 kg",
-          "200 kg",
-          "20 kg"
+          "3 045 m",
+          "3 450 m",
+          "345 m"
         ],
-        "ans": "2000 kg"
+        "ans": "3 045 m"
       },
       {
-        "q": "1 sutkada necha soat bor?",
+        "q": "5 soat 25 minut necha minut bo'ladi?",
         "opts": [
-          "24 soat",
-          "12 soat",
-          "60 soat"
+          "325 minut",
+          "525 minut",
+          "300 minut"
         ],
-        "ans": "24 soat"
+        "ans": "325 minut"
       },
       {
-        "q": "1 asr necha yilga teng?",
+        "q": "3 litr 450 ml necha millilitr?",
         "opts": [
-          "100 yil",
-          "10 yil",
-          "1000 yil"
+          "3 450 ml",
+          "345 ml",
+          "3 045 ml"
         ],
-        "ans": "100 yil"
+        "ans": "3 450 ml"
       },
       {
-        "q": "3 litr necha millilitrga teng?",
+        "q": "2 sutka 14 soat jami necha soat bo'ladi?",
         "opts": [
-          "3000 ml",
-          "300 ml",
-          "30 ml"
+          "62 soat",
+          "48 soat",
+          "38 soat"
         ],
-        "ans": "3000 ml"
+        "ans": "62 soat"
       }
     ],
     "video": {
-      "title": "Units Of Measurement | Why Measurements Matter? | The Dr Binocs Show | Peekaboo Kidz",
-      "desc": "O'lchov birliklari (uzunlik, og'irlik, hajm va vaqt) video darsi:",
-      "youtube_id": "AVC-426M6V0"
+      "title": "Kattaliklar va O'lchov Birliklari (Aylantirish Qoidalari)",
+      "desc": "Uzunlik, og'irlik, vaqt va hajm o'lchov birliklarini o'zaro aylantirish:",
+      "youtube_id": "7Lp5gP1K1r8"
     }
   },
   {
     "id": "math-unit-8",
     "num": 8,
-    "title": "Geometrik Shakllar va Burchaklar",
-    "subtitle": "Nuqta, kesma, burchak turlari, ko'pburchaklar va aylana",
-    "tag": "Geometriya Asoslari • 4-Sinf",
-    "meaning": "<b>Geometriya</b> shakllar, chiziqlar va ularning o'lchamlarini o'rganadi. Burchaklar kattaligiga ko'ra: <b>to'g'ri burchak</b> (90°), <b>o'tkir burchak</b> (90° dan kichik) va <b>o'tmas burchak</b> (90° dan katta) turlariga bo'linadi.",
+    "title": "Geometrik Shakllar, Burchaklar va Gradus O'lchovi",
+    "subtitle": "Burchak turlari (to'g'ri, o'tkir, o'tmas, yoyiq) va uchburchak burchaklari yig'indisi",
+    "tag": "Geometriya • 4-Sinf Chuqurlashtirilgan",
+    "meaning": "<b>Burchak</b> bir nuqtadan (uchidan) chiquvchi ikkita nurdan (tomonlaridan) hosil bo'ladi. Burchaklar <b>gradus</b> (°) bilan o'lchanadi.<br><br><b>Burchak turlari:</b><br>• <b>To'g'ri burchak:</b> roppa-rosa 90° ga teng.<br>• <b>O'tkir burchak:</b> 0° dan katta va 90° dan kichik burchak (masalan, 45°, 60°).<br>• <b>O'tmas burchak:</b> 90° dan katta va 180° dan kichik burchak (masalan, 120°, 135°).<br>• <b>Yoyiq burchak:</b> roppa-rosa 180° ga teng (to'g'ri chiziq).<br><br><b>Muhim qoida:</b> Har qanday uchburchakning ichki burchaklari yig'indisi har doim <b>180°</b> ga teng!",
     "tables": [
       {
-        "title": "Burchaklar va Geometrik Shakllar Tizimi",
+        "title": "Burchaklar Turlari va Gradus O'lchovlari Jadvali",
         "headers": [
-          "Shakl / Tushuncha",
-          "Belgilanishi / Xossasi",
-          "Turlari / Xususiyati",
-          "Hayotiy Misol"
+          "Burchak Nomi",
+          "Gradus Qiymati",
+          "Tavsifi",
+          "Misol"
         ],
         "rows": [
           [
-            "Burchaklar",
-            "90° (to'g'ri), <90° (o'tkir), >90° (o'tmas)",
-            "Ikki nurdan hosil bo'ladi",
-            "Kitob burchagi (to'g'ri burchak)"
+            "To'g'ri burchak",
+            "90°",
+            "Kvadrat va to'g'ri to'rtburchak burchagi",
+            "Xona burchagi (90°)"
           ],
           [
-            "Uchburchak",
-            "3 ta tomon, 3 ta burchak, 3 ta uchi bor",
-            "Teng tomonli, teng yonli, to'g'ri burchakli",
-            "Yo'l harakati belgisi"
+            "O'tkir burchak",
+            "< 90° (0° dan 90° gacha)",
+            "To'g'ri burchakdan kichik burchak",
+            "45° yoki 60°"
           ],
           [
-            "To'rtburchak",
-            "4 ta tomoni va 4 ta burchagi bor",
-            "To'g'ri to'rtburchak, kvadrat, romb",
-            "Sinf doskasi, televizor ekrani"
+            "O'tmas burchak",
+            "> 90° va < 180°",
+            "To'g'ri burchakdan katta burchak",
+            "120° yoki 135°"
           ],
           [
-            "Aylana va Doira",
-            "Markaz O, Radius R, Diametr D",
-            "D = 2 * R (Diametr radiusdan 2 marta katta)",
-            "Tangalar, soat siferblati, g'ildirak"
+            "Yoyiq burchak",
+            "180°",
+            "Tomonlari qarama-qarshi nurlar",
+            "Tekis to'g'ri chiziq (180°)"
+          ],
+          [
+            "Uchburchak yig'indisi",
+            "A + B + C = 180°",
+            "Uchburchak burchaklari yig'indisi",
+            "50° + 60° + 70° = 180°"
           ]
         ]
       }
     ],
-    "tip": "<b>Chizmachilik siri!</b> Har qanday to'g'ri burchak chizg'ichning burchagi yordamida tekshiriladi. Agar burchak chizg'ich burchagidan torroq bo'lsa - o'tkir, kengroq bo'lsa - o'tmas burchakdir!",
-    "time_words": "<b>Formulalar:</b> D = 2 * R, Burchaklar: 90° (to'g'ri), <90° (o'tkir), >90° (o'tmas).",
+    "tip": "<b>Olimpiada qoidasi:</b> Uchburchakning ikkita burchagi ma'lum bo'lsa, uchinchi burchakni topish uchun 180° dan shu ikki burchak yig'indisi ayriladi: <code>C = 180° - (A + B)</code>!",
+    "time_words": "<b>Burchaklar:</b> To'g'ri (90°), Yoyiq (180°), O'tkir (<90°), O'tmas (>90°), Uchburchak (180°).",
     "vocab": [
       {
         "num": 1,
-        "word": "Nuqta",
-        "uz": "Geometrik nuqta",
+        "word": "To'g'ri burchak",
+        "uz": "90 gradus",
         "pos": "ot",
-        "synonym": "Iz",
-        "meaning": "Geometriyaning o'lchamsiz eng sodda boshlang'ich belgisi",
-        "example": "Nuqtalar lotin bosh harflari bilan belgilanadi: A, B, C."
+        "synonym": "Tik burchak",
+        "meaning": "Roppa-rosa 90 gradusga teng bo'lgan kvadrat burchagi",
+        "example": "Har qanday to'g'ri to'rtburchak 4 ta to'g'ri burchakka ega."
       },
       {
         "num": 2,
-        "word": "Kesma",
-        "uz": "Chegaralangan chiziq",
+        "word": "O'tkir burchak",
+        "uz": "90 dan kichik",
         "pos": "ot",
-        "synonym": "Chiziq bo'lagi",
-        "meaning": "Ikki nuqta bilan chegaralangan to'g'ri chiziq qismi",
-        "example": "AB kesmasining uzunligi 8 santimetrga teng."
+        "synonym": "Tor burchak",
+        "meaning": "0 gradusdan katta va 90 gradusdan kichik bo'lgan burchak",
+        "example": "45 gradusli burchak o'tkir burchak hisoblanadi."
       },
       {
         "num": 3,
-        "word": "Nur",
-        "uz": "Yarim to'g'ri chiziq",
+        "word": "O'tmas burchak",
+        "uz": "90 dan katta",
         "pos": "ot",
-        "synonym": "Shu'la",
-        "meaning": "Boshlang'ich nuqtasi bor, ikkinchi tomonga cheksiz ketgan chiziq",
-        "example": "Quyosh nurlari kabi bir nuqtadan chiqadi."
+        "synonym": "Keng burchak",
+        "meaning": "90 gradusdan katta va 180 gradusdan kichik bo'lgan burchak",
+        "example": "135 gradusli burchak o'tmas burchak deb ataladi."
       },
       {
         "num": 4,
-        "word": "Burchak",
-        "uz": "Ikki nur orasidagi ochiqlik",
+        "word": "Yoyiq burchak",
+        "uz": "180 gradus",
         "pos": "ot",
-        "synonym": "Burchak",
-        "meaning": "Bitta umumiy nuqtadan chiquvchi ikkita nur hosil qilgan shakl",
-        "example": "To'g'ri to'rtburchakning hamma burchaklari to'g'ri burchakdir."
+        "synonym": "Yoyilgan chiziq",
+        "meaning": "Roppa-rosa 180 gradusga teng bo'lgan tekis chiziqli burchak",
+        "example": "Ikkita to'g'ri burchak yig'indisi yoyiq burchakni beradi."
       },
       {
         "num": 5,
-        "word": "To'g'ri burchak",
-        "uz": "90 gradusli burchak",
+        "word": "Gradus",
+        "uz": "Burchak birligi (°)",
         "pos": "ot",
-        "synonym": "90° burchak",
-        "meaning": "Chizg'ich burchagiga teng bo'lgan 90 gradusli burchak",
-        "example": "Kvadratning to'rttala burchagi ham to'g'ri burchakdir."
+        "synonym": "Burchak darajasi",
+        "meaning": "Burchak kattaligini o'lchash uchun xalqaro o'lchov birligi",
+        "example": "Uchburchak ichki burchaklari yig'indisi 180 gradusga teng."
       },
       {
         "num": 6,
-        "word": "O'tkir burchak",
-        "uz": "90 dan kichik burchak",
+        "word": "Transportir",
+        "uz": "Burchak o'lchagich",
         "pos": "ot",
-        "synonym": "Tor burchak",
-        "meaning": "To'g'ri burchakdan kichik bo'lgan burchak turi",
-        "example": "Qaychi biroz ochilganda o'tkir burchak hosil qiladi."
+        "synonym": "Gradus chizg'ichi",
+        "meaning": "Burchaklarni chizish va gradusini o'lchash asbobi",
+        "example": "Transportir yordamida 70 gradusli burchak chizildi."
       },
       {
         "num": 7,
-        "word": "O'tmas burchak",
-        "uz": "90 dan katta burchak",
+        "word": "Uchburchak",
+        "uz": "3 burchakli shakl",
         "pos": "ot",
-        "synonym": "Keng burchak",
-        "meaning": "To'g'ri burchakdan katta, lekin yoyiqdan kichik burchak",
-        "example": "Keng ochilgan eshik o'tmas burchak hosil qiladi."
+        "synonym": "Trigon",
+        "meaning": "Uchta burchak va uchta tomondan iborat geometrik shakl",
+        "example": "Teng tomonli uchburchakning barcha burchaklari 60 gradusdan bo'ladi."
       },
       {
         "num": 8,
-        "word": "Radius",
-        "uz": "Markazdan aylanagacha",
+        "word": "To'rtburchak",
+        "uz": "4 burchakli shakl",
         "pos": "ot",
-        "synonym": "R",
-        "meaning": "Aylana markazini uning ixtiyoriy nuqtasi bilan tutashtiruvchi kesma",
-        "example": "Agar aylana radiusi 4 cm bo'lsa, diametri 8 cm bo'ladi."
+        "synonym": "Kvadrat / Romb",
+        "meaning": "To'rtta tomon va to'rtta burchakdan iborat geometrik shakl",
+        "example": "To'rtburchak ichki burchaklari yig'indisi 360 gradusga teng."
       },
       {
         "num": 9,
-        "word": "Diametr",
-        "uz": "Aylana to'liq kengligi",
+        "word": "Vertikal burchaklar",
+        "uz": "Qarama-qarshi burchaklar",
         "pos": "ot",
-        "synonym": "D",
-        "meaning": "Markazdan o'tuvchi va aylananing ikki nuqtasini tutashtiruvchi kesma",
-        "example": "Diametr har doim ikkita radiusga teng: D = 2 * R."
+        "synonym": "Teng burchaklar",
+        "meaning": "Ikki to'g'ri chiziq kesishganda qarama-qarshi hosil bo'ladigan teng burchaklar",
+        "example": "Vertikal burchaklar o'zaro teng bo'ladi."
       },
       {
         "num": 10,
-        "word": "Ko'pburchak",
-        "uz": "Ko'p burchakli shakl",
+        "word": "Burchak uchi",
+        "uz": "Birlashish nuqtasi",
         "pos": "ot",
-        "synonym": "Shakl",
-        "meaning": "Uch yoki undan ortiq tomoni bo'lgan yopiq geometrik shakl",
-        "example": "Uchburchak, beshburchak va oltiburchak ko'pburchaklardir."
+        "synonym": "Tepa nuqta",
+        "meaning": "Burchak tomonlari (nurlar) boshlanadigan umumiy nuqta",
+        "example": "Burchak uchida gradus o'lchovi belgilanadi."
       }
     ],
     "cloze": {
-      "title": "Topshiriq 8: Me'mor Bennyning Chizmasi",
-      "inst": "Geometrik qoidalarni eslang va bo'sh joylarga to'g'ri javoblarni yozing:",
-      "text": "Benny yangi uy loyihasini chizmoqda. Xonaning to'rtta burchagi ham to'g'ri burchak bo'lib, har biri {90} gradusga teng. Uyning tomi uchburchak shaklida, unda {3} ta burchak bor. Hovliga aylana shaklida favvora quriladi. Agar favvora radiusi 5 metr bo'lsa, uning diametri (5 * 2) {10} metr bo'ladi. To'g'ri burchakdan kichik burchak {o'tkir} burchak deyiladi.",
+      "title": "Topshiriq 8: Me'moriy Minora Chizmasi",
+      "inst": "Geometriya va burchaklar qoidalaridan foydalanib bo'sh joylarni to'ldiring:",
+      "text": "Registon minorasi loyihasida geometrik burchaklar chizilmoqda: To'g'ri burchakning gradus o'lchovi roppa-rosa {90} gradusga teng. Yoyiq burchak esa {180} gradus bo'ladi. Chizmadagi uchburchakning ikki burchagi 50 va 60 gradus bo'lsa, uning uchinchi burchagi {70} gradus chiqadi. 45 gradusli burchak {o'tkir} burchak deb ataladi. 135 gradusli burchak esa {o'tmas} burchak hisoblanadi.",
       "answers": {
         "1": "90",
-        "2": "3",
-        "3": "10",
-        "4": "o'tkir"
+        "2": "180",
+        "3": "70",
+        "4": "o'tkir",
+        "5": "o'tmas"
       }
     },
     "quiz": [
       {
-        "q": "To'g'ri burchak necha gradusga teng?",
+        "q": "To'g'ri burchakning gradus o'lchovi nechaga teng?",
         "opts": [
           "90°",
-          "60°",
-          "180°"
+          "180°",
+          "45°"
         ],
         "ans": "90°"
       },
       {
-        "q": "Agar aylana radiusi 6 cm bo'lsa, uning diametri necha cm bo'ladi?",
+        "q": "Yoyiq burchak necha gradus bo'ladi?",
         "opts": [
-          "12 cm",
-          "3 cm",
-          "18 cm"
+          "180°",
+          "90°",
+          "360°"
         ],
-        "ans": "12 cm"
+        "ans": "180°"
       },
       {
-        "q": "90 gradusdan kichik burchak qanday ataladi?",
+        "q": "Uchburchakning ikki burchagi 50° va 60° bo'lsa, uchinchi burchagi necha gradus?",
         "opts": [
-          "O'tkir burchak",
+          "70°",
+          "80°",
+          "90°"
+        ],
+        "ans": "70°"
+      },
+      {
+        "q": "120 gradusli burchak qaysi burchak turiga kiradi?",
+        "opts": [
           "O'tmas burchak",
-          "Yoyiq burchak"
+          "O'tkir burchak",
+          "To'g'ri burchak"
         ],
-        "ans": "O'tkir burchak"
+        "ans": "O'tmas burchak"
       },
       {
-        "q": "Kvadratning nechta tomoni va nechta burchagi bor?",
+        "q": "Uchburchakning barcha ichki burchaklari yig'indisi nechaga teng?",
         "opts": [
-          "4 ta tomoni, 4 ta burchagi",
-          "3 ta tomoni, 3 ta burchagi",
-          "4 ta tomoni, 2 ta burchagi"
+          "180°",
+          "360°",
+          "90°"
         ],
-        "ans": "4 ta tomoni, 4 ta burchagi"
-      },
-      {
-        "q": "Kesma nurning qaysi xususiyati bilan farq qiladi?",
-        "opts": [
-          "Kesmaning ikkala uchi chegaralangan",
-          "Kesma cheksiz ketgan",
-          "Kesma doira shaklida"
-        ],
-        "ans": "Kesmaning ikkala uchi chegaralangan"
+        "ans": "180°"
       }
     ],
     "video": {
-      "title": "Lines, Line Segments, and Rays for Kids | Elementary Geometry",
-      "desc": "Geometrik shakllar, to'g'ri chiziq, nur, kesma va burchaklar video darsi:",
-      "youtube_id": "ZqwxaAnze8c"
+      "title": "Geometrik Shakllar, Burchaklar va Ularning Gradus O'lchovi",
+      "desc": "O'tkir, to'g'ri, o'tmas va yoyiq burchaklar hamda ko'pburchaklar:",
+      "youtube_id": "X0WjQd6V3fM"
     }
   },
   {
     "id": "math-unit-9",
     "num": 9,
     "title": "Perimetr va Yuza Hisoblash",
-    "subtitle": "Kvadrat va to'g'ri to'rtburchak perimetri hamda yuzasi",
-    "tag": "Geometriya Asoslari • 4-Sinf",
-    "meaning": "<b>Perimetr (P)</b> geometrik shaklning barcha tomonlari uzunliklari yig'indisidir. <b>Yuza (S)</b> esa shakl egallagan tekislik sathining o'lchamidir. Yuza kvadrat birliklarda (<code>cm²</code>, <code>m²</code>, <code>ar</code>, <code>gektar</code>) o'lchanadi.",
+    "subtitle": "Kvadrat va to'g'ri to'rtburchakning perimetri, yuzi va teskari masalalar",
+    "tag": "Geometriya & O'lchovlar • 4-Sinf Chuqurlashtirilgan",
+    "meaning": "<b>Perimetr (P)</b> — ko'pburchakning barcha tomonlari uzunliklari yig'indisidir.<br>• Kvadrat perimetri: <code>P = 4 * a</code> (tomoni <code>a = P : 4</code>).<br>• To'g'ri to'rtburchak perimetri: <code>P = 2 * (a + b)</code>.<br><br><b>Yuza (S)</b> — shakl tekislikda egallagan maydon kattaligidir (kvadrat birliklarda: cm², m²).<br>• Kvadrat yuzi: <code>S = a * a</code>.<br>• To'g'ri to'rtburchak yuzi: <code>S = a * b</code> (eni <code>b = S : a</code>).<br><br><b>Teskari masala:</b> Agar kvadratning perimetri ma'lum bo'lsa (masalan 48 cm), avval uning tomoni topiladi (<code>48 : 4 = 12 cm</code>), so'ngra uning yuzi hisoblanadi (<code>12 * 12 = 144 cm²</code>)!",
     "tables": [
       {
-        "title": "Perimetr va Yuza Formulalari Jadvali",
+        "title": "Perimetr va Yuza Formulalari hamda Teskari Masalalar",
         "headers": [
-          "Shakl",
-          "Perimetr Formulasi (P)",
-          "Yuza Formulasi (S)",
-          "Hisoblash Misoli"
+          "Shakl Turi",
+          "Perimetr Formulasi",
+          "Yuza Formulasi",
+          "Teskari Masala Namunasi"
         ],
         "rows": [
-          [
-            "To'g'ri to'rtburchak",
-            "P = 2 * (a + b)",
-            "S = a * b",
-            "a=6 cm, b=4 cm: P = 2*(6+4) = 20 cm; S = 6*4 = 24 cm²"
-          ],
           [
             "Kvadrat",
             "P = 4 * a",
             "S = a * a",
-            "a=5 cm: P = 4*5 = 20 cm; S = 5*5 = 25 cm²"
+            "P = 48 cm -> a = 48 : 4 = 12 cm -> S = 12 * 12 = 144 cm²"
           ],
           [
-            "Yer maydoni birliklari",
-            "1 ar (sotix) = 100 m²",
-            "1 gektar (ga) = 10 000 m²",
-            "10 sotix yer = 1 000 m² maydon"
+            "To'g'ri to'rtburchak",
+            "P = 2 * (a + b)",
+            "S = a * b",
+            "S = 72 cm², a = 9 cm -> b = 72 : 9 = 8 cm -> P = 2*(9+8) = 34 cm"
+          ],
+          [
+            "Kvadrat maydon",
+            "P = 4 * 10 = 40 m",
+            "S = 10 * 10 = 100 m²",
+            "a = 10 m bo'lsa, S = 100 m²"
+          ],
+          [
+            "Xona perimetri",
+            "P = 2 * (6 + 12)",
+            "S = 6 * 12 = 72 m²",
+            "P = 2 * 18 = 36 m"
           ]
         ]
       }
     ],
-    "tip": "<b>Faqat adashtirmang!</b> Perimetr oddiy uzunlik birligida (sm, m) o'lchanadi. Yuza esa KVADRAT birlikda (sm², m²) o'lchanadi!",
-    "time_words": "<b>Formulalar:</b> P = 2*(a+b), P = 4*a, S = a*b, S = a*a, 1 ga = 10000 m².",
+    "tip": "<b>Adashmang!</b> Perimetr oddiy uzunlik birliklarida (cm, m), yuza esa har doim KVADRAT birliklarda (cm², m²) o'lchanadi!",
+    "time_words": "<b>Formulalar:</b> P = 4*a, S = a*a, P = 2*(a+b), S = a*b, b = S : a.",
     "vocab": [
       {
         "num": 1,
         "word": "Perimetr",
-        "uz": "Chegaralar yig'indisi",
+        "uz": "Tomonlar yig'indisi",
         "pos": "ot",
         "synonym": "P",
-        "meaning": "Shaklning barcha tomonlari uzunliklarining yig'indisi",
-        "example": "Bog' atrofini o'rash uchun uning perimetrini bilish kerak."
+        "meaning": "Shaklning barcha tashqi chegaraviy tomonlari uzunliklarining umumiy yig'indisi",
+        "example": "Tomoni 12 cm bo'lgan kvadratning perimetri 48 cm bo'ladi."
       },
       {
         "num": 2,
         "word": "Yuza",
-        "uz": "Sath maydoni",
+        "uz": "Maydon kattaligi",
         "pos": "ot",
-        "synonym": "S",
-        "meaning": "Shaklning tekislikda egallagan maydoni o'lchami",
-        "example": "Polga gilam to'shash uchun xonaning yuzasi hisoblanadi."
+        "synonym": "S (Maydon)",
+        "meaning": "Shakl tekislikda egallagan sathning kvadrat birlikdagi miqdori",
+        "example": "Kvadratning yuzi 144 kvadrat santimetrga teng."
       },
       {
         "num": 3,
@@ -1691,1170 +1796,1216 @@ const MATH_DATA = {
         "uz": "cm²",
         "pos": "ot",
         "synonym": "sm²",
-        "meaning": "Tomoni 1 cm bo'lgan kvadratning yuzasi",
-        "example": "Daftar varag'ining yuzasi kvadrat santimetrlarda o'lchanadi."
+        "meaning": "Tomoni 1 cm bo'lgan kvadratning yuziga teng o'lchov birligi",
+        "example": "Daftar varag'ining yuzi kvadrat santimetrlarda o'lchanadi."
       },
       {
         "num": 4,
         "word": "Kvadrat metr",
         "uz": "m²",
         "pos": "ot",
-        "synonym": "metr kvadrat",
-        "meaning": "Tomoni 1 metr bo'lgan kvadratning yuzasi",
-        "example": "Xonamizning yuzasi 20 kvadrat metrga teng."
+        "synonym": "Maydon birligi",
+        "meaning": "Tomoni 1 metr bo'lgan kvadrat yuziga teng o'lchov",
+        "example": "Tomoni 10 m bo'lgan kvadrat maydon yuzi 100 m² bo'ladi."
       },
       {
         "num": 5,
-        "word": "Ar (Sotix)",
-        "uz": "100 kvadrat metr",
+        "word": "Teskari masala",
+        "uz": "Natijadan boshlash",
         "pos": "ot",
-        "synonym": "Sotix",
-        "meaning": "100 m² ga teng bo'lgan yer maydoni birligi",
-        "example": "Uyimizning tomorqasi 6 sotix (600 m²)."
+        "synonym": "Orqaga hisoblash",
+        "meaning": "Perimetr yoki yuzadan foydalanib noma'lum tomonni topish masalasi",
+        "example": "Yuzi 72 cm² va bo'yi 9 cm bo'lsa, eni 8 cm bo'ladi."
       },
       {
         "num": 6,
-        "word": "Gektar",
-        "uz": "10000 m²",
+        "word": "To'g'ri to'rtburchak",
+        "uz": "Burchaklari to'g'ri to'rtburchak",
         "pos": "ot",
-        "synonym": "ga",
-        "meaning": "10 000 kvadrat metrga teng yirik yer maydoni birligi",
-        "example": "Paxta maydoni 50 gektarni tashkil etadi."
+        "synonym": "To'rtburchak",
+        "meaning": "Qarama-qarshi tomonlari teng va barcha burchaklari 90° bo'lgan shakl",
+        "example": "Bo'yi 9 cm va eni 8 cm bo'lgan to'g'ri to'rtburchak perimetri 34 cm dir."
       },
       {
         "num": 7,
-        "word": "Bo'yi",
-        "uz": "Uzunligi",
+        "word": "Kvadrat",
+        "uz": "Hamma tomoni teng shakl",
         "pos": "ot",
-        "synonym": "Uzun tomon",
-        "meaning": "To'g'ri to'rtburchakning uzunroq tomoni (a)",
-        "example": "Stolning bo'yi 120 cm, eni esa 80 cm."
+        "synonym": "Muntazam to'rtburchak",
+        "meaning": "Barcha to'rtta tomoni teng va to'rtta burchagi to'g'ri bo'lgan shakl",
+        "example": "Kvadratning yuzi tomonining kvadratiga teng."
       },
       {
         "num": 8,
-        "word": "Eni",
-        "uz": "Kengligi",
+        "word": "Uzunlik va eni",
+        "uz": "a va b o'lchamlari",
         "pos": "ot",
-        "synonym": "Kalta tomon",
-        "meaning": "To'g'ri to'rtburchakning kalta tomoni (b)",
-        "example": "Xonaning eni 4 metrga teng."
+        "synonym": "Bo'y va en",
+        "meaning": "To'g'ri to'rtburchakning ikkita qo'shni tomonlari",
+        "example": "Bo'yi 12 m va eni 6 m bo'lgan xona perimetri 36 metrdir."
       },
       {
         "num": 9,
-        "word": "Kvadrat",
-        "uz": "Teng to'rtburchak",
+        "word": "Devor uzunligi",
+        "uz": "P to'siq",
         "pos": "ot",
-        "synonym": "Muntazam to'rtburchak",
-        "meaning": "Barcha 4 tomoni va burchaklari teng bo'lgan shakl",
-        "example": "Kvadratning yuzi tomonini o'ziga ko'paytirish orqali topiladi."
+        "synonym": "Panjara",
+        "meaning": "Bog' yoki hovli atrofiga o'raladigan panjara uzunligi (perimetr)",
+        "example": "Bog' atrofini o'rash uchun 48 metr panjara ketadi."
       },
       {
         "num": 10,
-        "word": "Formula",
-        "uz": "Hisob qoidasi",
+        "word": "Maydon hajmi",
+        "uz": "Ekiladigan sath",
         "pos": "ot",
-        "synonym": "Qoida tengligi",
-        "meaning": "Harflar orqali ifodalangan hisoblash qoidasi",
-        "example": "S = a * b formulasi to'g'ri to'rtburchak yuzini topish formulasidir."
+        "synonym": "Sath",
+        "meaning": "Ekin ekish yoki qoplama yotqizish uchun zarur bo'lgan yuz miqdori",
+        "example": "Xonaga gilam yotqizish uchun uning yuzi hisoblanadi."
       }
     ],
     "cloze": {
-      "title": "Topshiriq 9: Yangi Maktab Sport Maydoni",
-      "inst": "Matnni o'qing va perimetr hamda yuza formulalari yordamida bo'sh joylarni to'ldiring:",
-      "text": "Maktabimiz futbol maydonining bo'yi 40 metr, eni esa 20 metr. Maydonning perimetri 2 * (40 + 20) = {120} metrga teng. Maydonning yuzasi esa 40 * 20 = {800} kvadrat metr (m²) bo'ladi. Mashg'ulotlar maydonchasi tomoni 10 metr bo'lgan kvadrat shaklida. Bu kvadratning perimetri (4 * 10) {40} metr, yuzasi esa (10 * 10) {100} m² dir.",
+      "title": "Topshiriq 9: Sehrli Bog' Maydoni va Devorlari",
+      "inst": "Perimetr va yuzani hisoblab bo'sh joylarni to'ldiring:",
+      "text": "Alisher sehrli bog' loyihasini hisoblamoqda: Kvadrat shaklidagi gulzorning perimetri 48 cm bo'lsa, uning tomoni 12 cm bo'lib, yuzi {144} cm2 bo'ladi. To'g'ri to'rtburchak maydonning yuzi 72 cm2, bo'yi 9 cm bo'lsa, uning eni {8} cm bo'ladi. Bo'yi 9 cm va eni 8 cm bo'lgan ushbu to'rtburchakning perimetri {34} cm ga teng chiqadi. Tomoni 10 metr bo'lgan kvadrat shaklidagi maydon yuzi {100} m2 dir. Eni 6 m, bo'yi 12 m bo'lgan xonaning perimetri {36} metr bo'ladi.",
       "answers": {
-        "1": "120",
-        "2": "800",
-        "3": "40",
-        "4": "100"
+        "1": "144",
+        "2": "8",
+        "3": "34",
+        "4": "100",
+        "5": "36"
       }
     },
     "quiz": [
       {
-        "q": "Bo'yi 8 cm, eni 5 cm bo'lgan to'g'ri to'rtburchakning yuzi nechaga teng?",
+        "q": "Kvadratning perimetri 48 cm bo'lsa, uning yuzi necha cm²?",
         "opts": [
-          "40 cm²",
-          "26 cm",
-          "13 cm²"
+          "144 cm²",
+          "96 cm²",
+          "196 cm²"
         ],
-        "ans": "40 cm²"
+        "ans": "144 cm²"
       },
       {
-        "q": "Tomoni 6 cm bo'lgan kvadratning perimetri nechaga teng?",
+        "q": "To'g'ri to'rtburchakning yuzi 72 cm², bo'yi 9 cm bo'lsa, eni necha cm?",
         "opts": [
-          "24 cm",
-          "36 cm²",
-          "12 cm"
+          "8 cm",
+          "7 cm",
+          "6 cm"
         ],
-        "ans": "24 cm"
+        "ans": "8 cm"
       },
       {
-        "q": "Tomoni 6 cm bo'lgan kvadratning yuzi nechaga teng?",
+        "q": "Bo'yi 9 cm va eni 8 cm bo'lgan to'g'ri to'rtburchakning perimetri nechaga teng?",
         "opts": [
-          "36 cm²",
-          "24 cm",
-          "12 cm²"
+          "34 cm",
+          "72 cm",
+          "17 cm"
         ],
-        "ans": "36 cm²"
+        "ans": "34 cm"
       },
       {
-        "q": "1 sotix (ar) necha kvadrat metrga teng?",
+        "q": "Tomoni 10 metr bo'lgan kvadratning yuzi necha m²?",
         "opts": [
           "100 m²",
-          "10 m²",
-          "1000 m²"
+          "40 m²",
+          "10 m²"
         ],
         "ans": "100 m²"
       },
       {
-        "q": "Bo'yi 10 m, eni 6 m bo'lgan xonaning perimetri nechaga teng?",
+        "q": "Eni 6 m va bo'yi 12 m bo'lgan xonaning perimetrini toping:",
         "opts": [
-          "32 m",
-          "60 m²",
-          "16 m"
+          "36 m",
+          "72 m",
+          "18 m"
         ],
-        "ans": "32 m"
+        "ans": "36 m"
       }
     ],
     "video": {
-      "title": "Perimeter for Kids | Math Lesson Video",
-      "desc": "Perimetr va yuza hisoblash qoidalari hamda misollar video darsi:",
-      "youtube_id": "MTSlKifo4js"
+      "title": "Perimetr va Yuza Hisoblash (Kvadrat va To'g'ri To'rtburchak)",
+      "desc": "Perimetr va yuza formulalari, murakkab shakllar yuzini topish darsi:",
+      "youtube_id": "YwV_gE8vG1k"
     }
   },
   {
     "id": "math-unit-10",
     "num": 10,
-    "title": "Harakatga Doir Masalalar (Tezlik, Vaqt, Masofa)",
-    "subtitle": "S = V * t formulasi, yaqinlashish va uzoqlashish tezliklari",
-    "tag": "Matematik Masalalar • 4-Sinf",
-    "meaning": "<b>Harakat masalalari</b> uchta asosiy kattalik o'rtasidagi bog'lanishga asoslanadi: <b>Masofa (S)</b>, <b>Tezlik (V)</b> va <b>Vaqt (t)</b>. Asosiy formula: <code>S = V * t</code>. Tezlikni topish uchun: <code>V = S : t</code>. Vaqtni topish uchun: <code>t = S : V</code>.",
+    "title": "Harakatga Doir Masalalar",
+    "subtitle": "Tezlik, vaqt, masofa: uchrashuv harakati, quvib yetish va oqim bo'ylab tezlik",
+    "tag": "Matnli Masalalar • 4-Sinf Chuqurlashtirilgan",
+    "meaning": "<b>Harakatga doir masalalarda</b> uchta asosiy kattalik qatnashadi:<br>• Masofa (S): <code>S = V * t</code><br>• Tezlik (V): <code>V = S : t</code><br>• Vaqt (t): <code>t = S : V</code><br><br><b>Murakkab Harakat Turlari:</b><br>1. <b>Bir-biriga qarab harakat (Uchrashuv):</b> Yaqinlashish tezligi tezliklar yig'indisiga teng: <code>V_yaq = V1 + V2</code>. Uchrashuv vaqti: <code>t = S : (V1 + V2)</code>.<br>2. <b>Bir yo'nalishda quvib yetish:</b> Yaqinlashish tezligi tezliklar ayirmasiga teng: <code>V_yaq = V1 - V2</code>. Quvib yetish vaqti: <code>t = S_oraliq : (V1 - V2)</code>.<br>3. <b>Daryo oqimi bo'ylab harakat:</b> <code>V_oqim_boylab = V_kater + V_oqim</code>; Oqimga qarshi: <code>V_oqimga_qarshi = V_kater - V_oqim</code>.",
     "tables": [
       {
-        "title": "Harakat Turlari va Formulalar Jadvali",
+        "title": "Murakkab Harakat Masalalari Formulalar Jadvali",
         "headers": [
-          "Harakat Yo'nalishi",
-          "Tushuncha",
-          "Tezlik Formulasi",
-          "Misol"
+          "Harakat Turi",
+          "Yaqinlashish Tezligi",
+          "Vaqtni Topish Formulasi",
+          "Namunaviy Masala"
         ],
         "rows": [
           [
-            "Oddiy harakat",
-            "Bitta jism harakati",
-            "S = V * t; V = S : t; t = S : V",
-            "V = 60 km/h, t = 2 h => S = 120 km"
+            "Uchrashuv harakati",
+            "V_yaq = V1 + V2",
+            "t = S : (V1 + V2)",
+            "S = 420 km, V1 = 60, V2 = 80 -> t = 420 : 140 = 3 soat"
           ],
           [
-            "Qarama-qarshi harakat",
-            "Bir-biriga qarab kelish",
-            "V_yaqin = V1 + V2; S = V_yaqin * t",
-            "60 + 40 = 100 km/h yaqinlashish tezligi"
+            "Quvib yetish",
+            "V_yaq = V1 - V2",
+            "t = S_oraliq : (V1 - V2)",
+            "S = 60 km, V1 = 75, V2 = 55 -> t = 60 : 20 = 3 soat"
           ],
           [
-            "Bir yo'nalishdagi harakat",
-            "Biri ikkinchisini quvish",
-            "V_quvish = V1 - V2 (V1 > V2)",
-            "70 - 50 = 20 km/h quvish tezligi"
+            "Oqim bo'ylab",
+            "V = V_kater + V_oqim",
+            "S = V * t",
+            "V_k = 22, V_o = 3 -> V = 25 km/soat"
+          ],
+          [
+            "Oddiy tezlik",
+            "V = S : t",
+            "t = S : V",
+            "S = 240 km, t = 4 soat -> V = 60 km/soat"
           ]
         ]
       }
     ],
-    "tip": "<b>Birliklar mosligiga e'tibor bering!</b> Agar masofa kilometrda (km) berilgan bo'lsa, vaqt soatda (h), tezlik esa km/soatda bo'lishi kerak. Agar masofa metrda bo'lsa, tezlik m/sekundda o'lchanadi!",
-    "time_words": "<b>Formulalar:</b> S = V * t, V = S : t, t = S : V, V_yaqin = V1 + V2.",
+    "tip": "<b>Diqqat:</b> Ikki mashina bir-biriga qarab harakatlansa tezliklar QO'SHILADI! Agar biri ikkinchisini quvib ketsa tezliklar AYRILADI!",
+    "time_words": "<b>Formulalar:</b> S = V*t, V = S : t, t = S : V, V_yaq = V1 + V2, V_quvib = V1 - V2.",
     "vocab": [
       {
         "num": 1,
         "word": "Tezlik",
-        "uz": "Harakat tezligi (V)",
+        "uz": "1 soatda bosilgan yo'l",
         "pos": "ot",
-        "synonym": "Sur'at",
-        "meaning": "Vaqt birligi (1 soat, 1 minut) ichida bosib o'tilgan masofa",
-        "example": "Mashina soatiga 70 km tezlik bilan harakatlanmoqda."
+        "synonym": "V (km/soat)",
+        "meaning": "Vaqt birligi ichida bosib o'tilgan masofani bildiruvchi kattalik",
+        "example": "Avtomobilning tezligi soatiga 60 kilometrga teng."
       },
       {
         "num": 2,
         "word": "Masofa",
-        "uz": "Bosib o'tilgan yo'l (S)",
+        "uz": "Bosib o'tilgan yo'l",
         "pos": "ot",
-        "synonym": "Yo'l uzunligi",
-        "meaning": "Harakat davomida bosib o'tilgan oraliq masofa",
-        "example": "Ikki shahar orasidagi masofa 180 kilometrga teng."
+        "synonym": "S (km, metr)",
+        "meaning": "Boshlang'ich nuqtadan yakuniy manzilgacha bo'lgan yo'l uzunligi",
+        "example": "Shaharlar orasidagi masofa 420 km ni tashkil etadi."
       },
       {
         "num": 3,
-        "word": "Vaqt",
-        "uz": "Harakat vaqti (t)",
+        "word": "Harakat vaqti",
+        "uz": "Sarflangan soat",
         "pos": "ot",
-        "synonym": "Muddat",
-        "meaning": "Yo'lni bosib o'tish uchun ketgan soat yoki minut",
-        "example": "Poyezd manzilga 3 soatda yetib bordi."
+        "synonym": "t (soat, minut)",
+        "meaning": "Yo'lni bosib o'tish uchun ketgan vaqt miqdori",
+        "example": "Ikki poyezd 3 soatdan keyin uchrashadi."
       },
       {
         "num": 4,
-        "word": "Yaqinlashish tezligi",
-        "uz": "Qarama-qarshi tezlik",
+        "word": "Uchrashuv tezligi",
+        "uz": "V1 + V2",
         "pos": "ot",
-        "synonym": "Tezliklar yig'indisi",
-        "meaning": "Bir-biriga qarab kelayotgan jismlar tezliklarining yig'indisi",
-        "example": "V_yaqin = V1 + V2 formulasi bilan topiladi."
+        "synonym": "Yaqinlashish tezligi",
+        "meaning": "Qarama-qarshi harakatlanayotgan ikki jismning bir soatdagi yaqinlashishi",
+        "example": "60 va 80 km/soat tezliklar yig'indisi 140 km/soat bo'ladi."
       },
       {
         "num": 5,
         "word": "Quvib yetish tezligi",
-        "uz": "Tezliklar ayirmasi",
+        "uz": "V1 - V2",
         "pos": "ot",
-        "synonym": "V1 - V2",
-        "meaning": "Bir yo'nalishda orqadan quvib kelayotganning tezlik ustunligi",
-        "example": "Tezroq mashina har soatda oradagi masofani 20 km ga qisqartiradi."
+        "synonym": "Farqli tezlik",
+        "meaning": "Biri ikkinchisini quvayotgan ikki jism orasidagi masofaning qisqarish tezligi",
+        "example": "75 - 55 = 20 km/soat tezlik bilan oraliq qisqaradi."
       },
       {
         "num": 6,
-        "word": "km/soat",
-        "uz": "Kilometr soatiga",
+        "word": "Oqim bo'ylab tezlik",
+        "uz": "V_k + V_o",
         "pos": "ot",
-        "synonym": "km/h",
-        "meaning": "Avtomobil va poyezdlar tezligining asosiy o'lchov birligi",
-        "example": "Shahar ichida maksimal tezlik 60 km/soat etib belgilangan."
+        "synonym": "Oqim yordami",
+        "meaning": "Kater tezligiga daryo oqimi tezligi qo'shilgan umumiy tezlik",
+        "example": "22 + 3 = 25 km/soat tezlik bilan daryoda suzadi."
       },
       {
         "num": 7,
-        "word": "Metr sekundiga",
-        "uz": "m/s",
+        "word": "Oqimga qarshi tezlik",
+        "uz": "V_k - V_o",
         "pos": "ot",
-        "synonym": "Tezlik birligi",
-        "meaning": "Bir sekundda necha metr bosib o'tilishini ko'rsatuvchi birlik",
-        "example": "Shamolning tezligi sekundiga 5 metrga teng."
+        "synonym": "Oqim qarshiligi",
+        "meaning": "Kater tezligidan daryo oqimi tezligi ayrilgan haqiqiy tezlik",
+        "example": "22 - 3 = 19 km/soat tezlik bilan oqimga qarshi suziladi."
       },
       {
         "num": 8,
-        "word": "Uchrashuv vaqti",
-        "uz": "Uchrashish muddati",
+        "word": "Oraliq masofa",
+        "uz": "Dastlabki masofa",
         "pos": "ot",
-        "synonym": "t_uchrashuv",
-        "meaning": "Ikki qarama-qarshi jismning bir-biri bilan to'qnashish yoki uchrashish vaqti",
-        "example": "Masofani yaqinlashish tezligiga bo'lib uchrashuv vaqti topiladi."
+        "synonym": "Farq masofasi",
+        "meaning": "Quvib yetish boshlanganda ikki jism orasidagi mavjud masofa",
+        "example": "Oraliqdagi 60 km masofa 3 soatda yopiladi."
       },
       {
         "num": 9,
-        "word": "O'zgarmas tezlik",
-        "uz": "Tekis harakat",
-        "pos": "sifat/ot",
-        "synonym": "Doimiy tezlik",
-        "meaning": "Harakat davomida tezlikning o'zgarmay bir xil saqlanishi",
-        "example": "Samolyot tekis va o'zgarmas tezlikda uchmoqda."
+        "word": "Birgalikdagi yo'l",
+        "uz": "S1 + S2",
+        "pos": "ot",
+        "synonym": "Jami masofa",
+        "meaning": "Uchrashuvgacha ikkala jism birgalikda bosib o'tgan umumiy masofa",
+        "example": "Ikkala poyezd birgalikda 420 km yo'l yurdi."
       },
       {
         "num": 10,
-        "word": "O'rtacha tezlik",
-        "uz": "O'rtacha ko'rsatkich",
+        "word": "O'zgarmas tezlik",
+        "uz": "Bir maromdagi harakat",
         "pos": "ot",
-        "synonym": "O'rtacha tezlik",
-        "meaning": "Jami bosib o'tilgan yo'lni jami ketgan vaqtga bo'lish",
-        "example": "Tanaffuslar bilan hisoblanganda o'rtacha tezlik 50 km/soat bo'ldi."
+        "synonym": "Tekis harakat",
+        "meaning": "Butun yo'l davomida o'zgarmasdan saqlanib turgan tezlik",
+        "example": "Poyezd bir maromda 60 km/soat tezlik bilan yurmoqda."
       }
     ],
     "cloze": {
-      "title": "Topshiriq 10: Toshkent - Samarqand Afrosiyob Poyezdi",
-      "inst": "Harakat formulalaridan foydalanib, bo'sh joylarni to'ldiring:",
-      "text": "Afrosiyob tezyurar poyezdi 150 km/soat tezlik bilan harakatlanmoqda. U 2 soatda (150 * 2) {300} km masofani bosib o'tadi. Ikki velosipedchi oralaridagi masofa 60 km bo'lgan ikki qishloqdan bir-biriga qarab yo'lga chiqishdi. Birinchisining tezligi 12 km/soat, ikkinchisiniki 8 km/soat. Ularning yaqinlashish tezligi (12 + 8) {20} km/soat bo'ladi. Ular {3} soatdan keyin uchrashishadi.",
+      "title": "Topshiriq 10: Tezyurar Poyezdlar va Kater Harakati",
+      "inst": "Harakat formulalaridan foydalanib bo'sh joylarni to'ldiring:",
+      "text": "Ikki shahar orasidagi masofa 420 km. Bir-biriga qarab chiqqan poyezdlar tezligi 60 km/soat va 80 km/soat bo'lib, ular {3} soatdan keyin uchrashadi. Quvib yetish: 75 km/soat tezlikdagi mashina 55 km/soat tezlikdagi yuk mashinasidan 60 km orqada bo'lsa, uni {3} soatda quvib yetadi. Katerning o'z tezligi 22 km/soat, daryo oqimi 3 km/soat bo'lsa, oqim bo'ylab tezligi {25} km/soat bo'ladi. 4 soatda 240 km yo'l bosib o'tgan avtomobilning tezligi {60} km/soat ga teng. Velosipedchi 15 km/soat tezlik bilan 3 soatda {45} km masofani bosib o'tadi.",
       "answers": {
-        "1": "300",
-        "2": "20",
-        "3": "3"
+        "1": "3",
+        "2": "3",
+        "3": "25",
+        "4": "60",
+        "5": "45"
       }
     },
     "quiz": [
       {
-        "q": "Avtomobil 70 km/soat tezlik bilan 3 soatda necha km yuradi?",
+        "q": "S = 420 km, V1 = 60 km/soat, V2 = 80 km/soat. Ular necha soatda uchrashadi?",
         "opts": [
-          "210 km",
-          "200 km",
-          "140 km"
-        ],
-        "ans": "210 km"
-      },
-      {
-        "q": "Piyoda 20 km masofani 4 soatda bosib o'tdi. Uning tezligi qancha?",
-        "opts": [
-          "5 km/soat",
-          "6 km/soat",
-          "80 km/soat"
-        ],
-        "ans": "5 km/soat"
-      },
-      {
-        "q": "Ikki jism bir-biriga qarab kelsa, yaqinlashish tezligi qanday topiladi?",
-        "opts": [
-          "V1 + V2 (qo'shiladi)",
-          "V1 - V2 (ayriladi)",
-          "V1 * V2 (ko'paytiriladi)"
-        ],
-        "ans": "V1 + V2 (qo'shiladi)"
-      },
-      {
-        "q": "Masofa 400 km, tezlik 100 km/soat bo'lsa, vaqt necha soat bo'ladi?",
-        "opts": [
+          "3 soat",
           "4 soat",
-          "40 soat",
-          "500 soat"
+          "5 soat"
         ],
-        "ans": "4 soat"
+        "ans": "3 soat"
       },
       {
-        "q": "Harakat masofasini (S) topish formulasi qaysi?",
+        "q": "Oraliq masofa 60 km, tezliklar 75 va 55 km/soat bo'lsa, quvib yetish vaqti necha soat?",
         "opts": [
-          "S = V * t",
-          "S = V : t",
-          "S = V + t"
+          "3 soat",
+          "2 soat",
+          "4 soat"
         ],
-        "ans": "S = V * t"
+        "ans": "3 soat"
+      },
+      {
+        "q": "Kater tezligi 22 km/soat, oqim 3 km/soat. Oqim bo'ylab tezlik nechaga teng?",
+        "opts": [
+          "25 km/soat",
+          "19 km/soat",
+          "22 km/soat"
+        ],
+        "ans": "25 km/soat"
+      },
+      {
+        "q": "4 soatda 240 km yo'l yurgan avtomobil tezligi qancha?",
+        "opts": [
+          "60 km/soat",
+          "80 km/soat",
+          "50 km/soat"
+        ],
+        "ans": "60 km/soat"
+      },
+      {
+        "q": "15 km/soat tezlik bilan 3 soatda necha km masofa bosib o'tiladi?",
+        "opts": [
+          "45 km",
+          "30 km",
+          "60 km"
+        ],
+        "ans": "45 km"
       }
     ],
     "video": {
-      "title": "Speed, Distance, Time - Corbettmaths",
-      "desc": "Tezlik, vaqt va masofaga oid masalalarni yechish video darsi:",
-      "youtube_id": "dHVK7IeLGT8"
+      "title": "Harakatga Doir Masalalar (Uchrashuv va Quvib Yetish)",
+      "desc": "Tezlik, vaqt, masofa: uchrashuv harakati va quvib yetish masalalari:",
+      "youtube_id": "n8_oW7W3gN4"
     }
   },
   {
     "id": "math-unit-11",
     "num": 11,
     "title": "Mehnat va Ish Unumi Masalalari",
-    "subtitle": "Ish unumi formulasi (A = w * t) va birgalikda ishlash",
-    "tag": "Matematik Masalalar • 4-Sinf",
-    "meaning": "<b>Ish unumi (w)</b> vaqt birligi (masalan, 1 soatda yoki 1 kunda) bajarilgan ish hajmini bildiradi. <b>Bajarilgan ish (A)</b> ish unumini sarflangan vaqtga ko'paytirish orqali topiladi: <code>A = w * t</code>. Birgalikda ishlaganda ularning ish unumlari qo'shiladi: <code>w_birgalikda = w1 + w2</code>.",
+    "subtitle": "Ish unumi, birgalikda ishlash va umumiy buyurtmani bajarish vaqti",
+    "tag": "Matnli Masalalar • 4-Sinf Chuqurlashtirilgan",
+    "meaning": "<b>Ish unumi (w)</b> — vaqt birligi (1 soat, 1 kun) ichida bajarilgan ish miqdoridir.<br>• Bajarilgan ish (A): <code>A = w * t</code><br>• Ish unumi (w): <code>w = A : t</code><br>• Sarflangan vaqt (t): <code>t = A : w</code><br><br><b>Birgalikda ishlash qoidasi:</b> Agar bir nechta ishchi yoki usta birgalikda ishlasa, ularning bir soatlik ish unumlari <b>qo'shiladi</b>: <code>w_jami = w1 + w2</code>. Umumiy vaqt: <code>t = A : (w1 + w2)</code>.",
     "tables": [
       {
-        "title": "Mehnat Masalalari Formulalari",
+        "title": "Ish Unumi va Birgalikda Ishlash Jadvali",
         "headers": [
-          "Kattalik Nomi",
-          "Belgisi",
+          "Ish Turi",
           "Formula",
-          "Misol"
+          "Bajarilish Bosqichlari",
+          "Hisoblash Natijasi"
         ],
         "rows": [
           [
-            "Bajarilgan umumiy ish",
-            "A",
-            "A = w * t",
-            "1 soatda 15 detal tayyorlansa, 4 soatda: A = 15 * 4 = 60 detal"
+            "Birgalikdagi unum",
+            "w_jami = w1 + w2",
+            "Usta: 12 ta/soat, shogird: 8 ta/soat",
+            "12 + 8 = 20 ta/soat"
           ],
           [
-            "Ish unumi",
-            "w",
-            "w = A : t",
-            "80 detalni 4 soatda yasasa: w = 80 : 4 = 20 detal/soat"
+            "Umumiy vaqt",
+            "t = A : w_jami",
+            "100 ta detal : 20 ta/soat",
+            "100 : 20 = 5 soat"
           ],
           [
-            "Ketgan vaqt",
-            "t",
-            "t = A : w",
-            "100 detalni 25 detal/soat unum bilan: t = 100 : 25 = 4 soatda yasaydi"
+            "Hovuz to'ldirish",
+            "1/6 + 1/3 = 1/2",
+            "1-nasos 6 soat, 2-nasos 3 soat",
+            "1 soatda hovuzning 1/2 qismi to'ladi"
           ],
           [
-            "Birgalikdagi ish",
-            "A_umumiy",
-            "t = A : (w1 + w2)",
-            "Usta 6 ta, shogird 4 ta yasasa, birga: 6 + 4 = 10 ta/soat"
+            "Ishchining 1 soatlik unumi",
+            "w = A : (kun * soat)",
+            "240 ta : (5 * 8 soat)",
+            "240 : 40 = 6 ta/soat"
           ]
         ]
       }
     ],
-    "tip": "<b>Foydali taqqoslash!</b> Mehnat masalalari xuddi harakat masalalariga o'xshaydi: Ish (A) xuddi Masofa (S) kabidir, Ish unumi (w) esa Tezlik (V) kabidir!",
-    "time_words": "<b>Formulalar:</b> A = w * t, w = A : t, t = A : w, w_birga = w1 + w2.",
+    "tip": "<b>Muhim qoida:</b> Agar usta yolg'iz o'zi 12 ta, shogirdi 8 ta tayyorlasa, ikkalasi birgalikda albatta tezroq tugatadi (100 : 20 = 5 soatda)!",
+    "time_words": "<b>Formulalar:</b> A = w * t, w = A : t, t = A : w, w_jami = w1 + w2.",
     "vocab": [
       {
         "num": 1,
         "word": "Ish unumi",
-        "uz": "Soatlik mahsuldorlik (w)",
+        "uz": "1 soatlik mahsuldorlik",
         "pos": "ot",
-        "synonym": "Ish sur'ati",
-        "meaning": "1 soatda yoki 1 kunda tayyorlangan mahsulot miqdori",
-        "example": "Usta bir soatda 12 ta stul yasaydi, bu uning ish unumidir."
+        "synonym": "Tezkorlik (w)",
+        "meaning": "Bir soat yoki bir kunda tayyorlangan mahsulot miqdori",
+        "example": "Usta bir soatda 12 ta detal yasaydi."
       },
       {
         "num": 2,
-        "word": "Umumiy ish",
-        "uz": "Jami mahsulot (A)",
+        "word": "Bajarilgan ish",
+        "uz": "Jami mahsulot",
         "pos": "ot",
-        "synonym": "Bajarilgan vazifa",
-        "meaning": "Bajarilgan yoki bajarilishi kerak bo'lgan jami ish hajmi",
-        "example": "Buyurtmaga ko'ra 120 ta parta tayyorlash kerak."
+        "synonym": "A miqdori",
+        "meaning": "Barcha vaqt davomida tayyorlangan umumiy tovar yoki ish",
+        "example": "Jami buyurtma 100 ta detalni tashkil etadi."
       },
       {
         "num": 3,
+        "word": "Birgalikdagi unum",
+        "uz": "w1 + w2",
+        "pos": "ot",
+        "synonym": "Umumiy mahsuldorlik",
+        "meaning": "Barcha ishchilarning 1 soatda birgalikda bajargan ishi",
+        "example": "12 + 8 = 20 ta detal bir soatda tayyorlanadi."
+      },
+      {
+        "num": 4,
         "word": "Ish vaqti",
-        "uz": "Ketgan muddat (t)",
+        "uz": "Sarflangan soat",
         "pos": "ot",
-        "synonym": "Mehnat soati",
-        "meaning": "Ishni to'liq bajarish uchun sarflangan vaqt",
-        "example": "Ish 5 kunda to'liq yakunlandi."
-      },
-      {
-        "num": 4,
-        "word": "Birgalikdagi ish",
-        "uz": "Hamkorlikdagi mehnat",
-        "pos": "ot",
-        "synonym": "Hamkorlik",
-        "meaning": "Bir nechta ishchi yoki uskunaning bir vaqtda birgalikda ishlashi",
-        "example": "Birgalikda ishlaganda vazifa ancha tez bitadi."
+        "synonym": "t vaqti",
+        "meaning": "Buyurtmani to'liq bitirish uchun ketgan umumiy vaqt",
+        "example": "Usta va shogird ishni 5 soatda tugatishadi."
       },
       {
         "num": 5,
-        "word": "Reja (Norma)",
-        "uz": "Kutilgan me'yor",
+        "word": "Kunlik norma",
+        "uz": "Bir kungi reja",
         "pos": "ot",
-        "synonym": "Kundalik me'yor",
-        "meaning": "Kunlik yoki oylik bajarilishi shart bo'lgan vazifa miqdori",
-        "example": "Kunlik reja 50 ta detal deb belgilangan."
+        "synonym": "Kunlik unum",
+        "meaning": "Bir ish kunida bajarilishi lozim bo'lgan mahsulot soni",
+        "example": "Kuniga 8 soatdan ishlab vazifa bajarildi."
       },
       {
         "num": 6,
-        "word": "Rejadan ortiq",
-        "uz": "Qo'shimcha bajarilgan",
-        "pos": "sifat",
-        "synonym": "Ortig'i bilan",
-        "meaning": "Belgilangan rejadan ko'p mahsulot ishlab chiqarish",
-        "example": "Fabrika rejadan ortiq 200 ta kiyim tikdi."
+        "word": "Nasos unumi",
+        "uz": "Suv quyish tezligi",
+        "pos": "ot",
+        "synonym": "Hovuz tezligi",
+        "meaning": "Suv nasosining vaqt birligida quygan suv miqdori",
+        "example": "Birgalikda 1 soatda hovuzning 1/2 qismini to'ldirishadi."
       },
       {
         "num": 7,
-        "word": "Ustaxonaning quvvati",
-        "uz": "Ishlab chiqarish quvvati",
+        "word": "Kombayn unumi",
+        "uz": "Hosil o'rish",
         "pos": "ot",
-        "synonym": "Imkoniyat",
-        "meaning": "Ustaxonaning ma'lum vaqtda mahsulot bera olish imkoniyati",
-        "example": "Yangi stanoklar ish unumini 2 barobar oshirdi."
+        "synonym": "Gektar/soat",
+        "meaning": "Qishloq xo'jalik mashinasining 1 soatda o'rgan maydoni",
+        "example": "Kombayn 1 soatda 3 gektar bug'doyni o'radi."
       },
       {
         "num": 8,
-        "word": "Quvurlar masalasi",
-        "uz": "Hovuz to'ldirish",
+        "word": "Ishchilar guruhi",
+        "uz": "Brigada",
         "pos": "ot",
-        "synonym": "Hovuz masalasi",
-        "meaning": "Hovuzga suv quyuvchi quvurlar unumiga oid klassik masala",
-        "example": "Ikkita quvur hovuzni birgalikda 4 soatda to'ldiradi."
+        "synonym": "Jamoa",
+        "meaning": "Birgalikda bir maqsad uchun ishlayotgan ishchilar jamoasi",
+        "example": "4 nafar usta 3 kunda 60 ta stul yasaydi."
       },
       {
         "num": 9,
-        "word": "Tejamkorlik",
-        "uz": "Vaqtni tejash",
+        "word": "Bir soatlik hosildorlik",
+        "uz": "A : t",
         "pos": "ot",
-        "synonym": "Samaradorlik",
-        "meaning": "Vaqt va xomashyoni tejab, sifatli ish bajarish",
-        "example": "Yangi usul tufayli 2 soat vaqt tejab qolindi."
+        "synonym": "Soatlik natija",
+        "meaning": "Umumiy ishni sarflangan soatlarga bo'lish natijasi",
+        "example": "240 ni 40 soatga bo'lsak 6 ta chiqadi."
       },
       {
         "num": 10,
-        "word": "Vazifani taqsimlash",
-        "uz": "Bo'lib berish",
+        "word": "Teng taqsimlangan reja",
+        "uz": "Kunlik grafik",
         "pos": "ot",
-        "synonym": "Taqsimot",
-        "meaning": "Ish hajmini ishchilarning unumiga qarab taqsimlash",
-        "example": "Har bir guruhga 30 tadan daraxt ekish topshirildi."
+        "synonym": "Jadval",
+        "meaning": "Kunlar bo'yicha bir xil miqdorda taqsimlangan ish rejasi",
+        "example": "Bir kunda 20 ta stul yasalishi rejalashtirildi."
       }
     ],
     "cloze": {
-      "title": "Topshiriq 11: Duradgorlar Ustaxonasi",
-      "inst": "Mehnat masalasi formulalaridan foydalanib, bo'sh joylarni to'ldiring:",
-      "text": "Usta 1 soatda 8 ta stul yasaydi, shogirdi esa 1 soatda 4 ta stul yasaydi. Ular birgalikda 1 soatda (8 + 4) {12} ta stul yasashadi. Agar ularga 60 ta stul yasash buyurtmasi berilsa, ular birgalikda bu ishni (60 : 12) {5} soatda bajarishadi. Agar usta yolg'iz o'zi ishlasa, 80 ta stulni yasash uchun unga {10} soat vaqt kerak bo'ladi.",
+      "title": "Topshiriq 11: Duradgorlik Ustaxonasi va Hovuz Suvi",
+      "inst": "Ish unumi formulalaridan foydalanib bo'sh joylarni to'ldiring:",
+      "text": "Usta bir soatda 12 ta, shogirdi esa 8 ta detal tayyorlaydi. Ular birgalikda 1 soatda {20} ta detal yasashadi. Usta va shogird birgalikda 100 ta detalni {5} soatda tayyorlab bo'lishadi. 1-nasos hovuzni 6 soatda, 2-nasos 3 soatda to'ldiradi; ikkalasi birgalikda ishlaganda 1 soatda hovuzning {1/2} qismi to'ladi. Kuniga 8 soatdan ishlab, 5 kunda 240 ta mahsulot chiqargan ishchining 1 soatlik unumi {6} ta bo'ladi. 4 nafar usta 3 kunda 60 ta stul yasasa, bir kunda jami {20} ta stul tayyorlanadi.",
       "answers": {
-        "1": "12",
+        "1": "20",
         "2": "5",
-        "3": "10"
-      }
-    },
-    "quiz": [
-      {
-        "q": "Ishchi 1 soatda 15 ta detal yasasa, 6 soatda nechta yasaydi?",
-        "opts": [
-          "90 ta",
-          "75 ta",
-          "60 ta"
-        ],
-        "ans": "90 ta"
-      },
-      {
-        "q": "Tikuvchi 40 ta ko'ylakni 8 kunda tikdi. Uning kunlik unumi qancha?",
-        "opts": [
-          "5 ta",
-          "4 ta",
-          "10 ta"
-        ],
-        "ans": "5 ta"
-      },
-      {
-        "q": "Birinchi quvur hovuzni soatiga 20 litr, ikkinchisi 30 litr suv bilan to'ldiradi. Birga qancha?",
-        "opts": [
-          "50 litr/soat",
-          "10 litr/soat",
-          "600 litr/soat"
-        ],
-        "ans": "50 litr/soat"
-      },
-      {
-        "q": "Bajarilgan ish (A) qanday formula bilan topiladi?",
-        "opts": [
-          "A = w * t",
-          "A = w : t",
-          "A = w + t"
-        ],
-        "ans": "A = w * t"
-      },
-      {
-        "q": "Jami 120 ta kitobni soatiga 30 tadan muqovalash uchun necha soat kerak?",
-        "opts": [
-          "4 soat",
-          "5 soat",
-          "3 soat"
-        ],
-        "ans": "4 soat"
-      }
-    ],
-    "video": {
-      "title": "Math Minutes: Word Problems",
-      "desc": "Mehnat va ish unumiga oid amaliy masalalarni yechish video darsi:",
-      "youtube_id": "iVJeVcwT69E"
-    }
-  },
-  {
-    "id": "math-unit-12",
-    "num": 12,
-    "title": "Narx, Miqdor va Qiymat (Iqtisodiy Masalalar)",
-    "subtitle": "Qiymat = Narx * Miqdor formulasi va moliyaviy hisob-kitob",
-    "tag": "Matematik Masalalar • 4-Sinf",
-    "meaning": "<b>Iqtisodiy masalalarda</b> xarid qilish, narx belgilash va foyda hisoblash o'rganiladi. Asosiy tushunchalar: <b>Narx (N)</b> - 1 ta buyum bahosi; <b>Miqdor (M)</b> - olingan buyumlar soni yoki og'irligi; <b>Qiymat (Q)</b> - jami to'langan pul. Formula: <code>Qiymat = Narx * Miqdor</code>.",
-    "tables": [
-      {
-        "title": "Xarid va Narx Formulalari Jadvali",
-        "headers": [
-          "Kattalik Nomi",
-          "Belgisi",
-          "Topish Formulasi",
-          "Misol"
-        ],
-        "rows": [
-          [
-            "Jami Qiymat (Summa)",
-            "Q",
-            "Qiymat = Narx * Miqdor",
-            "1 ta daftar 3 000 so'm, 5 ta daftar: 3 000 * 5 = 15 000 so'm"
-          ],
-          [
-            "Bitta buyum narxi",
-            "N",
-            "Narx = Qiymat : Miqdor",
-            "6 ta qalam 12 000 so'm bo'lsa: 1 ta qalam = 12 000 : 6 = 2 000 so'm"
-          ],
-          [
-            "Sotib olingan miqdor",
-            "M",
-            "Miqdor = Qiymat : Narx",
-            "20 000 so'mga 4 000 so'mlik muzqaymoqdan: 20 000 : 4 000 = 5 ta olinadi"
-          ],
-          [
-            "Qaytim hisoblash",
-            "Qaytim",
-            "Berilgan pul - Xarid summasi",
-            "50 000 so'm berildi, xarid 38 000 so'm: Qaytim = 12 000 so'm"
-          ]
-        ]
-      }
-    ],
-    "tip": "<b>Aqlli xaridor qoidasi!</b> Xarid qilishdan oldin har bir tovarning donasi qanchaga tushishini (narxini) hisoblab ko'ring. Ba'zan to'plamda xarid qilish alohida olgandan ko'ra ancha arzon tushadi!",
-    "time_words": "<b>Formulalar:</b> Qiymat = Narx * Miqdor, Narx = Q : M, Miqdor = Q : N.",
-    "vocab": [
-      {
-        "num": 1,
-        "word": "Narx",
-        "uz": "1 ta donaning bahosi",
-        "pos": "ot",
-        "synonym": "Baho",
-        "meaning": "Bitta buyum yoki 1 kg mahsulot uchun belgilangan to'lov",
-        "example": "Nonning narxi 4 000 so'm qilib belgilangan."
-      },
-      {
-        "num": 2,
-        "word": "Miqdor",
-        "uz": "Soni yoki og'irligi",
-        "pos": "ot",
-        "synonym": "Soni",
-        "meaning": "Xarid qilingan narsalarning soni yoki o'lchami",
-        "example": "Biz do'kondan 3 dona qalam va 2 kg shakar oldik."
-      },
-      {
-        "num": 3,
-        "word": "Qiymat (Summa)",
-        "uz": "Jami to'lov",
-        "pos": "ot",
-        "synonym": "Jami pul",
-        "meaning": "Barcha olingan tovarlar uchun to'lanadigan umumiy mablag'",
-        "example": "Xaridimizning umumiy qiymati 25 000 so'm bo'ldi."
-      },
-      {
-        "num": 4,
-        "word": "Qaytim",
-        "uz": "Ortib qaytarilgan pul",
-        "pos": "ot",
-        "synonym": "Qaytim pul",
-        "meaning": "Kassirga berilgan puldan tovar narxi ayirib qaytariladigan qism",
-        "example": "100 000 so'm bersam, kassir 15 000 so'm qaytim berdi."
-      },
-      {
-        "num": 5,
-        "word": "Chegirma",
-        "uz": "Arzonlashtirish",
-        "pos": "ot",
-        "synonym": "Aksiya",
-        "meaning": "Mahsulot narxidan tushirib berilgan arzonlashgan summa",
-        "example": "Bayram munosabati bilan kitoblarga 20% chegirma e'lon qilindi."
-      },
-      {
-        "num": 6,
-        "word": "Foyda",
-        "uz": "Sof daromad",
-        "pos": "ot",
-        "synonym": "Daromad",
-        "meaning": "Sotuvdan tushgan pul va xarajatlar orasidagi ijobiy farq",
-        "example": "Tadbirkor har bir sotilgan mahsulotdan 5 000 so'm foyda ko'rdi."
-      },
-      {
-        "num": 7,
-        "word": "Xarajat",
-        "uz": "Ketgan pul",
-        "pos": "ot",
-        "synonym": "Chiqim",
-        "meaning": "Mahsulot tayyorlash yoki sotib olish uchun sarflangan summa",
-        "example": "Xomashyo uchun 50 000 so'm xarajat qilindi."
-      },
-      {
-        "num": 8,
-        "word": "So'm",
-        "uz": "Milliy valyuta",
-        "pos": "ot",
-        "synonym": "Pul birligi",
-        "meaning": "O'zbekiston Respublikasining rasmiy pul birligi",
-        "example": "Daftar narxi 2500 so'mga teng."
-      },
-      {
-        "num": 9,
-        "word": "Chek",
-        "uz": "Kassa cheki",
-        "pos": "ot",
-        "synonym": "Kvitansiya",
-        "meaning": "Xarid qilingan narsalar va ularning narxi yozilgan qog'oz",
-        "example": "Xarid qilgandan so'ng kassa chekini tekshirib olish kerak."
-      },
-      {
-        "num": 10,
-        "word": "Byudjet",
-        "uz": "Mablag' rejasi",
-        "pos": "ot",
-        "synonym": "Pul rejasi",
-        "meaning": "Daromad va xarajatlarning oldindan tuzilgan hisob-kitob rejasi",
-        "example": "Oila byudjetini to'g'ri rejalashtirish tejashga yordam beradi."
-      }
-    ],
-    "cloze": {
-      "title": "Topshiriq 12: Maktab Yarmarkasidagi Xarid",
-      "inst": "Narx va qiymat formulalaridan foydalanib, bo'sh joylarni to'ldiring:",
-      "text": "Alisher kitob do'koniga kirdi. U donasi 4 000 so'mdan bo'lgan 5 ta daftar sotib oldi. Daftarlar uchun (4000 * 5) {20000} so'm to'ladi. Shuningdek, 3 ta bir xil ruchka uchun jami 9 000 so'm to'ladi, demak bitta ruchka narxi {3000} so'm bo'lgan. Jami xarid {23000} so'mni tashkil etdi. Alisher kassirga 50 000 so'm bergach, kassir unga {27000} so'm qaytim qaytardi.",
-      "answers": {
-        "1": "20000",
-        "2": "3000",
-        "3": "23000",
-        "4": "27000"
-      }
-    },
-    "quiz": [
-      {
-        "q": "1 kg olma 8 000 so'm bo'lsa, 4 kg olma necha pul bo'ladi?",
-        "opts": [
-          "32000 so'm",
-          "24000 so'm",
-          "12000 so'm"
-        ],
-        "ans": "32000 so'm"
-      },
-      {
-        "q": "5 ta bir xil muzqaymoq 35 000 so'm bo'lsa, 1 tasining narxi qancha?",
-        "opts": [
-          "7000 so'm",
-          "6000 so'm",
-          "8000 so'm"
-        ],
-        "ans": "7000 so'm"
-      },
-      {
-        "q": "Xarid 64 000 so'm bo'ldi. 100 000 so'mdan qancha qaytim qaytadi?",
-        "opts": [
-          "36000 so'm",
-          "46000 so'm",
-          "26000 so'm"
-        ],
-        "ans": "36000 so'm"
-      },
-      {
-        "q": "Qiymatni topish formulasini ko'rsating:",
-        "opts": [
-          "Qiymat = Narx * Miqdor",
-          "Qiymat = Narx : Miqdor",
-          "Qiymat = Narx + Miqdor"
-        ],
-        "ans": "Qiymat = Narx * Miqdor"
-      },
-      {
-        "q": "50 000 so'mga 10 000 so'mlik kitobdan nechta sotib olish mumkin?",
-        "opts": [
-          "5 ta",
-          "4 ta",
-          "6 ta"
-        ],
-        "ans": "5 ta"
-      }
-    ],
-    "video": {
-      "title": "Calculating and Understanding Money For Kids | Mathematics Grade 1 | Periwinkle",
-      "desc": "Pul, narx, miqdor va qiymatga oid qiziqarli hisob-kitoblar darsi:",
-      "youtube_id": "GtlL_5Ct5rU"
-    }
-  },
-  {
-    "id": "math-unit-13",
-    "num": 13,
-    "title": "Ma'lumotlar bilan Ishlash va Diagrammalar",
-    "subtitle": "Jadvallar, ustunli diagrammalar va o'rtacha arifmetik qiymat",
-    "tag": "Ma'lumotlar va Statistika • 4-Sinf",
-    "meaning": "<b>Diagrammalar</b> ma'lumotlarni ko'rgazmali va tushunarli tarzda taqqoslash uchun xizmat qiladi. <b>O'rtacha arifmetik qiymat</b> bir nechta sonlar yig'indisini ularning soniga bo'lish orqali topiladi: <code>O'rtacha = (a + b + c + ...) : n</code>.",
-    "tables": [
-      {
-        "title": "Diagramma Turlari va O'rtacha Qiymat Jadvali",
-        "headers": [
-          "Diagramma / Tushuncha",
-          "Qanday Tasvirlanadi",
-          "Qachon Qo'llaniladi",
-          "Hisoblash Formulasi"
-        ],
-        "rows": [
-          [
-            "Ustunli diagramma",
-            "Har xil balandlikdagi ustunlar",
-            "Miqdorlarni o'zaro taqqoslashda",
-            "Ustun balandligi son qiymatiga teng"
-          ],
-          [
-            "Piktogramma",
-            "Kichik rasmlar va belgilar orqali",
-            "Bolalar uchun qiziqarli ko'rgazmada",
-            "1 ta ramz = 10 ta narsa deb olinadi"
-          ],
-          [
-            "O'rtacha arifmetik",
-            "Yig'indini sonlar miqdoriga bo'lish",
-            "Baholar va harorat o'rtachasida",
-            "(80 + 90 + 100) : 3 = 270 : 3 = 90"
-          ]
-        ]
-      }
-    ],
-    "tip": "<b>Amaliy misol!</b> Agar o'quvchi ketma-ket 4, 5, 5 baho olgan bo'lsa, uning o'rtacha bali: (4 + 5 + 5) : 3 = 14 : 3 ≈ 4.6 (yaxlitlanganda 5) bo'ladi!",
-    "time_words": "<b>Formulalar:</b> O'rtacha = Jami_yig'indi : Sonlar_miqdori, Max - Min = Farq.",
-    "vocab": [
-      {
-        "num": 1,
-        "word": "Diagramma",
-        "uz": "Ko'rgazmali chizma",
-        "pos": "ot",
-        "synonym": "Grafik",
-        "meaning": "Sonli ma'lumotlarni chizmalar va ustunlar orqali ifodalash",
-        "example": "Ustunli diagrammada har bir sinf o'quvchilari soni ko'rsatilgan."
-      },
-      {
-        "num": 2,
-        "word": "Ustunli diagramma",
-        "uz": "Ustunli grafik",
-        "pos": "ot",
-        "synonym": "Bar chart",
-        "meaning": "Balandligi son miqdoriga mos bo'lgan to'g'ri to'rtburchaklar chizmasi",
-        "example": "Eng baland ustun eng ko'p kitob o'qilgan oyni bildiradi."
-      },
-      {
-        "num": 3,
-        "word": "Jadval",
-        "uz": "Satr va ustunlar",
-        "pos": "ot",
-        "synonym": "Reestr",
-        "meaning": "Ma'lumotlarning tartiblangan kataklar to'plami",
-        "example": "Dars jadvali haftaning kunlari bo'yicha tuzilgan."
-      },
-      {
-        "num": 4,
-        "word": "O'rtacha arifmetik",
-        "uz": "O'rtacha qiymat",
-        "pos": "ot",
-        "synonym": "O'rtacha",
-        "meaning": "Barcha sonlar yig'indisini ularning soniga bo'lish natijasi",
-        "example": "Uchta imtihonning o'rtacha bali 90 ballni tashkil qildi."
-      },
-      {
-        "num": 5,
-        "word": "Eng katta qiymat",
-        "uz": "Maksimum",
-        "pos": "ot",
-        "synonym": "Maksimal",
-        "meaning": "Berilgan qatordagi eng yuqori ko'rsatkich",
-        "example": "Haftaning eng issiq kuni harorati 32 daraja bo'ldi."
-      },
-      {
-        "num": 6,
-        "word": "Eng kichik qiymat",
-        "uz": "Minimum",
-        "pos": "ot",
-        "synonym": "Minimal",
-        "meaning": "Berilgan qatordagi eng quyi ko'rsatkich",
-        "example": "Haftaning eng salqin kuni harorati 18 daraja bo'ldi."
-      },
-      {
-        "num": 7,
-        "word": "Shkala",
-        "uz": "Bo'linmalar o'qi",
-        "pos": "ot",
-        "synonym": "O'lchov chizig'i",
-        "meaning": "Diagramma o'qidagi raqamlar va oraliq belgilar tizimi",
-        "example": "Diagramma shkalasi 10 tadan qadam bilan belgilangan."
-      },
-      {
-        "num": 8,
-        "word": "Piktogramma",
-        "uz": "Rasmli diagramma",
-        "pos": "ot",
-        "synonym": "Rasm-grafik",
-        "meaning": "Sonlarni rasmlar (masalan, kitobcha, yulduzcha) orqali ko'rsatish",
-        "example": "Har bir yulduzcha 5 ta to'plangan ballni bildiradi."
-      },
-      {
-        "num": 9,
-        "word": "Tahlil",
-        "uz": "Xulosa chiqarish",
-        "pos": "ot",
-        "synonym": "Tadqiq",
-        "meaning": "Ma'lumotlarni o'rganib to'g'ri xulosa chiqarish jarayoni",
-        "example": "Diagramma tahliliga ko'ra o'quvchilar soni ortgan."
-      },
-      {
-        "num": 10,
-        "word": "So'rovnoma",
-        "uz": "Fikr to'plash",
-        "pos": "ot",
-        "synonym": "Anketa",
-        "meaning": "Ma'lumot yig'ish uchun o'quvchilar orasida o'tkazilgan savol-javob",
-        "example": "Sevimli fanlar bo'yicha so'rovnoma o'tkazildi."
-      }
-    ],
-    "cloze": {
-      "title": "Topshiriq 13: 4-Sinf Sport Musobaqasi Natijalari",
-      "inst": "Ma'lumotlar va o'rtacha qiymat qoidalaridan foydalanib, bo'sh joylarni to'ldiring:",
-      "text": "Musobaqada 4-A sinfi 1-turda 80 ball, 2-turda 90 ball, 3-turda esa 100 ball to'pladi. Ularning jami ballari yig'indisi {270} ball bo'ldi. O'rtacha arifmetik ball esa (270 : 3) {90} ballni tashkil etdi. Eng katta to'plangan ball {100}, eng kichigi esa {80} bo'ldi. Eng katta va eng kichik ballar farqi {20} ballga teng.",
-      "answers": {
-        "1": "270",
-        "2": "90",
-        "3": "100",
-        "4": "80",
+        "3": "1/2",
+        "4": "6",
         "5": "20"
       }
     },
     "quiz": [
       {
-        "q": "10, 20 va 30 sonlarining o'rtacha arifmetik qiymati nechaga teng?",
+        "q": "Usta 12 ta, shogird 8 ta detal yasaydi. Ikkalasi birgalikda 100 ta detalni necha soatda yasaydi?",
         "opts": [
-          "20",
-          "30",
-          "60"
+          "5 soat",
+          "6 soat",
+          "4 soat"
         ],
-        "ans": "20"
+        "ans": "5 soat"
       },
       {
-        "q": "Qaysi diagrammada sonlar rasmlar va belgilar orqali ifodalanadi?",
+        "q": "1-nasos 6 soatda, 2-nasos 3 soatda to'ldirsa, 1 soatda hovuzning qancha qismi to'ladi?",
         "opts": [
-          "Piktogramma",
-          "Ustunli diagramma",
-          "Doiraviy diagramma"
+          "1/2 qismi",
+          "1/3 qismi",
+          "1/6 qismi"
         ],
-        "ans": "Piktogramma"
+        "ans": "1/2 qismi"
       },
       {
-        "q": "5 ta kun davomida o'qilgan kitoblar: 2, 4, 6, 8, 10. O'rtacha kuniga nechta?",
+        "q": "5 kunda 40 soat ishlab 240 ta detal yasagan ishchining 1 soatlik unumi qancha?",
         "opts": [
           "6 ta",
-          "5 ta",
-          "30 ta"
+          "8 ta",
+          "5 ta"
         ],
         "ans": "6 ta"
       },
       {
-        "q": "Ustunli diagrammada ustun balandligi nimani ko'rsatadi?",
+        "q": "4 nafar usta 3 kunda 60 ta stul yasasa, bir kunda nechta stul yasaladi?",
         "opts": [
-          "Sonning kattaligini",
-          "Faqat rangini",
-          "Varaq o'lchamini"
+          "20 ta",
+          "15 ta",
+          "12 ta"
         ],
-        "ans": "Sonning kattaligini"
+        "ans": "20 ta"
       },
       {
-        "q": "O'rtacha arifmetik qiymatni topish uchun nima qilinadi?",
+        "q": "Ish unumini topish formulasini tanlang:",
         "opts": [
-          "Yig'indini ularning soniga bo'linadi",
-          "Faqat eng kattasi olinadi",
-          "Sonlar ko'paytiriladi"
+          "w = A : t",
+          "w = A * t",
+          "w = t : A"
         ],
-        "ans": "Yig'indini ularning soniga bo'linadi"
+        "ans": "w = A : t"
       }
     ],
     "video": {
-      "title": "Math Antics - Mean, Median and Mode",
-      "desc": "Diagrammalar, ma'lumotlar bilan ishlash va o'rtacha qiymat video darsi:",
-      "youtube_id": "B1HEzNTGeZ4"
+      "title": "Mehnat va Ish Unumi Masalalari (Birgalikda Ishlash)",
+      "desc": "Ish unumi, vaqt va bajarilgan ish miqdorini hisoblash usullari:",
+      "youtube_id": "b3eW2pA1Z7s"
+    }
+  },
+  {
+    "id": "math-unit-12",
+    "num": 12,
+    "title": "Narx, Miqdor, Qiymat va Iqtisodiy Masalalar",
+    "subtitle": "Xaridlar qiymati, chegirma, foyda-zarar va bir nechta noma'lumli tenglamalar",
+    "tag": "Iqtisodiy Masalalar • 4-Sinf Chuqurlashtirilgan",
+    "meaning": "<b>Iqtisodiy masalalarda</b> uchta asosiy tushuncha bog'lanadi:<br>• Umumiy Qiymat (Q): <code>Q = N * M</code> (Narx ko'paytirilgan Miqdor)<br>• Bitta buyum narxi (N): <code>N = Q : M</code><br>• Miqdori (M): <code>M = Q : N</code><br><br><b>Bir nechta xaridlar tenglamasi:</b> Agar 4 ta daftar va 3 ta ruchka uchun jami 26 000 so'm to'langan bo'lsa va 1 ta daftar 3 500 so'm bo'lsa:<br>1. Daftarlar narxi: <code>4 * 3 500 = 14 000 so'm</code><br>2. Ruchkalar narxi: <code>26 000 - 14 000 = 12 000 so'm</code><br>3. 1 ta ruchka narxi: <code>12 000 : 3 = 4 000 so'm</code>.",
+    "tables": [
+      {
+        "title": "Narx, Miqdor va Qiymat Formulalari Jadvali",
+        "headers": [
+          "Tushuncha",
+          "Formula",
+          "Namuna Masala",
+          "Hisoblash Natijasi"
+        ],
+        "rows": [
+          [
+            "Umumiy qiymat",
+            "Q = N * M",
+            "Bitta kitob 15 000 so'm, 5 ta kitob",
+            "15 000 * 5 = 75 000 so'm"
+          ],
+          [
+            "Noma'lum narx",
+            "Q_ruchka : 3",
+            "26 000 - 14 000 = 12 000 so'm",
+            "12 000 : 3 = 4 000 so'm"
+          ],
+          [
+            "Foyda hisoblash",
+            "Foyda = Sotish - Xarid",
+            "60 000 - 45 000 so'm",
+            "15 000 so'm sof foyda"
+          ],
+          [
+            "Kasrli narx",
+            "36 000 ning 3/4 qismi",
+            "(36 000 : 4) * 3",
+            "27 000 so'm"
+          ],
+          [
+            "Proporsiya narxi",
+            "(24 000 : 8) * 12",
+            "1 ta qalam 3 000 so'm",
+            "3 000 * 12 = 36 000 so'm"
+          ]
+        ]
+      }
+    ],
+    "tip": "<b>Amaliy maslahat:</b> Xaridlar masalasida avval narxi ma'lum bo'lgan buyumlarning umumiy summasi hisoblanadi, so'ngra jami summadan ayrilib, noma'lum buyum narxi topiladi!",
+    "time_words": "<b>Formulalar:</b> Q = N * M, N = Q : M, M = Q : N, Foyda = Sotish - Xarid.",
+    "vocab": [
+      {
+        "num": 1,
+        "word": "Narx",
+        "uz": "Bitta buyum bahosi",
+        "pos": "ot",
+        "synonym": "Birlik narxi (N)",
+        "meaning": "Bitta tovar yoki 1 kg mahsulot uchun to'lanadigan pul miqdori",
+        "example": "Bitta ruchkaning narxi 4 000 so'm chiqdi."
+      },
+      {
+        "num": 2,
+        "word": "Miqdor",
+        "uz": "Buyumlar soni/og'irligi",
+        "pos": "ot",
+        "synonym": "Soni (M)",
+        "meaning": "Xarid qilingan tovarlarning donasi yoki kilogramm miqdori",
+        "example": "Xaridor 4 ta daftar va 3 ta ruchka sotib oldi."
+      },
+      {
+        "num": 3,
+        "word": "Umumiy qiymat",
+        "uz": "Jami to'lov",
+        "pos": "ot",
+        "synonym": "Summa (Q)",
+        "meaning": "Barcha tovarlar uchun kassaga to'langan umumiy pul summasi",
+        "example": "Jami xarid qiymati 26 000 so'mni tashkil etdi."
+      },
+      {
+        "num": 4,
+        "word": "Foyda",
+        "uz": "Daromad ortig'i",
+        "pos": "ot",
+        "synonym": "Sof daromad",
+        "meaning": "Mahsulotni sotish narxi va xarid narxi orasidagi ijobiy farq",
+        "example": "Savdogar har bir tovardan 15 000 so'm foyda qildi."
+      },
+      {
+        "num": 5,
+        "word": "Zarar",
+        "uz": "Kutilmagan kamomad",
+        "pos": "ot",
+        "synonym": "Ziyon",
+        "meaning": "Tovar xarid narxidan arzon sotilganda ko'riladigan yo'qotish",
+        "example": "Hisob-kitob to'g'ri olib borilsa zarar bo'lmaydi."
+      },
+      {
+        "num": 6,
+        "word": "Chegirma",
+        "uz": "Arzonlashtirish",
+        "pos": "ot",
+        "synonym": "Aksiya narxi",
+        "meaning": "Tovarning dastlabki narxidan ma'lum pul miqdorini kamaytirish",
+        "example": "Bayram munosabati bilan barcha kitoblarga chegirma berildi."
+      },
+      {
+        "num": 7,
+        "word": "Kasrli xarid",
+        "uz": "Ulushli kilogramm",
+        "pos": "ot",
+        "synonym": "3/4 kg",
+        "meaning": "Tovarning butun bo'lmagan qismini sotib olish (masalan, 3/4 kg konfet)",
+        "example": "1 kg konfet 36 000 so'm bo'lsa, 3/4 kg miqdori 27 000 so'm bo'ladi."
+      },
+      {
+        "num": 8,
+        "word": "Kassa cheki",
+        "uz": "To'lov hujjati",
+        "pos": "ot",
+        "synonym": "Kvitansiya",
+        "meaning": "Xarid qilingan tovarlar va to'langan pul ro'yxati yozilgan qog'oz",
+        "example": "Kassa chekida jami 75 000 so'm qayd etildi."
+      },
+      {
+        "num": 9,
+        "word": "Tannarx",
+        "uz": "Olingan bahosi",
+        "pos": "ot",
+        "synonym": "Xarid bahosi",
+        "meaning": "Tovarni ishlab chiqarish yoki ulgurji sotib olish bahosi",
+        "example": "Tovarning tannarxi 45 000 so'm edi."
+      },
+      {
+        "num": 10,
+        "word": "Proporsional narx",
+        "uz": "Bir xil nisbat",
+        "pos": "ot",
+        "synonym": "Nisbatli narx",
+        "meaning": "Tovarlar soniga qarab narxning to'g'ri mutanosib oshishi",
+        "example": "8 ta qalam 24 000 bo'lsa, 12 tasi 36 000 so'm bo'ladi."
+      }
+    ],
+    "cloze": {
+      "title": "Topshiriq 12: Bolalar Supermarketida Oqilona Xarid",
+      "inst": "Iqtisodiy formulalardan foydalanib bo'sh joylarni to'ldiring:",
+      "text": "Xaridor 4 ta daftar va 3 ta ruchka uchun 26 000 so'm to'ladi. Bir daftar 3 500 so'm bo'lsa, 4 ta daftar 14 000 so'm bo'lib, bitta ruchka narxi {4000} so'm chiqadi. Savdogar tovarini 45 000 so'mga olib, 60 000 so'mga sotdi; uning sof foydasi {15000} so'm bo'ldi. 1 kg shirin konfet 36 000 so'm tursa, uning 3/4 kg miqdori {27000} so'm bo'ladi. 5 ta bir xil darslik uchun 75 000 so'm to'lansa, bitta darslik narxi {15000} so'm bo'ladi. 8 ta qalam 24 000 so'm tursa, 12 ta shunday qalam {36000} so'm bo'ladi.",
+      "answers": {
+        "1": "4000",
+        "2": "15000",
+        "3": "27000",
+        "4": "15000",
+        "5": "36000"
+      }
+    },
+    "quiz": [
+      {
+        "q": "4 ta daftar (har biri 3 500 so'm) va 3 ta ruchka jami 26 000 so'm. Bitta ruchka necha pul?",
+        "opts": [
+          "4 000 so'm",
+          "3 000 so'm",
+          "5 000 so'm"
+        ],
+        "ans": "4 000 so'm"
+      },
+      {
+        "q": "45 000 ga olinib, 60 000 so'mga sotilgan tovardan qancha foyda ko'riladi?",
+        "opts": [
+          "15 000 so'm",
+          "20 000 so'm",
+          "10 000 so'm"
+        ],
+        "ans": "15 000 so'm"
+      },
+      {
+        "q": "1 kg konfet 36 000 so'm bo'lsa, 3/4 kg konfet necha pul turadi?",
+        "opts": [
+          "27 000 so'm",
+          "24 000 so'm",
+          "18 000 so'm"
+        ],
+        "ans": "27 000 so'm"
+      },
+      {
+        "q": "5 ta bir xil kitob 75 000 so'm bo'lsa, bitta kitob necha pul?",
+        "opts": [
+          "15 000 so'm",
+          "12 000 so'm",
+          "25 000 so'm"
+        ],
+        "ans": "15 000 so'm"
+      },
+      {
+        "q": "8 ta qalam 24 000 so'm tursa, 12 ta shunday qalam necha pul bo'ladi?",
+        "opts": [
+          "36 000 so'm",
+          "32 000 so'm",
+          "48 000 so'm"
+        ],
+        "ans": "36 000 so'm"
+      }
+    ],
+    "video": {
+      "title": "Narx, Miqdor, Qiymat va Iqtisodiy Masalalar",
+      "desc": "Narx, miqdor, umumiy qiymat va foyda/zararni hisoblash:",
+      "youtube_id": "5Jz9uW2Zq8w"
+    }
+  },
+  {
+    "id": "math-unit-13",
+    "num": 13,
+    "title": "Ma'lumotlar Tahlili, Jadvallar va Arifmetik O'rtacha",
+    "subtitle": "Arifmetik o'rtacha qiymat, diagrammalar, statistik ma'lumotlar tahlili",
+    "tag": "Statistika va Tahlil • 4-Sinf Chuqurlashtirilgan",
+    "meaning": "<b>Arifmetik o'rtacha qiymat</b> — bir nechta sonlar yig'indisini ularning soniga bo'lish natijasida hosil bo'ladigan o'rtacha ko'rsatkichdir:<br><code>Arifmetik o'rtacha = (a1 + a2 + ... + an) : n</code>.<br><br><b>Teskari tahlil:</b> Agar sonlarning arifmetik o'rtachasi ma'lum bo'lsa, ularning umumiy yig'indisini topish uchun o'rtacha qiymat sonlar miqdoriga ko'paytiriladi (masalan, 3 ta sonning o'rtachasi 40 bo'lsa, ularning yig'indisi <code>40 * 3 = 120</code> bo'ladi). Diagrammalar va jadvallar ma'lumotlarni ko'rgazmali solishtirish uchun xizmat qiladi.",
+    "tables": [
+      {
+        "title": "Arifmetik O'rtacha Hisoblash Jadvali",
+        "headers": [
+          "Berilgan Ma'lumotlar",
+          "Sonlar Miqdori (n)",
+          "Yig'indisi",
+          "Arifmetik O'rtachasi"
+        ],
+        "rows": [
+          [
+            "Chorak baholari: 85, 90, 95, 90",
+            "4 ta baho",
+            "85 + 90 + 95 + 90 = 360",
+            "360 : 4 = 90 ball"
+          ],
+          [
+            "Uchta son o'rtachasi: 40",
+            "3 ta son",
+            "Yig'indi = 40 * 3",
+            "Yig'indisi = 120"
+          ],
+          [
+            "Kunlik savdo: 120, 150, 180 kg",
+            "3 kun",
+            "120 + 150 + 180 = 450",
+            "450 : 3 = 150 kg"
+          ],
+          [
+            "200 ning 4 ga bo'linishi",
+            "4 ta son",
+            "Yig'indisi = 200",
+            "200 : 4 = 50"
+          ],
+          [
+            "Ketma-ket sonlar: 10, 20, 30, 40, 50",
+            "5 ta son",
+            "Yig'indi = 150",
+            "150 : 5 = 30"
+          ]
+        ]
+      }
+    ],
+    "tip": "<b>Foydali qoida:</b> Agar sonlar bir xil qadam bilan ortib boruvchi toq miqdordagi sonlar bo'lsa (masalan 10, 20, 30, 40, 50), ularning arifmetik o'rtachasi roppa-rosa o'rtadagi songa (30 ga) teng bo'ladi!",
+    "time_words": "<b>Formulalar:</b> O'rtacha = Yig'indi : Soni, Yig'indi = O'rtacha * Soni.",
+    "vocab": [
+      {
+        "num": 1,
+        "word": "Arifmetik o'rtacha",
+        "uz": "O'rtacha ko'rsatkich",
+        "pos": "ot",
+        "synonym": "O'rtacha qiymat",
+        "meaning": "Barcha qiymatlar yig'indisini ularning soniga bo'lish natijasi",
+        "example": "To'rtta imtihon natijasining arifmetik o'rtachasi 90 ball bo'ldi."
+      },
+      {
+        "num": 2,
+        "word": "Ma'lumotlar",
+        "uz": "Faktlar va sonlar",
+        "pos": "ot",
+        "synonym": "Statistika",
+        "meaning": "Kuzatishlar natijasida to'plangan raqamli ko'rsatkichlar to'plami",
+        "example": "Kutubxona kitobxonlari haqida ma'lumotlar jadvalga kiritildi."
+      },
+      {
+        "num": 3,
+        "word": "Diagramma",
+        "uz": "Ko'rgazmali chizma",
+        "pos": "ot",
+        "synonym": "Grafik",
+        "meaning": "Ma'lumotlar orasidagi nisbatni chizma, ustun yoki doira shaklida ifodalash",
+        "example": "Ustunli diagrammada har bir sinf yutuqlari yaqqol ko'rinib turibdi."
+      },
+      {
+        "num": 4,
+        "word": "Jadval",
+        "uz": "Satr va ustunlar",
+        "pos": "ot",
+        "synonym": "Taqsimot",
+        "meaning": "Ma'lumotlarni tartibli satr va ustunlarda joylashtirish usuli",
+        "example": "Jadval yordamida o'quvchilar reytingi aniqlandi."
+      },
+      {
+        "num": 5,
+        "word": "Umumiy yig'indi",
+        "uz": "Barcha sonlar summasi",
+        "pos": "ot",
+        "synonym": "Jami ball",
+        "meaning": "Barcha qo'shiluvchilarning umumiy arifmetik summasi",
+        "example": "Uchta sonning yig'indisi 120 ga teng bo'ldi."
+      },
+      {
+        "num": 6,
+        "word": "Ustunli diagramma",
+        "uz": "Vertikal chiziqlar",
+        "pos": "ot",
+        "synonym": "Gistogramma",
+        "meaning": "Kattaliklarni turli balandlikdagi ustunlar bilan ko'rsatuvchi grafik",
+        "example": "Eng baland ustun eng ko'p kitob o'qilgan oyni bildiradi."
+      },
+      {
+        "num": 7,
+        "word": "Doiraviy diagramma",
+        "uz": "Ulushli doira",
+        "pos": "ot",
+        "synonym": "Sektorli grafik",
+        "meaning": "Doiraning bo'laklari (sektorlari) orqali foiz va kasrlarni ko'rsatish",
+        "example": "Doiraning yarmi matematika faniga ajratilgan."
+      },
+      {
+        "num": 8,
+        "word": "O'rtacha savdo",
+        "uz": "Kunlik o'rtacha",
+        "pos": "ot",
+        "synonym": "Kundalik me'yor",
+        "meaning": "Kunlar bo'yicha sotilgan mahsulotning o'rtacha hisoblangan miqdori",
+        "example": "Do'konda kunlik o'rtacha sotuv 150 kg ni tashkil etdi."
+      },
+      {
+        "num": 9,
+        "word": "Eng katta ko'rsatkich",
+        "uz": "Maksimum",
+        "pos": "ot",
+        "synonym": "Cho'qqi qiymat",
+        "meaning": "Jadval yoki diagrammadagi eng yuqori sonli natija",
+        "example": "Maksimal ball 95 ballni tashkil qildi."
+      },
+      {
+        "num": 10,
+        "word": "Eng kichik ko'rsatkich",
+        "uz": "Minimum",
+        "pos": "ot",
+        "synonym": "Eng past qiymat",
+        "meaning": "Jadvaldagi eng quyi sonli ko'rsatkich",
+        "example": "Minimal ball 85 ball bo'ldi."
+      }
+    ],
+    "cloze": {
+      "title": "Topshiriq 13: Maktab Olimpiadasi Statistikasi",
+      "inst": "Arifmetik o'rtacha va jadvallar tahlili bo'yicha bo'sh joylarni to'ldiring:",
+      "text": "O'quvchining to'rtta chorakdagi baholari 85, 90, 95 va 90 bo'lsa, uning o'rtacha balli {90} bo'ladi. Agar uchta sonning arifmetik o'rtachasi 40 ga teng bo'lsa, ularning umumiy yig'indisi {120} ga teng chiqadi. Do'konda 1-kuni 120 kg, 2-kuni 150 kg, 3-kuni 180 kg meva sotildi; kunlik o'rtacha sotuv {150} kg bo'ldi. To'rtta sonning yig'indisi 200 ga teng bo'lsa, ularning o'rtachasi {50} bo'ladi. 10, 20, 30, 40, 50 sonlarining arifmetik o'rtacha qiymati {30} ga teng.",
+      "answers": {
+        "1": "90",
+        "2": "120",
+        "3": "150",
+        "4": "50",
+        "5": "30"
+      }
+    },
+    "quiz": [
+      {
+        "q": "85, 90, 95 va 90 sonlarining arifmetik o'rtachasini toping:",
+        "opts": [
+          "90",
+          "88",
+          "92"
+        ],
+        "ans": "90"
+      },
+      {
+        "q": "Uchta sonning arifmetik o'rtachasi 40 bo'lsa, ularning yig'indisi nechaga teng?",
+        "opts": [
+          "120",
+          "40",
+          "160"
+        ],
+        "ans": "120"
+      },
+      {
+        "q": "120, 150 va 180 sonlarining o'rtacha arifmetigi nechaga teng?",
+        "opts": [
+          "150",
+          "160",
+          "140"
+        ],
+        "ans": "150"
+      },
+      {
+        "q": "To'rtta sonning yig'indisi 200 bo'lsa, ularning o'rtachasi qancha?",
+        "opts": [
+          "50",
+          "25",
+          "100"
+        ],
+        "ans": "50"
+      },
+      {
+        "q": "10, 20, 30, 40, 50 sonlarining arifmetik o'rtachasini toping:",
+        "opts": [
+          "30",
+          "25",
+          "35"
+        ],
+        "ans": "30"
+      }
+    ],
+    "video": {
+      "title": "Ma'lumotlar Tahlili, Jadvallar va Arifmetik O'rtacha",
+      "desc": "Arifmetik o'rtacha qiymatni topish va diagrammalarni tahlil qilish:",
+      "youtube_id": "9tG_5gV3qL8"
     }
   },
   {
     "id": "math-unit-14",
     "num": 14,
-    "title": "Mantiqiy va Olimpiada Masalalari",
-    "subtitle": "Kombinatorika, daraxt usuli, teskari tartibda yechish va jumboqlar",
-    "tag": "Mantiq va Olimpiada • 4-Sinf",
-    "meaning": "<b>Mantiqiy masalalar</b> standart formulalarga tayanmasdan, mantiqiy fikrlash, qonuniyatlarni topish va variantlarni tizimli saralash orqali yechiladi. Asosiy usullar: <b>Variantlar daraxti</b>, <b>Orqadan oldinga (oxiridan boshlab) yechish</b> va <b>Dirixle qoidasi</b>.",
+    "title": "Mantiqiy va Olimpiada Masalalari (Prezident Maktabi)",
+    "subtitle": "Tovuq va quyonlar (bosh-oyoqlar), oraliqlar, kesmalar va teskari hisoblash usuli",
+    "tag": "Olimpiada & Mantiq • 4-Sinf Chuqurlashtirilgan",
+    "meaning": "<b>Mantiqiy va olimpiada masalalari</b> Al-Xorazmiy va Prezident maktablari imtihonlarining eng muhim qismidir.<br><br><b>1. Tovuq va quyonlar masalasi (Boshlar va oyoqlar):</b><br>Hovlida jami 15 ta bosh va 44 ta oyoq bor. Faraz qilamiz, barchasi tovuq bo'lsin: <code>15 * 2 = 30 ta oyoq</code> bo'lardi. Yetishmayotgan oyoqlar: <code>44 - 30 = 14 ta</code>. Har bir quyon tovuqdan 2 ta ortiq oyoqqa ega: <code>14 : 2 = 7 ta quyon</code>. Tovuqlar: <code>15 - 7 = 8 ta tovuq</code>!<br><br><b>2. Oraliqlar va daraxtlar masalasi:</b><br>To'g'ri yo'l bo'yiga ekilgan daraxtlar soni har doim oraliqlar (kesmalar) sonidan <b>1 taga ko'p</b> bo'ladi: <code>Daraxtlar = (Uzunlik : Qadam) + 1</code>.<br><br><b>3. Teskari tartibda yechish:</b> Masalaning oxirgi natijasidan boshlab, barcha amallarga teskari amal bajarib boriladi.",
     "tables": [
       {
-        "title": "Mantiqiy Masalalarni Yechish Usullari",
+        "title": "Klassik Olimpiada Masalalari Yechish Sxemasi",
         "headers": [
-          "Yechish Usuli",
-          "Qoida / Strategiya",
-          "Masala Namunasi",
-          "Yechim Qadami"
+          "Masala Turi",
+          "Shart Namunasi",
+          "Yechish Algoritmi",
+          "Javob"
         ],
         "rows": [
           [
-            "Teskari usul",
-            "Oxirgi natijadan boshlab amallarni teskarisiga bajarish",
-            "O'ylangan songa 5 qo'shib, 2 ga ko'paytirilsa 30 chiqdi. Sonni toping.",
-            "30 : 2 = 15; 15 - 5 = 10 (O'ylangan son 10)"
+            "Tovuq va quyonlar",
+            "15 ta bosh, 44 ta oyoq",
+            "15*2=30; 44-30=14; 14:2 = 7 ta quyon; 15-7 = 8 ta tovuq",
+            "7 ta quyon, 8 ta tovuq"
           ],
           [
-            "Variantlar daraxti",
-            "Mumkin bo'lgan barcha kombinatsiyalarni chizish",
-            "1, 2, 3 raqamlaridan nechta ikki xonali son tuzish mumkin?",
-            "3 * 3 = 9 ta (11, 12, 13, 21, 22, 23, 31, 32, 33)"
+            "Teskari tartib",
+            "Sonni 3 ga ko'paytirib, 20 qo'shilsa 80",
+            "(80 - 20) : 3 = 60 : 3 = 20",
+            "Dastlabki son = 20"
           ],
           [
-            "Qonuniyatni topish",
-            "Ketma-ketlikdagi qadamni aniqlash",
-            "3, 7, 11, 15, ... Keyingi son nima?",
-            "Har safar +4 qo'shilyapti, demak: 15 + 4 = 19"
+            "Oraliqlar va ko'chat",
+            "60 m yo'l, har 5 metrda bitta ko'chat",
+            "Oraliqlar = 60 : 5 = 12 ta; Ko'chatlar = 12 + 1",
+            "13 ta ko'chat"
+          ],
+          [
+            "Taxtani arralash",
+            "10 metr taxtani 2 metrli bo'laklarga",
+            "Bo'laklar: 10:2 = 5 ta; Arralashlar: 5 - 1",
+            "4 marta arralash kerak"
+          ],
+          [
+            "Savatdagi olma",
+            "Yarmi, so'ng yana 5 tasi olinsa 15 ta qoldi",
+            "(15 + 5) * 2 = 20 * 2 = 40 ta",
+            "Dastlab 40 ta olma bo'lgan"
           ]
         ]
       }
     ],
-    "tip": "<b>Olimpiada siri!</b> Agar masala chigal ko'rinsa, qog'ozga kichik chizma yoki jadval chizing. Masaladagi har bir shartni qadamma-qadam tekshirib chiqing!",
-    "time_words": "<b>Mantiqiy qoidalar:</b> Kombinatsiyalar = n * m, Teskari amal: + <-> -, * <-> :.",
+    "tip": "<b>Olimpiada qoidasi:</b> Taxtani 5 bo'lakka bo'lish uchun faqat 4 marta arralash kifoya! Oraliqlar soni har doim bo'laklar sonidan 1 taga kam, ko'chatlar soni esa 1 taga ko'p bo'ladi!",
+    "time_words": "<b>Usullar:</b> Faraz qilish usuli, Teskari tartibda yechish, Oraliqlar qoidasi, Dirixle prinsipi.",
     "vocab": [
       {
         "num": 1,
-        "word": "Mantiq",
-        "uz": "Mantiqiy fikrlash",
+        "word": "Faraz qilish usuli",
+        "uz": "Taxmin qilib yechish",
         "pos": "ot",
-        "synonym": "Zukkolik",
-        "meaning": "To'g'ri fikrlash, sabab va oqibatni to'g'ri bog'lash qobiliyati",
-        "example": "Mantiqiy fikrlash har qanday qiyin jumboqni yechishga yordam beradi."
+        "synonym": "Gipoteza",
+        "meaning": "Barcha hayvonlarni bitta tur deb faraz qilib, farq orqali yechish usuli",
+        "example": "Barcha 15 ta jonivorni tovuq deb faraz qildik."
       },
       {
         "num": 2,
-        "word": "Qonuniyat",
-        "uz": "Qat'iy qoida",
+        "word": "Teskari tartib",
+        "uz": "Oxiridan boshlash",
         "pos": "ot",
-        "synonym": "Ketma-ketlik tartibi",
-        "meaning": "Sonlar yoki shakllar qatorida takrorlanuvchi ichki qoida",
-        "example": "2, 4, 8, 16 qatorida har bir son 2 ga ko'paytirib borilgan."
+        "synonym": "Ortga qaytish",
+        "meaning": "Oxirgi natijadan boshlab amallarga teskari amallar qo'llab yechish",
+        "example": "(80 - 20) : 3 orqali dastlabki son 20 topildi."
       },
       {
         "num": 3,
-        "word": "Kombinatorika",
-        "uz": "Variantlar soni",
+        "word": "Oraliqlar qoidasi",
+        "uz": "Kesmalar soni",
         "pos": "ot",
-        "synonym": "Guruhlash",
-        "meaning": "Turli narsalarni guruhlash va kombinatsiyalarini sanash sohasi",
-        "example": "Kombinatorika kiyimlar va raqamlar variantini sanashda qo'llaniladi."
+        "synonym": "Oraliq masofa",
+        "meaning": "Ko'chatlar soni har doim oraliqlar sonidan 1 taga ko'p bo'lishi qoidasi",
+        "example": "60 metrda 12 ta oraliq bo'lib, 13 ta ko'chat ekiladi."
       },
       {
         "num": 4,
-        "word": "Daraxt usuli",
-        "uz": "Shoxlangan diagramma",
+        "word": "Arralash soni",
+        "uz": "Kesimlar soni",
         "pos": "ot",
-        "synonym": "Tree diagram",
-        "meaning": "Barcha mumkin bo'lgan natijalarni shoxlatib chizish usuli",
-        "example": "Daraxt usulida barcha yo'llar aniq ko'rinadi."
+        "synonym": "Bo'lak - 1",
+        "meaning": "Narsani bo'laklarga ajratish uchun zarur bo'lgan kesishlar soni",
+        "example": "5 ta bo'lak olish uchun taxta 4 marta arralanadi."
       },
       {
         "num": 5,
-        "word": "Teskari usul",
-        "uz": "Oxiridan yechish",
+        "word": "Oyoqlar farqi",
+        "uz": "4 - 2 = 2 ta",
         "pos": "ot",
-        "synonym": "Orqaga qaytish",
-        "meaning": "Natijadan boshlab barcha amallarni teskarisiga bajarib boshlang'ich sonni topish",
-        "example": "Teskari usulda ko'paytirish bo'lishga, qo'shish ayirishga aylanadi."
+        "synonym": "Qo'shimcha oyoq",
+        "meaning": "Quyonning tovuqdan 2 ta ortiq oyog'i borligi hisobiga yechish",
+        "example": "14 ta yetishmagan oyoqni 2 ga bo'lib 7 ta quyon topildi."
       },
       {
         "num": 6,
-        "word": "Dirixle prinsipi",
-        "uz": "Katak va quyonlar qoidasi",
+        "word": "Mantiqiy xulosa",
+        "uz": "Deduksiya",
         "pos": "ot",
-        "synonym": "Kataklar qoidasi",
-        "meaning": "Agar 4 ta quyonni 3 ta katakka joylashtirsa, bittasida kamida 2 ta bo'ladi",
-        "example": "Ushbu mantiqiy qoida olimpiadalarda juda ko'p qo'llaniladi."
+        "synonym": "Fikr zanjiri",
+        "meaning": "Berilgan shartlardan qadamma-qadam to'g'ri xulosalar chiqarish",
+        "example": "Mantiqiy tahlil orqali masala tenglamasiz oson yechildi."
       },
       {
         "num": 7,
-        "word": "Algoritm",
-        "uz": "Qadamlar tartibi",
+        "word": "Dirixle prinsipi",
+        "uz": "Kataklar va quyonlar",
         "pos": "ot",
-        "synonym": "Ko'rsatma",
-        "meaning": "Masalani yechish uchun tuzilgan aniq qadam-baqadam ketma-ketlik",
-        "example": "Choy damlash yoki misol yechishning o'z algoritmi bor."
+        "synonym": "Kafolat qoidasi",
+        "meaning": "Agar n ta katakka n+1 ta quyon joylashtirilsa, kamida bittasida 2 ta bo'ladi",
+        "example": "Dirixle prinsipi olimpiada masalalarida keng qo'llaniladi."
       },
       {
         "num": 8,
-        "word": "Jumboq",
-        "uz": "Mantiqiy savol",
+        "word": "Kombinatorika",
+        "uz": "Variantlar soni",
         "pos": "ot",
-        "synonym": "Topshiriq",
-        "meaning": "Topqirlik va ziyraklikni talab qiladigan qiziqarli savol",
-        "example": "Bugungi darsda qiziqarli geometrik jumboq yechdik."
+        "synonym": "Imkoniyatlar",
+        "meaning": "Berilgan raqamlar yoki narsalardan tuzish mumkin bo'lgan usullar soni",
+        "example": "3 ta raqamdan nechta turli 3 xonali son tuzish mumkinligini aniqladik."
       },
       {
         "num": 9,
-        "word": "Faraz",
-        "uz": "Dastlabki taxmin",
+        "word": "Juft va toqlik",
+        "uz": "Son xossasi",
         "pos": "ot",
-        "synonym": "Gipoteza",
-        "meaning": "Tekshirib ko'rish uchun ilgari surilgan dastlabki fikr",
-        "example": "Farazimizni amaliy hisoblash orqali tekshirib ko'ramiz."
+        "synonym": "Paritet",
+        "meaning": "Sonlarning 2 ga bo'linish xossasidan foydalanib yechish",
+        "example": "Ikkita toq sonning yig'indisi har doim juft bo'ladi."
       },
       {
         "num": 10,
-        "word": "Isbot",
-        "uz": "Asoslash",
+        "word": "Al-Xorazmiy uslubi",
+        "uz": "Klassik matematika",
         "pos": "ot",
-        "synonym": "Tasdiq",
-        "meaning": "Fikrning to'g'riligini mantiqiy qoidalar bilan asoslash",
-        "example": "Matematikada har bir teorema isbotlanishi shart."
+        "synonym": "Sharqona mantiq",
+        "meaning": "Masalalarni tenglamalar va aniq qoidalar asosida hal etish san'ati",
+        "example": "Al-Xorazmiy akademiyasiga tayyorgarlik yuqori mantiqiy fikrlashni talab qiladi."
       }
     ],
     "cloze": {
-      "title": "Topshiriq 14: Zukko Detektiv va Seyf Kodi",
-      "inst": "Mantiqiy qonuniyatlarni toping va bo'sh joylarni to'ldiring:",
-      "text": "Seyf kodini ochish uchun quyidagi qonuniyat berilgan: 2, 5, 8, 11, {14}. Bu qatorda har bir son oldingisidan 3 taga ortmoqda. Seyfning ikkinchi kodi esa quyidagicha topiladi: bir son o'ylandi, unga 10 qo'shilib, 2 ga bo'linganda 20 chiqdi. Teskari usulda hisoblasak: 20 * 2 = 40, 40 - 10 = {30} bo'ladi. 1, 2 raqamlaridan tuzish mumkin bo'lgan takrorlanmas ikki xonali sonlar soni {2} ta (12 va 21).",
+      "title": "Topshiriq 14: Al-Xorazmiy Akademiyasi Olimpiada Sinovlari",
+      "inst": "Mantiqiy qoidalar va usullardan foydalanib bo'sh joylarni to'ldiring:",
+      "text": "Olimpiada tanlovida klassik masalalar berildi: Hovlida tovuqlar va quyonlar bor; jami boshlar 15 ta, oyoqlar esa 44 ta. U yerda {7} ta quyon va {8} ta tovuq bor. O'ylangan sonni 3 ga ko'paytirib, natijaga 20 qo'shilsa 80 hosil bo'ldi; o'ylangan son {20} bo'lgan. 60 metrli yo'l bo'ylab har 5 metrda bittadan ko'chat ekildi; jami ekilgan ko'chatlar soni {13} ta. 10 metrli taxtani 2 metrli teng bo'laklarga ajratish uchun {4} marta arralash kerak bo'ladi. Savatdagi olmalarning yarmi, so'ng yana 5 tasi olinsa 15 ta qoldi; dastlab savatda {40} ta olma bo'lgan.",
       "answers": {
-        "1": "14",
-        "2": "30",
-        "3": "2"
+        "1": "7",
+        "2": "8",
+        "3": "20",
+        "4": "13",
+        "5": "4",
+        "6": "40"
       }
     },
     "quiz": [
       {
-        "q": "Qonuniyatni davom ettiring: 4, 8, 16, 32, ... ?",
+        "q": "Hovlida 15 ta bosh va 44 ta oyoq bor. Quyonlar soni nechta?",
         "opts": [
-          "64",
-          "48",
-          "40"
+          "7 ta",
+          "8 ta",
+          "6 ta"
         ],
-        "ans": "64"
+        "ans": "7 ta"
       },
       {
-        "q": "O'ylangan sonni 4 ga ko'paytirib, 10 ayirilsa 30 qoladi. Son nechaga teng?",
+        "q": "Bir sonni 3 ga ko'paytirib, 20 qo'shilsa 80 hosil bo'ldi. Dastlabki son nechaga teng?",
         "opts": [
-          "10",
-          "8",
-          "12"
+          "20",
+          "30",
+          "15"
         ],
-        "ans": "10"
+        "ans": "20"
       },
       {
-        "q": "3 xil ko'ylak va 2 xil shimdan nechta turli xil kiyinish kombinatsiyasi tuziladi?",
+        "q": "60 metrli yo'lga har 5 metrda bittadan ko'chat ekilsa, jami nechta ko'chat ekiladi?",
         "opts": [
-          "6 ta (3 * 2)",
-          "5 ta",
-          "8 ta"
+          "13 ta",
+          "12 ta",
+          "11 ta"
         ],
-        "ans": "6 ta (3 * 2)"
+        "ans": "13 ta"
       },
       {
-        "q": "Qonuniyatni toping: 100, 90, 80, 70, ... ?",
+        "q": "10 metrli taxtani 2 metrli bo'laklarga ajratish uchun necha marta arralash kerak?",
         "opts": [
-          "60",
-          "50",
-          "65"
+          "4 marta",
+          "5 marta",
+          "3 marta"
         ],
-        "ans": "60"
+        "ans": "4 marta"
       },
       {
-        "q": "Teskari usulda yechishda bo'lish amali qaysi amalga aylanadi?",
+        "q": "Olmalarning yarmi va yana 5 tasi olingach 15 ta qoldi. Dastlab nechta olma bo'lgan?",
         "opts": [
-          "Ko'paytirishga (*)",
-          "Qo'shishga (+)",
-          "Ayirishga (-)"
+          "40 ta",
+          "30 ta",
+          "50 ta"
         ],
-        "ans": "Ko'paytirishga (*)"
+        "ans": "40 ta"
       }
     ],
     "video": {
-      "title": "Maths Puzzles With Answers Part 2",
-      "desc": "Mantiqiy boshqotirmalar va olimpiada masalalari video darsi:",
-      "youtube_id": "h7lBnyLXo-s"
+      "title": "Mantiqiy va Olimpiada Masalalari (Al-Xorazmiy Usullari)",
+      "desc": "Tovuq va quyonlar, oraliqlar, teskari tartibda yechiladigan olimpiada masalalari:",
+      "youtube_id": "K1vP8qW2z4M"
     }
   }
 ],
+
   cloze_pages: [
   {
     "page_num": 51,
     "title": "4-BO'LIM: MATEMATIK MASALALAR MASTERWORK",
-    "subtitle": "Matnli masalalarni yechish: 4 ta Oltin Qoida va Strategiya",
+    "subtitle": "Matnli masalalarni yechish: 4 ta Oltin Qoida va Strategiya (Olimpiada & Prezident Maktabi)",
     "tag": "Bo'lim Kirish • 4-Sinf",
     "is_intro": true,
     "rules": [
       [
-        "1. Masala shartini diqqat bilan 2 marta o'qing va tahlil qiling",
-        "Nima ma'lum va nimani topish kerakligini aniqlang. Barcha sonlar va o'lchov birliklarini ajratib oling."
+        "1. Masala shartini 2 marta diqqat bilan o'qing va tahlil qiling",
+        "Nima berilgan va nimani topish kerakligini aniq ajrating. Barcha sonlar, kasrlar va o'lchov birliklarini belgilang."
       ],
       [
         "2. Qisqa shart, jadval yoki chizma (sxema) tuzing",
-        "Masaladagi voqealarni ko'z oldingizga keltiring. Qisqa yozuv va chizma yechim yo'lini darhol ko'rsatib beradi."
+        "Masalani ko'z oldingizga keltiring. Kesmalar, to'g'ri to'rtburchaklar yoki jadvallar yechim yo'lini darhol ko'rsatib beradi."
       ],
       [
-        "3. Yechish rejasini va formulani tanlang",
-        "Qaysi amallarni qaysi tartibda bajarishni rejalashtiring (Harakat bo'lsa S=V*t, Narx bo'lsa Q=N*M, Ish bo'lsa A=w*t)."
+        "3. Yechish rejasini va to'g'ri formulani tanlang",
+        "Harakat bo'lsa S = V*t; Kasr bo'lsa (A:n)*m yoki (B:m)*n; Ish unumi bo'lsa A = w*t; Narx bo'lsa Q = N*M."
       ],
       [
-        "4. Javobni hisoblang va uni teskari amal bilan tekshiring",
-        "Topilgan son masala shartiga mantiqan mos keladimi? Olingan javobni boshlang'ich shartga qo'yib tekshirib ko'ring."
+        "4. Javobni hisoblang va teskari amal bilan tekshiring",
+        "Olingan natijani boshlang'ich shartga qo'yib tekshiring. Topilgan son masala ma'nosiga mos kelishiga ishonch hosil qiling."
       ]
     ],
-    "banner_note": "Ushbu 20 ta sahifada siz 1-dan 14-gacha bo'lgan barcha matematik mavzularni Alisher va Benny bilan qiziqarli detektiv sarguzashtlar orqali mustahkamlaysiz!",
+    "banner_note": "Ushbu 20 ta sahifada siz 1-dan 14-gacha bo'lgan barcha matematik mavzularni Alisher, Benny va Al-Xorazmiy bilan haqiqiy qiziqarli detektiv sarguzashtlar orqali mustahkamlaysiz!",
     "video": {
-      "title": "word problem addition and subtraction 4th grade |  klong maths",
-      "desc": "Matematik matnli masalalarni o'qish, tushunish va to'g'ri yechish masterclass darsi:",
+      "title": "Matematik Matnli Masalalarni Tahlil Qilish va Yechish Strategiyasi",
+      "desc": "Murakkab masalalarni qisqa shart, chizma va qadam-baqadam reja bilan yechish masterclassi:",
       "youtube_id": "tuVI8Uv0SAI"
     }
   },
   {
     "page_num": 52,
     "unit_ref": "Math Unit 1",
-    "title": "Sehrli Maktab Kutubxonasidagi Kitoblar",
-    "tense_focus": "Ko'p Xonali Sonlar (1 000 000 gacha)",
-    "intro": "Kitoblar fondini hisoblang va bo'sh joylarni to'ldiring:",
-    "story": "Sehrli Maktab kutubxonasiga yangi o'quv yilida katta miqdorda kitoblar keltirildi. Birlar sinfida 450 ta ertak kitob, minglar sinfida esa 35 mingta ilmiy kitob bor edi. Jami kitoblar soni <span class=\"q-blank\">___________</span> tani tashkil etdi. Kutubxonachi kitoblarni o'nliklargacha yaxlitlaganda ular taxminan <span class=\"q-blank\">___________</span> ta bo'ldi. Eng katta olti xonali natural son bu <span class=\"q-blank\">___________</span> dir. 1 000 000 sonida jami <span class=\"q-blank\">___________</span> ta nol bor.",
+    "title": "Sehrli Maktab Kutubxonasidagi Kitoblar Fondi",
+    "tense_focus": "Ko'p Xonali Sonlar (1 000 000 gacha, Sinflar va Yaxlitlash)",
+    "intro": "Kutubxona kitoblar fondini tahlil qiling va bo'sh joylarni to'ldiring:",
+    "story": "Sehrli Maktab kutubxonasida yangi o'quv yilida katta hisob-kitob boshlandi. Birlar sinfida 450 ta ertak kitobi, minglar sinfida esa 350 mingta ilmiy kitob bor. Jami kitoblar soni <span class=\"q-blank\">___________</span> tani tashkil etdi. Kutubxonachi kitoblar sonini mingliklargacha yaxlitlaganda ular taxminan <span class=\"q-blank\">___________</span> ta bo'ldi. Eng katta olti xonali natural son bu <span class=\"q-blank\">___________</span> dir. 1 000 000 (bir million) sonida jami <span class=\"q-blank\">___________</span> ta nol qatnashadi.",
     "answers": [
-      "35450",
-      "35450",
+      "350450",
+      "350000",
       "999999",
       "6"
     ]
@@ -2862,300 +3013,318 @@ const MATH_DATA = {
   {
     "page_num": 53,
     "unit_ref": "Math Unit 2",
-    "title": "Xazina Sandig'idagi Oltin Tangalar",
-    "tense_focus": "Ko'p Xonali Sonlarni Qo'shish va Ayirish",
-    "intro": "Qadimiy tangalarni hisoblashda Alisherga yordam bering:",
-    "story": "Qadimiy Registon minorasi ostidan topilgan birinchi sandiqda 14 500 ta oltin tanga, ikkinchi sandiqda esa 18 200 ta kumush tanga bor edi. Ikkala sandiqdagi jami tangalar soni <span class=\"q-blank\">___________</span> tani tashkil qildi. Arxeologlar muzeyga 12 000 ta tangani topshirishgach, sandiqlarda <span class=\"q-blank\">___________</span> ta tanga qoldi. Agar x + 5000 = 15000 bo'lsa, x ning qiymati <span class=\"q-blank\">___________</span> ga teng.",
+    "title": "Samarqand Karvonidagi Oltin va Kumush Tangalar",
+    "tense_focus": "Ko'p Xonali Sonlarni Qo'shish, Ayirish va Tenglamalar",
+    "intro": "Karvon xazinasidagi tangalarni hisoblashda yordam bering:",
+    "story": "Ipak Yo'li karvonboshisi Registonga keltirgan birinchi sandiqda 245 800 ta oltin tanga, ikkinchi sandiqda 154 200 ta kumush tanga bor edi. Ikkala sandiqdagi jami tangalar yig'indisi <span class=\"q-blank\">___________</span> tani tashkil qildi. 1 000 000 tangadan 325 500 tanga xazina ehtiyojlariga ajratilgach, sandiqlarda <span class=\"q-blank\">___________</span> ta tanga qoldi. Agar x + 45 000 = 120 000 bo'lsa, noma'lum x qiymati <span class=\"q-blank\">___________</span> ga teng. Ikki sandiqda 90 000 tanga bo'lib, birida 38 500 bo'lsa, ikkinchisida <span class=\"q-blank\">___________</span> ta tanga bor.",
     "answers": [
-      "32700",
-      "20700",
-      "10000"
+      "400000",
+      "674500",
+      "75000",
+      "51500"
     ]
   },
   {
     "page_num": 54,
     "unit_ref": "Math Unit 3",
-    "title": "Kosmik Kemadagi Yoqilg'i Zaxirasi",
-    "tense_focus": "Ko'p Xonali Sonlarni Ko'paytirish",
-    "intro": "Mars ekspeditsiyasining yoqilg'i hisob-kitobini bajaring:",
-    "story": "Kosmik kema dvigateli har bir soatda 40 litr maxsus suyuq yoqilg'i sarflaydi. Kema 25 soat davomida to'xtovsiz uchganda jami <span class=\"q-blank\">___________</span> litr yoqilg'i sarflandi. Kemadagi 15 ta oziq-ovqat konteynerining har birida 20 kg dan mahsulot bor, bu jami <span class=\"q-blank\">___________</span> kg ni tashkil etadi. Har qanday sonni 0 ga ko'paytirganda ko'paytma <span class=\"q-blank\">___________</span> bo'ladi.",
+    "title": "Xiva Gilamchilik Ustaxonasidagi Katta Buyurtma",
+    "tense_focus": "Ko'p Xonali Sonlarni Ko'paytirish va Taqsimot Qonuni",
+    "intro": "Gilam to'qish hisob-kitoblarini ko'paytirish qoidalari bilan yeching:",
+    "story": "Xivadagi tarixiy ustaxonada 320 ta naqshli ipak gilam to'qildi. Har bir gilam uchun 45 metr ipak ipi sarflandi. Barcha gilamlar uchun jami <span class=\"q-blank\">___________</span> metr ip ishlatildi. Ombor hisobchisi 1 200 * 300 amalini bajarganda natija <span class=\"q-blank\">___________</span> chiqdi. 25 * (40 + 4) ifodasi taqsimot qonuniga ko'ra oson hisoblansa <span class=\"q-blank\">___________</span> bo'ladi. Bir qutida 50 ta naqshli ip bo'lsa, 160 ta shunday qutida <span class=\"q-blank\">___________</span> ta ip bo'ladi.",
     "answers": [
-      "1000",
-      "300",
-      "0"
+      "14400",
+      "360000",
+      "1100",
+      "8000"
     ]
   },
   {
     "page_num": 55,
     "unit_ref": "Math Unit 4",
-    "title": "Qaroqchilar Orolidagi O'lja Taqsimoti",
-    "tense_focus": "Ko'p Xonali Sonlarni Bo'lish va Qoldiq",
-    "intro": "O'ljalarni teng taqsimlang va qoldiqlarni aniqlang:",
-    "story": "Qaroqchi kapitan Benny 840 ta qimmatbaho javohirni o'zining 7 nafar do'stiga teng taqsimlab berdi. Har bir qaroqchiga <span class=\"q-blank\">___________</span> tadan javohir tegdi. Qolgan 29 ta oltin tangani 4 nafar yordamchiga teng bo'lganda, har biriga <span class=\"q-blank\">___________</span> tadan tegdi va <span class=\"q-blank\">___________</span> ta tanga qoldiq qoldi.",
+    "title": "Zog Sayyorasidagi Kristallarni Teng Bo'lish",
+    "tense_focus": "Ko'p Xonali Sonlarni Bo'lish va Qoldiqni Topish",
+    "intro": "Kristallarni teng taqsimlab, qoldiq va bo'linuvchini toping:",
+    "story": "Zog sayyorasidan keltirilgan 14 400 ta qimmatbaho kristall 24 nafar fazogirga teng taqsimlandi. Har bir astronavtga <span class=\"q-blank\">___________</span> tadan kristall tegdi. 175 ta marvarid 15 ta qutiga teng solinganda, har bir qutiga 11 tadan tushib, qutidan tashqarida <span class=\"q-blank\">___________</span> ta qoldiq marvarid qoldi. Noma'lum bo'linuvchi x : 20 = 7 (qoldiq 5) bo'lsa, x ning qiymati <span class=\"q-blank\">___________</span> ga teng. 81 000 : 900 ifodasining qiymati esa <span class=\"q-blank\">___________</span> bo'ladi.",
     "answers": [
-      "120",
-      "7",
-      "1"
+      "600",
+      "10",
+      "145",
+      "90"
     ]
   },
   {
     "page_num": 56,
     "unit_ref": "Math Unit 5",
-    "title": "Professor Owlning Robot Konstruktori",
-    "tense_focus": "Amallar Tartibi va Qavsli Ifodalar",
-    "intro": "Robot tizimidagi ifodalarni to'g'ri hisoblang:",
-    "story": "Robotni ishga tushirish uchun kompyuterga ifoda kiritildi: 40 + 30 * 2. Amallar tartibiga ko'ra avval ko'paytirilib, natijada <span class=\"q-blank\">___________</span> hosil bo'ldi. Keyingi xavfsizlik kodi qavsli ifoda edi: (40 + 30) * 2 va uning qiymati <span class=\"q-blank\">___________</span> bo'ldi. 100 - 60 : 3 ifodaning qiymati esa <span class=\"q-blank\">___________</span> ga teng.",
+    "title": "Al-Xorazmiy Laboratoriyasidagi Qavsli Formulalar",
+    "tense_focus": "Amallar Tartibi (PEMDAS) va Murakkab Qavsli Tenglamalar",
+    "intro": "Amallar tartibiga rioya qilib laboratoriya tenglamalarini yeching:",
+    "story": "Al-Xorazmiy laboratoriyasida tajriba ifodasi berildi: 400 - (120 + 30 * 4) : 6. Qavs ichidagi amallar bajarilib 240 hosil bo'ldi, 6 ga bo'linib 40 chiqdi va yakuniy natija <span class=\"q-blank\">___________</span> bo'ldi. (x + 80) : 5 = 40 tenglamada x + 80 = 200 bo'lib, x ning qiymati <span class=\"q-blank\">___________</span> ga teng. 180 : (15 - 6) + 40 * 3 ifodasining to'g'ri qiymati <span class=\"q-blank\">___________</span> chiqadi. 300 - 4 * y = 180 tenglamada 4 * y = 120 bo'lib, y = <span class=\"q-blank\">___________</span> bo'ladi.",
     "answers": [
-      "100",
+      "360",
+      "120",
       "140",
-      "80"
+      "30"
     ]
   },
   {
     "page_num": 57,
     "unit_ref": "Math Unit 6",
-    "title": "Bennyning Pitsa Ziyofati",
-    "tense_focus": "Oddiy Kasrlar va Ulushlar",
-    "intro": "Ziyofatdagi pitsa va piroglarning ulushlarini aniqlang:",
-    "story": "Benny katta mevali pirogni 6 ta teng bo'lakka bo'ldi. U va mehmonlar 4 ta bo'lakni yeb tugatishdi. Ular pirogning <span class=\"q-blank\">___________</span> qismini yeyishdi. Likopchada pirogning <span class=\"q-blank\">___________</span> qismi qoldi. 4/6 kasrida surat <span class=\"q-blank\">___________</span> soni, maxraj esa <span class=\"q-blank\">___________</span> sonidir.",
+    "title": "Benny va Alisherning Sehrli Hosili va Kasrlar",
+    "tense_focus": "Oddiy Kasrlar (Qo'shish, Ayirish, Sonning Kasri, Kasriga Ko'ra Son)",
+    "intro": "Kasrlar qoidasidan foydalanib bog' hosilini aniq hisoblang:",
+    "story": "Benny va Alisher bog'dan jami 240 kg shirin meva terishdi. Jami mevaning 3/8 qismi olma bo'lib, terilgan olmalar miqdori <span class=\"q-blank\">___________</span> kg ni tashkil etdi. Qolgan 150 kg mevaning 2/5 qismi nok bo'lib, uning og'irligi <span class=\"q-blank\">___________</span> kg bo'ldi. Omborda qolgan mevalar shaftoli bo'lib, shaftolilar miqdori <span class=\"q-blank\">___________</span> kg bo'ldi. Do'stlar hosilning 3/7 va 2/7 qismini quritishga qo'yishdi, jami quritilgan mevalar <span class=\"q-blank\">___________</span> qismni tashkil qildi. Idishdagi meva sharbatining 5/9 qismi ichildi, idishda sharbatning <span class=\"q-blank\">___________</span> qismi qoldi. Bir qop yong'oqning 3/4 qismi 45 kg bo'lsa, butun qopdagi yong'oq <span class=\"q-blank\">___________</span> kg tosh bosadi!",
     "answers": [
-      "4/6",
-      "2/6",
-      "4",
-      "6"
+      "90",
+      "60",
+      "90",
+      "5/7",
+      "4/9",
+      "60"
     ]
   },
   {
     "page_num": 58,
     "unit_ref": "Math Unit 7",
-    "title": "Chimyon Tog'idagi Sayohatchilar Xaltasi",
-    "tense_focus": "Kattaliklar va O'lchov Birliklari",
-    "intro": "Tog' sayohatidagi masofa va og'irliklarni hisoblang:",
-    "story": "Alisher va uning sinfdoshlari Chimyon tog'i bo'ylab 6 km piyoda yurishdi. Bu masofa <span class=\"q-blank\">___________</span> metrga teng. Sayohatchilar olib kelgan 3 kg suv <span class=\"q-blank\">___________</span> grammni tashkil etadi. Ular tog'da 4 soat bo'lishdi, bu esa <span class=\"q-blank\">___________</span> minutga teng. 1 tonna yuk esa <span class=\"q-blank\">___________</span> kg ga teng.",
+    "title": "Chimyon Tog' Ekspeditsiyasidagi O'lchovlar",
+    "tense_focus": "Kattaliklar (Massa, Uzunlik, Vaqt va Sig'im Birliklari)",
+    "intro": "Murakkab o'lchov birliklarini eng kichik birlikka aylantiring:",
+    "story": "Qutqaruv guruhi tog' lageriga yo'l oldi. Vertolyotdagi 5 t 4 sentner 60 kg yuk jami <span class=\"q-blank\">___________</span> kg bo'ldi. Cho'qqigacha bo'lgan 4 km 80 m masofa <span class=\"q-blank\">___________</span> metrga teng. Ekspeditsiyada sarflangan 4 soat 45 minut vaqt jami <span class=\"q-blank\">___________</span> minutni tashkil etdi. Barcha idishlardagi 5 litr 350 ml buloq suvi <span class=\"q-blank\">___________</span> ml hajmga ega bo'ldi.",
     "answers": [
-      "6000",
-      "3000",
-      "240",
-      "1000"
+      "5460",
+      "4080",
+      "285",
+      "5350"
     ]
   },
   {
     "page_num": 59,
     "unit_ref": "Math Unit 8",
-    "title": "Sirli Labirint va Geometrik Darvozalar",
-    "tense_focus": "Geometrik Shakllar va Burchaklar",
-    "intro": "Labirint eshiklarini ochish uchun geometrik sirlarni yozing:",
-    "story": "Qadimiy qasr darvozalari to'g'ri to'rtburchak shaklida bo'lib, uning to'rtta burchagi ham to'g'ri burchak, ya'ni <span class=\"q-blank\">___________</span> gradusli burchakdir. Favvora aylanasi radiusi 7 metr bo'lsa, uning diametri <span class=\"q-blank\">___________</span> metrga teng. 90 gradusdan kichik bo'lgan burchak <span class=\"q-blank\">___________</span> burchak deb ataladi.",
+    "title": "Qadimiy Sharq Me'morchiligidagi Burchaklar",
+    "tense_focus": "Geometrik Burchaklar (Graduslar, Uchburchak Ichki Burchaklari)",
+    "intro": "Chizmadagi geometrik burchaklar gradusini hisoblang:",
+    "story": "Madrasa ravoqlarini loyihalashda me'morlar burchaklarni o'lchashdi: To'g'ri burchakning gradus o'lchovi <span class=\"q-blank\">___________</span> gradus bo'ladi. Yoyiq burchak esa <span class=\"q-blank\">___________</span> gradusga teng. Chizmadagi uchburchakning ikki burchagi 45 va 65 gradus bo'lsa, uchinchi burchagi <span class=\"q-blank\">___________</span> gradus chiqadi. 60 gradusli burchak to'g'ri burchakdan kichik bo'lgani uchun <span class=\"q-blank\">___________</span> burchak deyiladi. 110 gradusli burchak esa 90 dan katta bo'lgani uchun <span class=\"q-blank\">___________</span> burchak deb ataladi.",
     "answers": [
       "90",
-      "14",
-      "o'tkir"
+      "180",
+      "70",
+      "o'tkir",
+      "o'tmas"
     ]
   },
   {
     "page_num": 60,
     "unit_ref": "Math Unit 9",
-    "title": "Yangi Maktab Tomorqasi va Maydoni",
-    "tense_focus": "Perimetr va Yuza Hisoblash",
-    "intro": "Tomorqa maydonining o'lchamlarini hisoblang:",
-    "story": "Maktab tomorqasining bo'yi 30 metr, eni 20 metr bo'lgan to'g'ri to'rtburchakdir. Ushbu tomorqaning perimetri <span class=\"q-blank\">___________</span> metrga teng. Tomorqaning yuzasi esa <span class=\"q-blank\">___________</span> kvadrat metr (m²) bo'ladi. Tomoni 8 metr bo'lgan gulzor kvadrat shaklida bo'lsa, uning yuzi <span class=\"q-blank\">___________</span> m² dir.",
+    "title": "Sehrli Bog' Maydoni, Tomoni va Devorlari",
+    "tense_focus": "Perimetr va Yuza (Kvadrat va To'g'ri To'rtburchakning Teskari Masalalari)",
+    "intro": "Perimetr va yuzani hisoblab bo'sh joylarni to'ldiring:",
+    "story": "Kvadrat shaklidagi gulzorning perimetri 60 metrga teng. Uning bir tomoni 15 metr bo'lib, yuzi <span class=\"q-blank\">___________</span> m2 ni tashkil qiladi. To'g'ri to'rtburchak shaklidagi bog'ning yuzi 96 m2, bo'yi 12 metr bo'lsa, uning eni <span class=\"q-blank\">___________</span> metr bo'ladi. Bo'yi 12 m va eni 8 m bo'lgan ushbu to'rtburchakning perimetri <span class=\"q-blank\">___________</span> metrga teng. Tomoni 8 cm bo'lgan kvadratning perimetri esa <span class=\"q-blank\">___________</span> cm bo'ladi.",
     "answers": [
-      "100",
-      "600",
-      "64"
+      "225",
+      "8",
+      "40",
+      "32"
     ]
   },
   {
     "page_num": 61,
     "unit_ref": "Math Unit 10",
-    "title": "Poyga Avtomobillari Musobaqasi",
-    "tense_focus": "Harakat Masalalari (S = V * t)",
-    "intro": "Musobaqa yo'lidagi tezlik va masofalarni aniqlang:",
-    "story": "Qizil poyga mashinasi 90 km/soat tezlik bilan 2 soat harakatlandi va <span class=\"q-blank\">___________</span> km yo'l bosdi. Ko'k mashina esa 240 km masofani 3 soatda bosib o'tdi, demak uning tezligi <span class=\"q-blank\">___________</span> km/soat bo'lgan. Agar ikki mashina bir-biriga qarab 80 va 70 km/soat tezlik bilan harakatlansa, yaqinlashish tezligi <span class=\"q-blank\">___________</span> km/soat bo'ladi.",
+    "title": "'Afrosiyob' Tezyurar Poyezdi va Uchrashuv Harakati",
+    "tense_focus": "Harakatga Doir Masalalar (Uchrashuv, Quvib Yetish va Oqim)",
+    "intro": "Tezlik, vaqt va masofani harakat formulalari orqali hisoblang:",
+    "story": "Toshkent va Samarqand orasidagi 300 km masofani 'Afrosiyob' poyezdi 2 soatda bosib o'tdi; poyezd tezligi <span class=\"q-blank\">___________</span> km/soat bo'ldi. Qarama-qarshi yo'nalishda chiqqan ikki poyezd tezliklari 70 km/soat va 80 km/soat bo'lib, ular orasidagi masofa 450 km bo'lsa, ular <span class=\"q-blank\">___________</span> soatda uchrashadi. Tezligi 90 km/soat bo'lgan yengil mashina 60 km/soat tezlikdagi yuk mashinasidan 60 km orqada bo'lsa, uni <span class=\"q-blank\">___________</span> soatda quvib yetadi. Kater tezligi 20 km/soat, daryo oqimi 4 km/soat bo'lsa, uning oqim bo'ylab tezligi <span class=\"q-blank\">___________</span> km/soat bo'ladi.",
     "answers": [
-      "180",
-      "80",
-      "150"
+      "150",
+      "3",
+      "2",
+      "24"
     ]
   },
   {
     "page_num": 62,
     "unit_ref": "Math Unit 11",
-    "title": "Ikkita Duradgorning Shahar Soati",
-    "tense_focus": "Mehnat va Ish Unumi Masalalari",
-    "intro": "Shaharning qadimiy soatini ta'mirlashdagi ish unumini hisoblang:",
-    "story": "Birinchi usta soat uchun 1 kunda 6 ta tishli g'ildirak yasaydi, ikkinchi usta esa 4 ta yasaydi. Ular birgalikda 1 kunda <span class=\"q-blank\">___________</span> ta g'ildirak tayyorlashadi. Agar jami 50 ta g'ildirak kerak bo'lsa, ular birgalikda bu ishni <span class=\"q-blank\">___________</span> kunda bajarishadi. Birinchi usta yolg'iz o'zi 30 ta g'ildirakni <span class=\"q-blank\">___________</span> kunda yasaydi.",
+    "title": "Toshkent Robototexnika Zavodidagi Mehnat Unumi",
+    "tense_focus": "Ish Unumi va Birgalikda Ishlash Masalalari",
+    "intro": "Ish unumi formulalaridan foydalanib bo'sh joylarni to'ldiring:",
+    "story": "Zavodda 1-robot soatiga 15 ta, 2-robot 10 ta detal yig'adi. Ikkala robot birgalikda 1 soatda <span class=\"q-blank\">___________</span> ta detal yig'adi. Ular 150 ta detalni birgalikda <span class=\"q-blank\">___________</span> soatda tayyorlab bo'lishadi. Tajribali usta 8 soatda 96 ta buyum yasasa, uning bir soatlik ish unumi <span class=\"q-blank\">___________</span> ta bo'ladi. 5 nafar ishchi 2 kunda 80 ta stul tayyorlasa, bir kunda jami <span class=\"q-blank\">___________</span> ta stul yasaladi.",
     "answers": [
-      "10",
-      "5",
-      "5"
+      "25",
+      "6",
+      "12",
+      "40"
     ]
   },
   {
     "page_num": 63,
     "unit_ref": "Math Unit 12",
-    "title": "Supermarketdagi Katta Xarid",
-    "tense_focus": "Narx, Miqdor va Qiymat",
-    "intro": "Xarid chekidagi hisob-kitoblarni yakunlang:",
-    "story": "Ona va bola supermarketdan 1 kg narxi 6 000 so'm bo'lgan un mahsulotidan 3 kg sotib olishdi. Un uchun <span class=\"q-blank\">___________</span> so'm to'landi. 2 litr sut uchun 16 000 so'm berildi, demak 1 litr sut narxi <span class=\"q-blank\">___________</span> so'm. Jami xarid 34 000 so'm bo'ldi. Kassirga 50 000 so'm berilgach, qaytim <span class=\"q-blank\">___________</span> so'm bo'ldi.",
+    "title": "Bolalar Supermarketidagi Oqilona Xaridlar",
+    "tense_focus": "Narx, Miqdor, Qiymat, Foyda va Kasrli Baholar",
+    "intro": "Xaridlar qiymati va narxlarni hisoblab bo'sh joylarni to'ldiring:",
+    "story": "O'quvchi 5 ta kitob va 2 ta ruchka uchun 46 000 so'm to'ladi. Bitta kitob 8 000 so'm bo'lsa (5 tasi 40 000 so'm), bitta ruchka narxi <span class=\"q-blank\">___________</span> so'm bo'ladi. Do'konchi mahsulotni 50 000 so'mga olib 70 000 so'mga sotdi; uning foydasi <span class=\"q-blank\">___________</span> so'm bo'ldi. 1 kg asal 80 000 so'm bo'lsa, uning 3/4 kg miqdori <span class=\"q-blank\">___________</span> so'm turadi. 6 ta bir xil daftar 18 000 so'm tursa, 10 ta shunday daftar <span class=\"q-blank\">___________</span> so'm bo'ladi.",
     "answers": [
-      "18000",
-      "8000",
-      "16000"
+      "3000",
+      "20000",
+      "60000",
+      "30000"
     ]
   },
   {
     "page_num": 64,
     "unit_ref": "Math Unit 13",
-    "title": "Maktab Kutubxonasi Statistikasi",
-    "tense_focus": "Diagrammalar va O'rtacha Qiymat",
-    "intro": "Kitobxonlik haftaligi natijalarini hisoblang:",
-    "story": "Hafta davomida dushanba kuni 30 ta, seshanba kuni 40 ta, chorshanba kuni 50 ta kitob o'qildi. Jami o'qilgan kitoblar soni <span class=\"q-blank\">___________</span> ta bo'ldi. Kuniga o'rtacha <span class=\"q-blank\">___________</span> ta kitob o'qilgan. Eng ko'p o'qilgan kundagi kitoblar soni <span class=\"q-blank\">___________</span> tani tashkil etdi.",
+    "title": "Maktab Olimpiadasi Natijalari va O'rtacha Ball",
+    "tense_focus": "Arifmetik O'rtacha Qiymat va Statistik Tahlil",
+    "intro": "Arifmetik o'rtacha formulasi bo'yicha hisoblang:",
+    "story": "Olimpiadada Alisher 4 ta tur bo'yicha 90, 85, 95 va 90 ball to'pladi; uning arifmetik o'rtacha balli <span class=\"q-blank\">___________</span> bo'ldi. To'rtta sonning o'rtachasi 25 ga teng bo'lsa, ularning umumiy yig'indisi <span class=\"q-blank\">___________</span> bo'ladi. Kutubxonada 3 kunda 100, 150 va 200 ta kitob o'qildi; kunlik o'rtacha o'qilgan kitoblar soni <span class=\"q-blank\">___________</span> ta bo'ldi. 20, 40 va 60 sonlarining arifmetik o'rtachasi <span class=\"q-blank\">___________</span> ga teng chiqadi.",
     "answers": [
-      "120",
-      "40",
-      "50"
+      "90",
+      "100",
+      "150",
+      "40"
     ]
   },
   {
     "page_num": 65,
     "unit_ref": "Math Unit 14",
-    "title": "Zukko Detektivning Seyf Kodi",
-    "tense_focus": "Mantiqiy Qonuniyatlar va Kombinatorika",
-    "intro": "Detektiv Alisherga seyf kodini topishda yordam bering:",
-    "story": "Qonuniyatni toping: 5, 10, 15, 20, <span class=\"q-blank\">___________</span>. Bir son o'ylandi, undan 8 ayirilib, 3 ga ko'paytirilsa 36 chiqadi. Teskari usulda hisoblasak: 36 : 3 = 12, 12 + 8 = <span class=\"q-blank\">___________</span>. Qizil, sariq va ko'k rangli 3 ta bayroqchadan har xil tartibda <span class=\"q-blank\">___________</span> ta juftlik tuzish mumkin.",
+    "title": "Boburning Sehrli Jumboqlari (Bosh-Oyoqlar va Oraliqlar)",
+    "tense_focus": "Olimpiada Mantiqiy Masalalari (Tovuq-Quyon, Oraliqlar, Arralash)",
+    "intro": "Al-Xorazmiy uslubida mantiqiy hisoblab bo'sh joylarni to'ldiring:",
+    "story": "Boburning bog'ida tovuqlar va quyonlar bor; jami 20 ta bosh va 56 ta oyoq bor. U yerda <span class=\"q-blank\">___________</span> ta quyon va <span class=\"q-blank\">___________</span> ta tovuq bor. O'ylangan sonni 4 ga ko'paytirib, 30 ayrilsa 50 hosil bo'ldi; o'ylangan son <span class=\"q-blank\">___________</span> bo'lgan. 80 metrli yo'l bo'ylab har 10 metrda bittadan archa ekildi; jami <span class=\"q-blank\">___________</span> ta archa ekilgan. 12 metrli arqonni 3 metrli teng bo'laklarga ajratish uchun uni <span class=\"q-blank\">___________</span> marta kesish kerak bo'ladi.",
     "answers": [
-      "25",
+      "8",
+      "12",
       "20",
-      "6"
+      "9",
+      "3"
     ]
   },
   {
     "page_num": 66,
-    "unit_ref": "Math Unit 15",
-    "title": "Qadimgi Samarqandga Sayohat",
-    "tense_focus": "Aralash Masalalar (Masofa va Narx)",
-    "intro": "Tarixiy obidalarga sayohat sarf-xarajatlarini aniqlang:",
-    "story": "Ekskursiya avtobusi Toshkentdan Samarqandgacha bo'lgan 300 km masofani 75 km/soat tezlik bilan <span class=\"q-blank\">___________</span> soatda bosib o'tdi. Har bir o'quvchi uchun muzey chiptasi 10 000 so'm bo'lib, 20 nafar o'quvchi uchun jami <span class=\"q-blank\">___________</span> so'm to'landi. Mehmonxonada har birida 3 tadan o'rin bo'lgan 8 ta xona band qilindi, jami joylar soni <span class=\"q-blank\">___________</span> ta bo'ldi.",
+    "unit_ref": "Math Units 6 & 10",
+    "title": "Koinot Akademiyasining Kasrlar va Tezlik Sinovi",
+    "tense_focus": "Kasrlar va Harakat Uyg'unligi (Olimpiada Bosqichi)",
+    "intro": "Kasrlar va harakat formulalarini birlashtirib masalalarni yeching:",
+    "story": "Koinot kemasi 600 km masofaning 3/5 qismini bosib o'tdi, ya'ni kema <span class=\"q-blank\">___________</span> km masofa yurdi. Yakuniy manzilgacha qolgan masofa <span class=\"q-blank\">___________</span> km ni tashkil etdi. Kema qolgan masofani 2 soatda bosib o'tishi uchun uning tezligi <span class=\"q-blank\">___________</span> km/soat bo'lishi kerak. 1 butun yoqilg'i bakidan 5/11 qismi sarflangach, bakda <span class=\"q-blank\">___________</span> qism yoqilg'i qoldi. Agar noma'lum sonning 2/7 qismi 14 ga teng bo'lsa, butun sonning o'zi <span class=\"q-blank\">___________</span> bo'ladi.",
     "answers": [
-      "4",
-      "200000",
-      "24"
+      "360",
+      "240",
+      "120",
+      "6/11",
+      "49"
     ]
   },
   {
     "page_num": 67,
-    "unit_ref": "Math Unit 16",
-    "title": "Kelajak 2050 Shahri Quyosh Energiyasi",
-    "tense_focus": "Aralash Masalalar (Yuza va Ish unumi)",
-    "intro": "Eko-shahar quyosh panellari quvvatini hisoblang:",
-    "story": "Kvadrat shaklidagi quyosh paneli tomoni 6 metrga teng. Uning yuzasi <span class=\"q-blank\">___________</span> m² bo'ladi. Bitta panel soatiga 5 kilovatt energiya ishlab chiqarsa, 8 soatda <span class=\"q-blank\">___________</span> kilovatt energiya beradi. Shahar markazidagi 100 000 kishidan iborat aholi soni yuz minglar xonasida <span class=\"q-blank\">___________</span> raqamiga ega.",
+    "unit_ref": "Math Units 5 & 6",
+    "title": "Kiber Laboratoriya 2099: Formulalar va Kasrlar",
+    "tense_focus": "Murakkab Tenglamalar va Kasrlar Ustida Amallar",
+    "intro": "Qavsli tenglamalar va kasr amallarini yeching:",
+    "story": "Kiber laboratoriyada (x - 50) * 6 = 300 tenglama yechildi va x = <span class=\"q-blank\">___________</span> chiqdi. Laboratoriyadagi 360 litr eritmaning 5/9 qismi reaksiyaga ishlatildi, ya'ni <span class=\"q-blank\">___________</span> litr sarflandi. Idishda <span class=\"q-blank\">___________</span> litr eritma qoldi. 4/15 + 7/15 amali bajarilganda <span class=\"q-blank\">___________</span> hosil bo'ladi. Agar noma'lum sonning 3/8 qismi 24 bo'lsa, butun son <span class=\"q-blank\">___________</span> ga teng bo'ladi.",
     "answers": [
-      "36",
-      "40",
-      "1"
+      "100",
+      "200",
+      "160",
+      "11/15",
+      "64"
     ]
   },
   {
     "page_num": 68,
-    "unit_ref": "Math Unit 17",
-    "title": "Matematika Chempionati Finali",
-    "tense_focus": "Katta Yakuniy Masala Matni",
-    "intro": "Grand Chempionatning yakuniy savollariga to'g'ri javoblarni yozing:",
-    "story": "Chempionatda 120 nafar o'quvchi qatnashdi. Ularning yarmi (1/2 qismi) o'g'il bolalar bo'lib, ular <span class=\"q-blank\">___________</span> nafarni tashkil qildi. Qolgan 60 nafar qiz bolalar 6 ta jamoaga teng taqsimlanganda, har bir jamoada <span class=\"q-blank\">___________</span> tadan qiz bo'ldi. Musobaqada g'olib bo'lgan jamoa 500 ball to'plab, eng yaqin ta'qibchisidan 50 ball ko'p oldi, ikkinchi o'rindagi jamoa <span class=\"q-blank\">___________</span> ball to'plagan.",
+    "unit_ref": "Final Mastery",
+    "title": "Al-Xorazmiy Nomidagi 4-Sinf Grand Final Imtihoni",
+    "tense_focus": "Barcha 14 Mavzuning Jamlangan Sinovi (Prezident Maktabi Standarti)",
+    "intro": "Barcha bilimlaringizni ishga solib final savollariga to'g'ri javob bering:",
+    "story": "Final imtihonida barcha bo'limlardan sinov berildi: 500 000 + 40 000 + 700 + 8 xona qo'shiluvchilari yig'indisi <span class=\"q-blank\">___________</span> sonini hosil qiladi. 1 000 000 - 350 000 ayirmani hisoblasak <span class=\"q-blank\">___________</span> bo'ladi. 250 sonining 4/5 qismi <span class=\"q-blank\">___________</span> ga teng. 1 butundan 4/9 ayrilsa <span class=\"q-blank\">___________</span> qoladi. Perimetri 36 cm bo'lgan kvadratning yuzi <span class=\"q-blank\">___________</span> cm2 bo'ladi. Ikki shahar orasidagi 300 km masofani 60 km/soat tezlikdagi mashina <span class=\"q-blank\">___________</span> soatda bosib o'tadi.",
     "answers": [
-      "60",
-      "10",
-      "450"
+      "540708",
+      "650000",
+      "200",
+      "5/9",
+      "81",
+      "5"
     ]
   },
   {
     "page_num": 69,
-    "title": "SECTION 4: MATEMATIK MASALALAR JAVOBLAR KALITI",
-    "subtitle": "Barcha 17 ta sarguzashtli hikoya-masalalarning rasmiy yechimlari",
+    "title": "MATEMATIK MASALALAR JAVOBLAR KALITI",
+    "subtitle": "52-68 betlardagi barcha 17 ta sarguzasht masalalarining to'liq yechimlar kaliti",
     "tag": "Javoblar Kaliti • 4-Sinf",
     "is_answers": true,
     "answers_list": [
       [
-        "Sahifa 52: Sehrli Maktab Kutubxonasidagi Kitoblar",
-        "35450, 35450, 999999, 6"
+        "Sahifa 52: Sehrli Maktab Kutubxonasi",
+        "350450, 350000, 999999, 6"
       ],
       [
-        "Sahifa 53: Xazina Sandig'idagi Oltin Tangalar",
-        "32700, 20700, 10000"
+        "Sahifa 53: Samarqand Karvoni Tangalari",
+        "400000, 674500, 75000, 51500"
       ],
       [
-        "Sahifa 54: Kosmik Kemadagi Yoqilg'i Zaxirasi",
-        "1000, 300, 0"
+        "Sahifa 54: Xiva Gilamchilik Ustaxonasi",
+        "14400, 360000, 1100, 8000"
       ],
       [
-        "Sahifa 55: Qaroqchilar Orolidagi O'lja Taqsimoti",
-        "120, 7, 1"
+        "Sahifa 55: Zog Sayyorasidagi Kristallari",
+        "600, 10, 145, 90"
       ],
       [
-        "Sahifa 56: Professor Owlning Robot Konstruktori",
-        "100, 140, 80"
+        "Sahifa 56: Al-Xorazmiy Laboratoriyasi",
+        "360, 120, 140, 30"
       ],
       [
-        "Sahifa 57: Bennyning Pitsa Ziyofati",
-        "4/6, 2/6, 4, 6"
+        "Sahifa 57: Sehrli Bog' Hosili va Kasrlar",
+        "90, 60, 90, 5/7, 4/9, 60"
       ],
       [
-        "Sahifa 58: Chimyon Tog'idagi Sayohatchilar Xaltasi",
-        "6000, 3000, 240, 1000"
+        "Sahifa 58: Chimyon Tog' Ekspeditsiyasi",
+        "5460, 4080, 285, 5350"
       ],
       [
-        "Sahifa 59: Sirli Labirint va Geometrik Darvozalar",
-        "90, 14, o'tkir"
+        "Sahifa 59: Sharq Me'morchiligidagi Burchaklar",
+        "90, 180, 70, o'tkir, o'tmas"
       ],
       [
-        "Sahifa 60: Yangi Maktab Tomorqasi va Maydoni",
-        "100, 600, 64"
+        "Sahifa 60: Sehrli Bog' Maydoni va Devorlari",
+        "225, 8, 40, 32"
       ],
       [
-        "Sahifa 61: Poyga Avtomobillari Musobaqasi",
-        "180, 80, 150"
+        "Sahifa 61: 'Afrosiyob' Tezyurar Poyezdi",
+        "150, 3, 2, 24"
       ],
       [
-        "Sahifa 62: Ikkita Duradgorning Shahar Soati",
-        "10, 5, 5"
+        "Sahifa 62: Robototexnika Zavodi Unumi",
+        "25, 6, 12, 40"
       ],
       [
-        "Sahifa 63: Supermarketdagi Katta Xarid",
-        "18000, 8000, 16000"
+        "Sahifa 63: Bolalar Supermarketidagi Xarid",
+        "3000, 20000, 60000, 30000"
       ],
       [
-        "Sahifa 64: Maktab Kutubxonasi Statistikasi",
-        "120, 40, 50"
+        "Sahifa 64: Maktab Olimpiadasi Statistikasi",
+        "90, 100, 150, 40"
       ],
       [
-        "Sahifa 65: Zukko Detektivning Seyf Kodi",
-        "25, 20, 6"
+        "Sahifa 65: Boburning Jumboqlari (Mantiq)",
+        "8, 12, 20, 9, 3"
       ],
       [
-        "Sahifa 66: Qadimgi Samarqandga Sayohat",
-        "4, 200000, 24"
+        "Sahifa 66: Kasrlar va Harakat Uyg'unligi",
+        "360, 240, 120, 6/11, 49"
       ],
       [
-        "Sahifa 67: Kelajak 2050 Shahri Quyosh Energiyasi",
-        "36, 40, 1"
+        "Sahifa 67: Kiber Laboratoriya 2099",
+        "100, 200, 160, 11/15, 64"
       ],
       [
-        "Sahifa 68: Matematika Chempionati Finali",
-        "60, 10, 450"
+        "Sahifa 68: Grand Final Imtihoni",
+        "540708, 650000, 200, 5/9, 81, 5"
       ]
     ]
   },
   {
     "page_num": 70,
-    "title": "AL-XORAZMIY GRAND MASTER DIPLOMI",
-    "subtitle": "4-Sinf Matematika fanidan oliy darajali bitiruv diplomi",
-    "tag": "Grand Diplom • 4-Sinf",
+    "title": "AL-XORAZMIY GRAND MASTER DIPLOM",
+    "subtitle": "4-Sinf Matematika va Mantiq Kursini A'lo Baholarga Tamomlaganlik To'g'risida",
+    "tag": "Rasmiy Diplom • 4-Sinf",
     "is_cert": true
   }
 ]
 };
-
-if (typeof window !== 'undefined') {
-  window.MATH_DATA = MATH_DATA;
-}
